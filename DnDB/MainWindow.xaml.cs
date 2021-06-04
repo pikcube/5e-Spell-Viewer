@@ -20,16 +20,15 @@ namespace DnDB
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private DnDBDataSet db = new DnDBDataSet();
-        static public DnDBDataSetTableAdapters.Master_SpellsTableAdapter TableAdapter;
-        static public DnDBDataSet.Master_SpellsDataTable SpellTable;
+        private static DnDBDataSetTableAdapters.Master_SpellsTableAdapter TableAdapter;
+        private static DnDBDataSet.Master_SpellsDataTable SpellTable;
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             SpellLevel.Text = $"Spell Level:{Environment.NewLine}Level 1";
@@ -173,10 +172,6 @@ namespace DnDB
                 IsMaterial = isMaterial;
                 Material = material == "none" ? "" : material;
                 Details = details;
-            }
-
-            private SpellRow()
-            {
             }
         }
     }

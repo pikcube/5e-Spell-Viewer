@@ -31,13 +31,14 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <ScrollViewer Grid.Row="5" 
-                          Grid.Column="0" 
-                          Grid.ColumnSpan="5" >
-                <TextBlock x:Name="SpellDescription"
-                           Text="Description"
-                           FontSize="15"/>
-            </ScrollViewer>
+            <TextBox Grid.Row="5"
+                     Grid.Column="0" 
+                     Grid.ColumnSpan="5"
+                     x:Name="SpellDescription"
+                     Text="Description"
+                     FontSize="15"
+                     VerticalScrollBarVisibility="Auto" 
+                     IsReadOnly="True"/>
             <TextBlock x:Name="SpellName" 
                        Grid.Row="0" 
                        Grid.Column="0" 
