@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DnDB"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="Spell Viewer" Height="450" Width="800" Loaded="Window_Loaded" Icon="dd-dice-512.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -23,6 +23,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="10"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -31,6 +32,22 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            <Grid Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Text="Add Spells to  "/>
+                <ComboBox Grid.Column="2" x:Name="AddToThisClass" SelectionChanged="AddToThisClass_SelectionChanged"/>
+                <Button Grid.Column="3" x:Name="AddSpell" Content="Add" Click="AddSpell_Click"/>
+                <Button Grid.Column="4" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click"></Button>
+            </Grid>
             <TextBox Grid.Row="5"
                      Grid.Column="0" 
                      Grid.ColumnSpan="5"
@@ -84,10 +101,22 @@
                        Text="Other Info"
                        TextAlignment="Left"/>
 
-
         </Grid>
-        <ListBox Grid.Row="0"
-                 Grid.Column="0"
-                 x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged"/>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <ComboBox Grid.Row="0"
+                      x:Name="SelectedClass" SelectionChanged="SelectedClass_SelectionChanged">
+            </ComboBox>
+            <ComboBox Grid.Row="1"
+                      x:Name="SelectedLevel"/>
+                <ListBox Grid.Row="2"
+                         Grid.Column="0"
+                         x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged"/>
+        </Grid>
     </Grid>
 </Window>

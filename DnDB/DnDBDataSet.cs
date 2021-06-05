@@ -1,7 +1,9 @@
-﻿namespace DnDB {
-    
-    
-    public partial class DnDBDataSet {
+﻿namespace DnDB
+{
+
+
+    public partial class DnDBDataSet
+    {
     }
 }
 
