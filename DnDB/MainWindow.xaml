@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DnDB"
         mc:Ignorable="d"
-        Title="Spell Viewer" Height="450" Width="800" Loaded="Window_Loaded" Icon="dd-dice-512.png">
+        Title="Spell Viewer" Height="489" Width="917" Loaded="Window_Loaded" Icon="dd-dice-512.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -15,6 +15,8 @@
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
+
+        <!--Main Body Grid-->
         <Grid Grid.Row="0" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -32,22 +34,34 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+
+            <!--Bottom Bar Subgrid-->
             <Grid Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="200"/>
                     <ColumnDefinition Width="60"/>
                     <ColumnDefinition Width="60"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="1" Text="Add Spells to  "/>
-                <ComboBox Grid.Column="2" x:Name="AddToThisClass" SelectionChanged="AddToThisClass_SelectionChanged"/>
-                <Button Grid.Column="3" x:Name="AddSpell" Content="Add" Click="AddSpell_Click"/>
-                <Button Grid.Column="4" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click"></Button>
+                <TextBlock Grid.Column="0" Text="Characters: " VerticalAlignment="Center"/>
+                <Button Grid.Column="1" Content="Create"/>
+                <Button Grid.Column="2" Content="Rename"/>
+                <Button Grid.Column="3" Content="Delete"/>
+                <TextBlock Grid.Column="5" Text="Add Spells to  " VerticalAlignment="Center"/>
+                <ComboBox Grid.Column="6" x:Name="AddToThisClass" SelectionChanged="AddToThisClass_SelectionChanged"/>
+                <Button Grid.Column="7" x:Name="AddSpell" Content="Add" Click="AddSpell_Click"/>
+                <Button Grid.Column="8" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click"/>
             </Grid>
+
+            <!--Main Body-->
             <TextBox Grid.Row="5"
                      Grid.Column="0" 
                      Grid.ColumnSpan="5"
@@ -63,6 +77,23 @@
                        FontSize="30" 
                        Text="Spell Name" 
                        TextAlignment="Center"/>
+            <Grid Grid.Row="0" Grid.Column="4">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Options"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Content="⚙️"
+                        FontSize="20"
+                />
+            </Grid>
             <TextBlock x:Name="SpellLevel" 
                        Grid.Row="1"
                        Grid.Column="0"
@@ -85,7 +116,7 @@
                        Grid.Row="1"
                        Grid.Column="3"
                        FontSize="15"
-                       Text="Duration: 1 Minute"
+                       Text="Duration: Sure"
                        TextAlignment="Center"/>
             <TextBlock x:Name="SpellRange" 
                        Grid.Row="1"
@@ -102,21 +133,24 @@
                        TextAlignment="Left"/>
 
         </Grid>
+
+        <!--Sidebar Grid-->
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            
+
             <ComboBox Grid.Row="0"
-                      x:Name="SelectedClass" SelectionChanged="SelectedClass_SelectionChanged">
-            </ComboBox>
+                      x:Name="SelectedClass" SelectionChanged="SelectedClass_SelectionChanged"/>
             <ComboBox Grid.Row="1"
                       x:Name="SelectedLevel"/>
-                <ListBox Grid.Row="2"
-                         Grid.Column="0"
-                         x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged"/>
+            <ComboBox Grid.Row="2" x:Name="SelectedSchool"/>
+            <ListBox Grid.Row="3"
+                     Grid.Column="0"
+                     x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged"/>
         </Grid>
     </Grid>
 </Window>

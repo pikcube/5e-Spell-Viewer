@@ -6,16 +6,19 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MessageBox = System.Windows.MessageBox;
 
 namespace DnDB
 {
@@ -29,8 +32,8 @@ namespace DnDB
             InitializeComponent();
         }
 
-        private static List<DnDBClass> Classes = new List<DnDBClass>();
-        private static List<DnDBClass> Classes2 = new List<DnDBClass>();
+        public static List<DnDBClass> Classes = new List<DnDBClass>();
+        public static List<DnDBClass> Classes2 = new List<DnDBClass>();
         private static DnDBDataSetTableAdapters.Master_SpellsTableAdapter TableAdapter;
         private static DnDBDataSet.Master_SpellsDataTable SpellTable;
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -40,32 +43,58 @@ namespace DnDB
             //SpellCastTime.Text = $"Casting Time{Environment.NewLine}1 Action";
             //SpellDuration.Text = $"Duration:{Environment.NewLine}1 Minute";
             //SpellRange.Text = $"Range:{Environment.NewLine}Forever";
-            string[] LevelList = 
+            string[] LevelList =
             {
                 "All Levels", "Cantrip", "Level 1", "Level 2", "Level 3", "Level 4",
                 "Level 5", "Level 6", "Level 7", "Level 8", "Level 9",
             };
 
+            string[] Schools =
+            {
+                "All Schools", "Abjuration", "Conjuration", "Divination", "Enchantment",
+                "Evocation", "Illusion", "Necromancy", "Transmutation",
+            };
+            
+
             SelectedLevel.ItemsSource = LevelList;
             SelectedLevel.SelectedIndex = 0;
             SelectedLevel.SelectionChanged += SelectedClass_SelectionChanged;
+
+            SelectedSchool.ItemsSource = Schools;
+            SelectedSchool.SelectedIndex = 0;
+            SelectedSchool.SelectionChanged += SelectedSchool_SelectionChanged;
 
             SpellTable = new DnDBDataSet.Master_SpellsDataTable();
             TableAdapter = new DnDBDataSetTableAdapters.Master_SpellsTableAdapter();
             TableAdapter.Fill(SpellTable);
             SpellDescription.TextWrapping = TextWrapping.Wrap;
 
+            
+
             UpdateClasses();
+        }
+
+        private void SelectedSchool_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void UpdateClasses()
         {
+            int SidebarIndex = SpellList.SelectedIndex; 
+            
             string[] ClassFiles = Directory.GetFiles("classes", "*.dndbClass");
+            string[] CharacterFiles = Directory.GetFiles("classes", "*.dndbChara");
 
             Classes.Clear();
             Classes2.Clear();
 
             foreach (string c in ClassFiles)
+            {
+                Classes.Add(DnDBClass.GetClass(c));
+            }
+
+            foreach (string c in CharacterFiles)
             {
                 Classes.Add(DnDBClass.GetClass(c));
                 Classes2.Add(DnDBClass.GetClass(c));
@@ -89,13 +118,14 @@ namespace DnDB
             
             
             Classes2.Add(new DnDBClass("<Create Custom Class>", new string[0]));
-            Classes2.RemoveAt(0);
 
             AddToThisClass.ItemsSource = Classes2.Select(z => z.ClassName);
 
             AddToThisClass.SelectedIndex = 0;
 
             AddToThisClass.SelectedIndex = OldIndex2;
+
+            SpellList.SelectedIndex = Math.Min(SidebarIndex, SpellList.Items.Count - 1);
         }
 
         private void SpellList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -290,21 +320,27 @@ namespace DnDB
         private void AddSpell_Click(object sender, RoutedEventArgs e)
         {
             string SelectedSpell = (string) SpellList.SelectedItem;
-            string SelectedClass = (string) AddToThisClass.SelectedItem;
-            using (StreamWriter writer = new StreamWriter($@"classes\{SelectedClass}.dndbClass", true))
+            string AddToThisClassSelectedName = (string) AddToThisClass.SelectedItem;
+            using (StreamWriter writer = new StreamWriter($@"classes\{AddToThisClassSelectedName}.dndbChara", true))
             {
                 writer.WriteLine($"\"{SelectedSpell}\"");
             }
             UpdateClasses();
+            MessageBox.Show($"{SelectedSpell} added to {AddToThisClassSelectedName}", "Add complete");
         }
 
         private void RemoveSpell_Click(object sender, RoutedEventArgs e)
         {
             string SelectedSpell = (string)SpellList.SelectedItem;
             string AddToThisClassSelectedName = (string)AddToThisClass.SelectedItem;
+            MessageBoxResult Result = MessageBox.Show($"Are you sure you want to remove {SelectedSpell} from {AddToThisClassSelectedName}?", "Caution", MessageBoxButton.YesNo);
+            if (Result != MessageBoxResult.Yes)
+            {
+                return;
+            }
             DnDBClass Class = Classes.First(z => z.ClassName == AddToThisClassSelectedName);
             Class.Spells.RemoveAll(z => z == SelectedSpell);
-            using (StreamWriter writer = new StreamWriter($@"classes\{AddToThisClassSelectedName}.dndbClass", false))
+            using (StreamWriter writer = new StreamWriter($@"classes\{AddToThisClassSelectedName}.dndbChara", false))
             {
                 foreach (string spell in Class.Spells)
                 {
@@ -312,10 +348,13 @@ namespace DnDB
                 }
             }
             UpdateClasses();
+            MessageBox.Show($"{SelectedSpell} removed from {AddToThisClassSelectedName}", "Remove complete");
         }
 
         public static string NewClass = "";
         private bool DisableSelectionChangeEvent = false;
+        private int AddToThisClassOldIndex = 0;
+
 
         private void AddToThisClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -327,9 +366,11 @@ namespace DnDB
 
             if (AddToThisClass.SelectedIndex + 1 == AddToThisClass.Items.Count)
             {
-                new Form1().ShowDialog();
+                Form1 F = new Form1 {StartPosition = FormStartPosition.CenterParent};
+                F.ShowDialog();
                 if (NewClass == "")
                 {
+                    AddToThisClass.SelectedIndex = AddToThisClassOldIndex;
                     return;
                 }
 
@@ -340,6 +381,10 @@ namespace DnDB
                 UpdateClasses();
                 AddToThisClass.SelectedIndex = Classes2.IndexOf(Classes2.First(z => z.ClassName == NewClassFlagless));
                 NewClass = "";
+            }
+            else
+            {
+                AddToThisClassOldIndex = AddToThisClass.SelectedIndex;
             }
         }
     }
