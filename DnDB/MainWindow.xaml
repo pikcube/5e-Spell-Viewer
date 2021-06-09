@@ -146,7 +146,7 @@
             <ComboBox Grid.Row="0"
                       x:Name="SelectedClass" SelectionChanged="SelectedClass_SelectionChanged"/>
             <ComboBox Grid.Row="1"
-                      x:Name="SelectedLevel"/>
+                      x:Name="SelectedLevel" SelectionChanged="SelectedLevel_SelectionChanged"/>
             <ComboBox Grid.Row="2" x:Name="SelectedSchool"/>
             <ListBox Grid.Row="3"
                      Grid.Column="0"

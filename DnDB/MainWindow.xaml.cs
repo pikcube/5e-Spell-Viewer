@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlTypes;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -62,7 +63,7 @@ namespace DnDB
 
             SelectedSchool.ItemsSource = Schools;
             SelectedSchool.SelectedIndex = 0;
-            SelectedSchool.SelectionChanged += SelectedSchool_SelectionChanged;
+            SelectedSchool.SelectionChanged += SelectedClass_SelectionChanged;
 
             SpellTable = new DnDBDataSet.Master_SpellsDataTable();
             TableAdapter = new DnDBDataSetTableAdapters.Master_SpellsTableAdapter();
@@ -74,9 +75,17 @@ namespace DnDB
             UpdateClasses();
         }
 
-        private void SelectedSchool_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void SelectedClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            SpellList.ItemsSource = SpellTable.Select(z => z.Name).Where(z =>
+            {
+                SpellRow Spell = SpellRow.GetSpell(z);
+
+                return Classes[SelectedClass.SelectedIndex].Spells.Any(x => x.Name == Spell.Name) &&
+                       (Spell.Level + 1 == SelectedLevel.SelectedIndex || SelectedLevel.SelectedIndex == 0) &&
+                       (Spell.School == SelectedSchool.SelectedItem.ToString() || SelectedSchool.SelectedIndex == 0);
+            });
+            SpellList.SelectedIndex = 0;
         }
 
         private void UpdateClasses()
@@ -127,7 +136,6 @@ namespace DnDB
                 DeleteChara.IsEnabled = false;
                 AddSpell.IsEnabled = false;
                 RemoveSpell.IsEnabled = false;
-                return;
             }
             else
             {
@@ -136,13 +144,14 @@ namespace DnDB
                 DeleteChara.IsEnabled = true;
                 AddSpell.IsEnabled = true;
                 RemoveSpell.IsEnabled = true;
+
+                AddToThisClass.SelectedIndex = 0;
+
+                AddToThisClass.SelectedIndex = OldIndex2;
+
+                SpellList.SelectedIndex = Math.Min(SidebarIndex, SpellList.Items.Count - 1);
             }
-
-            AddToThisClass.SelectedIndex = 0;
-
-            AddToThisClass.SelectedIndex = OldIndex2;
-
-            SpellList.SelectedIndex = Math.Min(SidebarIndex, SpellList.Items.Count - 1);
+            return;
         }
 
         private void SpellList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -170,7 +179,7 @@ namespace DnDB
                 get;
             }
 
-            public List<string> Spells
+            public List<SpellRow> Spells
             {
                 get;
             }
@@ -188,7 +197,11 @@ namespace DnDB
             public DnDBClass(string name, string[] spells)
             {
                 ClassName = name;
-                Spells = spells.ToList();
+                Spells = new List<SpellRow>();
+                foreach (var S in spells)
+                {
+                    Spells.Add(SpellRow.GetSpell(S));
+                }
             }
         }
 
@@ -314,26 +327,6 @@ namespace DnDB
             }
         }
 
-        private void SelectedClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            SpellList.ItemsSource = SpellTable.Select(z => z.Name).ToList().Where(z =>
-            {
-                if (Classes[SelectedClass.SelectedIndex].Spells.Contains(z))
-                {
-                    SpellRow Spell = SpellRow.GetSpell(z);
-                    if (Spell.Level + 1 != SelectedLevel.SelectedIndex && SelectedLevel.SelectedIndex != 0)
-                    {
-                        return false;
-                    }
-
-                    return true;
-                }
-
-                return false;
-            });
-            SpellList.SelectedIndex = 0;
-        }
-
         private void AddSpell_Click(object sender, RoutedEventArgs e)
         {
             string SelectedSpell = (string) SpellList.SelectedItem;
@@ -356,10 +349,10 @@ namespace DnDB
                 return;
             }
             DnDBClass Class = Classes.First(z => z.ClassName == AddToThisClassSelectedName);
-            Class.Spells.RemoveAll(z => z == SelectedSpell);
+            Class.Spells.RemoveAll(z => z.Name == SelectedSpell);
             using (StreamWriter writer = new StreamWriter($@"classes\{AddToThisClassSelectedName}.dndbChara", false))
             {
-                foreach (string spell in Class.Spells)
+                foreach (string spell in Class.Spells.Select(z => z.Name))
                 {
                     writer.WriteLine($"\"{spell}\"");
                 }
@@ -410,6 +403,11 @@ namespace DnDB
         }
 
         private void Options_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SelectedLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
