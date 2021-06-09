@@ -33,7 +33,7 @@ namespace DnDB
         }
 
         public static List<DnDBClass> Classes = new List<DnDBClass>();
-        public static List<DnDBClass> Classes2 = new List<DnDBClass>();
+        public static List<DnDBClass> Characters = new List<DnDBClass>();
         private static DnDBDataSetTableAdapters.Master_SpellsTableAdapter TableAdapter;
         private static DnDBDataSet.Master_SpellsDataTable SpellTable;
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -87,7 +87,7 @@ namespace DnDB
             string[] CharacterFiles = Directory.GetFiles("classes", "*.dndbChara");
 
             Classes.Clear();
-            Classes2.Clear();
+            Characters.Clear();
 
             foreach (string c in ClassFiles)
             {
@@ -97,7 +97,7 @@ namespace DnDB
             foreach (string c in CharacterFiles)
             {
                 Classes.Add(DnDBClass.GetClass(c));
-                Classes2.Add(DnDBClass.GetClass(c));
+                Characters.Add(DnDBClass.GetClass(c));
             }
 
             int OldIndex1 = SelectedClass.SelectedIndex == -1 ? 0 : SelectedClass.SelectedIndex;
@@ -117,9 +117,26 @@ namespace DnDB
 
             
             
-            Classes2.Add(new DnDBClass("<Create Custom Class>", new string[0]));
 
-            AddToThisClass.ItemsSource = Classes2.Select(z => z.ClassName);
+            AddToThisClass.ItemsSource = Characters.Select(z => z.ClassName);
+
+            if (AddToThisClass.Items.Count == 0)
+            {
+                AddToThisClass.IsEnabled = false;
+                RenameChara.IsEnabled = false;
+                DeleteChara.IsEnabled = false;
+                AddSpell.IsEnabled = false;
+                RemoveSpell.IsEnabled = false;
+                return;
+            }
+            else
+            {
+                AddToThisClass.IsEnabled = true;
+                RenameChara.IsEnabled = true;
+                DeleteChara.IsEnabled = true;
+                AddSpell.IsEnabled = true;
+                RemoveSpell.IsEnabled = true;
+            }
 
             AddToThisClass.SelectedIndex = 0;
 
@@ -352,40 +369,49 @@ namespace DnDB
         }
 
         public static string NewClass = "";
-        private bool DisableSelectionChangeEvent = false;
-        private int AddToThisClassOldIndex = 0;
 
-
-        private void AddToThisClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void CreateChara_Click(object sender, RoutedEventArgs e)
         {
-            if (DisableSelectionChangeEvent)
+            Form1 F = new Form1 { StartPosition = FormStartPosition.CenterParent };
+            F.ShowDialog();
+            if (NewClass == "")
             {
                 return;
             }
 
+            string NewClassFlagless = NewClass;
+            NewClass = "";
 
-            if (AddToThisClass.SelectedIndex + 1 == AddToThisClass.Items.Count)
-            {
-                Form1 F = new Form1 {StartPosition = FormStartPosition.CenterParent};
-                F.ShowDialog();
-                if (NewClass == "")
-                {
-                    AddToThisClass.SelectedIndex = AddToThisClassOldIndex;
-                    return;
-                }
+            AddToThisClass.SelectedIndex = 0;
+            UpdateClasses();
+            AddToThisClass.SelectedIndex = Characters.IndexOf(Characters.First(z => z.ClassName == NewClassFlagless));
+        }
 
-                string NewClassFlagless = NewClass;
-                NewClass = "";
-                
-                AddToThisClass.SelectedIndex = 0;
-                UpdateClasses();
-                AddToThisClass.SelectedIndex = Classes2.IndexOf(Classes2.First(z => z.ClassName == NewClassFlagless));
-                NewClass = "";
-            }
-            else
+        private void RenameChara_Click(object sender, RoutedEventArgs e)
+        {
+            Form2 F = new Form2 { StartPosition = FormStartPosition.CenterParent };
+            F.ShowDialog();
+            if (NewClass == "")
             {
-                AddToThisClassOldIndex = AddToThisClass.SelectedIndex;
+                return;
             }
+            AddToThisClass.SelectedIndex = 0;
+            UpdateClasses();
+            string NewClassFlagless = NewClass;
+            NewClass = "";
+            AddToThisClass.SelectedIndex = Characters.IndexOf(Characters.First(z => z.ClassName == NewClassFlagless));
+        }
+
+        private void DeleteChara_Click(object sender, RoutedEventArgs e)
+        {
+            Form3 F = new Form3 { StartPosition = FormStartPosition.CenterParent };
+            F.ShowDialog();
+            UpdateClasses();
+        }
+
+        private void Options_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

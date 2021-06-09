@@ -23,15 +23,15 @@ namespace DnDB
         private void button1_Click(object sender, EventArgs e)
         {
             var Existing = Directory.GetFiles("classes");
-            if (Existing.Any(z => z == $"{textBox1.Text}.dndbClass") || Existing.Any(z => z == $"{textBox1.Text}.dndbChara"))
+            if (Existing.Any(z => z == $@"classes\{textBox1.Text}.dndbClass") || Existing.Any(z => z == $@"classes\{textBox1.Text}.dndbChara"))
             {
-                MessageBox.Show("Class Already Exists");
+                MessageBox.Show("Character/Class Already Exists");
                 return;
             }
 
             if (textBox1.Text == "")
             {
-                MessageBox.Show("Enter a class name");
+                MessageBox.Show("Enter a character name");
                 return;
             }
 
