@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlTypes;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -43,8 +44,6 @@ namespace DnDB
             //SpellCastTime.Text = $"Casting Time{Environment.NewLine}1 Action";
             //SpellDuration.Text = $"Duration:{Environment.NewLine}1 Minute";
             //SpellRange.Text = $"Range:{Environment.NewLine}Forever";
-            SetColors();
-
             string[] LevelList =
             {
                 "All Levels", "Cantrip", "Level 1", "Level 2", "Level 3", "Level 4",
@@ -56,7 +55,7 @@ namespace DnDB
                 "All Schools", "Abjuration", "Conjuration", "Divination", "Enchantment",
                 "Evocation", "Illusion", "Necromancy", "Transmutation",
             };
-            
+
 
             SelectedLevel.ItemsSource = LevelList;
             SelectedLevel.SelectedIndex = 0;
@@ -64,36 +63,35 @@ namespace DnDB
 
             SelectedSchool.ItemsSource = Schools;
             SelectedSchool.SelectedIndex = 0;
-            SelectedSchool.SelectionChanged += SelectedSchool_SelectionChanged;
+            SelectedSchool.SelectionChanged += SelectedClass_SelectionChanged;
 
             SpellTable = new DnDBDataSet.Master_SpellsDataTable();
             TableAdapter = new DnDBDataSetTableAdapters.Master_SpellsTableAdapter();
             TableAdapter.Fill(SpellTable);
             SpellDescription.TextWrapping = TextWrapping.Wrap;
 
-            
+
 
             UpdateClasses();
         }
 
-<<<<<<< HEAD
-        private void SetColors()
-        {
-            
-        }
-
         private void SelectedClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
-=======
-        private void SelectedSchool_SelectionChanged(object sender, SelectionChangedEventArgs e)
->>>>>>> parent of 23687a7 (Small Code Optimizations)
         {
-            throw new NotImplementedException();
+            SpellList.ItemsSource = SpellTable.Select(z => z.Name).Where(z =>
+            {
+                SpellRow Spell = SpellRow.GetSpell(z);
+
+                return Classes[SelectedClass.SelectedIndex].Spells.Any(x => x.Name == Spell.Name) &&
+                       (Spell.Level + 1 == SelectedLevel.SelectedIndex || SelectedLevel.SelectedIndex == 0) &&
+                       (Spell.School == SelectedSchool.SelectedItem.ToString() || SelectedSchool.SelectedIndex == 0);
+            });
+            SpellList.SelectedIndex = 0;
         }
 
         private void UpdateClasses()
         {
-            int SidebarIndex = SpellList.SelectedIndex; 
-            
+            int SidebarIndex = SpellList.SelectedIndex;
+
             string[] ClassFiles = Directory.GetFiles("classes", "*.dndbClass");
             string[] CharacterFiles = Directory.GetFiles("classes", "*.dndbChara");
 
@@ -126,8 +124,8 @@ namespace DnDB
 
             SelectedClass.SelectedIndex = OldIndex1;
 
-            
-            
+
+
 
             AddToThisClass.ItemsSource = Characters.Select(z => z.ClassName);
 
@@ -138,7 +136,6 @@ namespace DnDB
                 DeleteChara.IsEnabled = false;
                 AddSpell.IsEnabled = false;
                 RemoveSpell.IsEnabled = false;
-                return;
             }
             else
             {
@@ -147,13 +144,14 @@ namespace DnDB
                 DeleteChara.IsEnabled = true;
                 AddSpell.IsEnabled = true;
                 RemoveSpell.IsEnabled = true;
+
+                AddToThisClass.SelectedIndex = 0;
+
+                AddToThisClass.SelectedIndex = OldIndex2;
+
+                SpellList.SelectedIndex = Math.Min(SidebarIndex, SpellList.Items.Count - 1);
             }
-
-            AddToThisClass.SelectedIndex = 0;
-
-            AddToThisClass.SelectedIndex = OldIndex2;
-
-            SpellList.SelectedIndex = Math.Min(SidebarIndex, SpellList.Items.Count - 1);
+            return;
         }
 
         private void SpellList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -181,7 +179,7 @@ namespace DnDB
                 get;
             }
 
-            public List<string> Spells
+            public List<SpellRow> Spells
             {
                 get;
             }
@@ -199,7 +197,11 @@ namespace DnDB
             public DnDBClass(string name, string[] spells)
             {
                 ClassName = name;
-                Spells = spells.ToList();
+                Spells = new List<SpellRow>();
+                foreach (var S in spells)
+                {
+                    Spells.Add(SpellRow.GetSpell(S));
+                }
             }
         }
 
@@ -245,9 +247,9 @@ namespace DnDB
                         Output = Output.TrimEnd(' ').TrimEnd(',');
                         Output += Environment.NewLine;
                     }
-                    
+
                     Output += $"Components: {VSM(IsVerbal, IsSomatic, IsMaterial)}";
-                    
+
                     if (IsMaterial)
                     {
                         Output += $", {Material}";
@@ -325,30 +327,10 @@ namespace DnDB
             }
         }
 
-        private void SelectedClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            SpellList.ItemsSource = SpellTable.Select(z => z.Name).ToList().Where(z =>
-            {
-                if (Classes[SelectedClass.SelectedIndex].Spells.Contains(z))
-                {
-                    SpellRow Spell = SpellRow.GetSpell(z);
-                    if (Spell.Level + 1 != SelectedLevel.SelectedIndex && SelectedLevel.SelectedIndex != 0)
-                    {
-                        return false;
-                    }
-
-                    return true;
-                }
-
-                return false;
-            });
-            SpellList.SelectedIndex = 0;
-        }
-
         private void AddSpell_Click(object sender, RoutedEventArgs e)
         {
-            string SelectedSpell = (string) SpellList.SelectedItem;
-            string AddToThisClassSelectedName = (string) AddToThisClass.SelectedItem;
+            string SelectedSpell = (string)SpellList.SelectedItem;
+            string AddToThisClassSelectedName = (string)AddToThisClass.SelectedItem;
             using (StreamWriter writer = new StreamWriter($@"classes\{AddToThisClassSelectedName}.dndbChara", true))
             {
                 writer.WriteLine($"\"{SelectedSpell}\"");
@@ -367,10 +349,10 @@ namespace DnDB
                 return;
             }
             DnDBClass Class = Classes.First(z => z.ClassName == AddToThisClassSelectedName);
-            Class.Spells.RemoveAll(z => z == SelectedSpell);
+            Class.Spells.RemoveAll(z => z.Name == SelectedSpell);
             using (StreamWriter writer = new StreamWriter($@"classes\{AddToThisClassSelectedName}.dndbChara", false))
             {
-                foreach (string spell in Class.Spells)
+                foreach (string spell in Class.Spells.Select(z => z.Name))
                 {
                     writer.WriteLine($"\"{spell}\"");
                 }
@@ -383,7 +365,7 @@ namespace DnDB
 
         private void CreateChara_Click(object sender, RoutedEventArgs e)
         {
-            Form1 F = new Form1 { StartPosition = FormStartPosition.CenterParent,};
+            Form1 F = new Form1 { StartPosition = FormStartPosition.CenterParent };
             F.ShowDialog();
             if (NewClass == "")
             {
@@ -400,7 +382,7 @@ namespace DnDB
 
         private void RenameChara_Click(object sender, RoutedEventArgs e)
         {
-            Form2 F = new Form2 { StartPosition = FormStartPosition.CenterParent,};
+            Form2 F = new Form2 { StartPosition = FormStartPosition.CenterParent };
             F.ShowDialog();
             if (NewClass == "")
             {
@@ -415,12 +397,17 @@ namespace DnDB
 
         private void DeleteChara_Click(object sender, RoutedEventArgs e)
         {
-            Form3 F = new Form3 { StartPosition = FormStartPosition.CenterParent,};
+            Form3 F = new Form3 { StartPosition = FormStartPosition.CenterParent };
             F.ShowDialog();
             UpdateClasses();
         }
 
         private void Options_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SelectedLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

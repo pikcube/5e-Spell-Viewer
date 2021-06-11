@@ -1,5 +1,4 @@
 ﻿<Window x:Class="DnDB.MainWindow"
-        x:Name="Window"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,29 +6,18 @@
         xmlns:local="clr-namespace:DnDB"
         mc:Ignorable="d"
         Title="Spell Viewer" Height="489" Width="917" Loaded="Window_Loaded" Icon="dd-dice-512.png">
-    <Window.Resources>
-        <Style TargetType="ScrollBar">
-            <Setter Property="Background" Value="#ffdeb887"/>
-            <Setter Property="BorderBrush" Value="#ffdeb887"/>
-
-        </Style>
-    </Window.Resources>
-    <Window.Background>
-        <ImageBrush ImageSource="background.jpg" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,360,360"/>
-    </Window.Background>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="225*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="431*"/>
-            <ColumnDefinition Width="243*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
         <!--Main Body Grid-->
-        <Grid Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2">
+        <Grid Grid.Row="0" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -81,8 +69,7 @@
                      Text="Description"
                      FontSize="15"
                      VerticalScrollBarVisibility="Auto" 
-                     IsReadOnly="True" BorderBrush="{x:Null}" Background="{x:Null}"
-                     BorderThickness="0"/>
+                     IsReadOnly="True"/>
             <TextBlock x:Name="SpellName" 
                        Grid.Row="0" 
                        Grid.Column="0" 
@@ -159,11 +146,11 @@
             <ComboBox Grid.Row="0"
                       x:Name="SelectedClass" SelectionChanged="SelectedClass_SelectionChanged"/>
             <ComboBox Grid.Row="1"
-                      x:Name="SelectedLevel"/>
+                      x:Name="SelectedLevel" SelectionChanged="SelectedLevel_SelectionChanged"/>
             <ComboBox Grid.Row="2" x:Name="SelectedSchool"/>
             <ListBox Grid.Row="3"
                      Grid.Column="0"
-                     x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged" Background="{x:Null}"/>
+                     x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged"/>
         </Grid>
     </Grid>
 </Window>
