@@ -44,8 +44,6 @@ namespace DnDB
             //SpellCastTime.Text = $"Casting Time{Environment.NewLine}1 Action";
             //SpellDuration.Text = $"Duration:{Environment.NewLine}1 Minute";
             //SpellRange.Text = $"Range:{Environment.NewLine}Forever";
-            SetColors();
-
             string[] LevelList =
             {
                 "All Levels", "Cantrip", "Level 1", "Level 2", "Level 3", "Level 4",
@@ -75,11 +73,6 @@ namespace DnDB
 
 
             UpdateClasses();
-        }
-
-        private void SetColors()
-        {
-            
         }
 
         private void SelectedClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -372,7 +365,7 @@ namespace DnDB
 
         private void CreateChara_Click(object sender, RoutedEventArgs e)
         {
-            Form1 F = new Form1 { StartPosition = FormStartPosition.CenterParent,};
+            Form1 F = new Form1 { StartPosition = FormStartPosition.CenterParent };
             F.ShowDialog();
             if (NewClass == "")
             {
@@ -389,7 +382,7 @@ namespace DnDB
 
         private void RenameChara_Click(object sender, RoutedEventArgs e)
         {
-            Form2 F = new Form2 { StartPosition = FormStartPosition.CenterParent,};
+            Form2 F = new Form2 { StartPosition = FormStartPosition.CenterParent };
             F.ShowDialog();
             if (NewClass == "")
             {
@@ -404,7 +397,7 @@ namespace DnDB
 
         private void DeleteChara_Click(object sender, RoutedEventArgs e)
         {
-            Form3 F = new Form3 { StartPosition = FormStartPosition.CenterParent,};
+            Form3 F = new Form3 { StartPosition = FormStartPosition.CenterParent };
             F.ShowDialog();
             UpdateClasses();
         }
