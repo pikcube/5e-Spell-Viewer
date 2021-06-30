@@ -1,312 +1,312 @@
-"Acid Splash"
-"Blade Ward"
-"Chill Touch"
-"Dancing Lights"
-"Fire Bolt"
-"Friends"
-"Light"
-"Mage Hand"
-"Mending"
-"Message"
-"Minor Illusion"
-"Poison Spray"
-"Ray of Frost"
-"Shocking Grasp"
-"True Strike"
-"Alarm"
-"Burning Hands"
-"Charm Person"
-"Chromatic Orb"
-"Color Spray"
-"Comprehend Languages"
-"Detect Magic"
-"Disguise Self"
-"Expeditious Retreat"
-"False Life"
-"Feather Fall"
-"Find Familiar"
-"Fog Cloud"
-"Grease"
-"Identify"
-"Illusory Script"
-"Jump"
-"Longstrider"
-"Mage Armor"
-"Magic Missile"
-"Protection from Evil and Good"
-"Ray of Sickness"
-"Shield"
-"Silent Image"
-"Sleep"
-"Tasha's Hideous Laughter"
-"Tenser's Floating Disk"
-"Thunderwave"
-"Unseen Servant"
-"Witch Bolt"
-"Alter Self"
-"Arcane Lock"
-"Blindness/Deafness"
-"Blur"
-"Cloud of Daggers"
-"Continual Flame"
-"Crown of Madness"
-"Darkness"
-"Darkvision"
-"Detect Thoughts"
-"Enlarge/Reduce"
-"Flaming Sphere"
-"Gentle Repose"
-"Gust of Wind"
-"Hold Person"
-"Invisibility"
-"Knock"
-"Levitate"
-"Locate Object"
-"Magic Mouth"
-"Magic Weapon"
-"Melf's Acid Arrow"
-"Mirror Image"
-"Misty Step"
-"Nystul's Magic Aura"
-"Phantasmal Force"
-"Ray of Enfeeblement"
-"Rope Trick"
-"Scorching Ray"
-"See invisibility"
-"Shatter"
-"Spider Climb"
-"Suggestion"
-"Web"
-"Animate Dead"
-"Bestow Curse"
-"Blink"
-"Clairvoyance"
-"Counterspell"
-"Dispel Magic"
-"Fear"
-"Feign Death"
-"Fly"
-"Gaseous Form"
-"Glyph of Warding"
-"Haste"
-"Hypnotic Pattern"
-"Leomund's Tiny Hut"
-"Lightning Bolt"
-"Magic Circle"
-"Major Image"
-"Nondetection"
-"Phantom Steed"
-"Protection from Energy"
-"Remove Curse"
-"Sending"
-"Sleet Storm"
-"Slow"
-"Stinking Cloud"
-"Tongues"
-"Vampiric Touch"
-"Water Breathing"
-"Arcane Eye"
-"Banishment"
-"Blight"
-"Confusion"
-"Conjure Minor Elementals"
-"Control Water"
-"Dimension Door"
-"Evard's Black Tentacles"
-"Fabricate"
-"Fire Shield"
-"Greater Invisibility"
-"Hallucinatory Terrain"
-"Ice Storm"
-"Leomund's Secret Chest"
-"Locate Creature"
-"Mordenkainen's Faithful Hound"
-"Mordenkainen's Private Sanctum"
-"Otiluke's Resilient Sphere"
-"Phantasmal Killer"
-"Polymorph"
-"Stone Shape"
-"Stoneskin"
-"Wall of Fire"
-"Animate Objects"
-"Bigby's Hand"
-"Cloudkill"
-"Cone of Cold"
-"Conjure Elemental"
-"Contact Other Plane"
-"Creation"
-"Dominate Person"
-"Dream"
-"Geas"
-"Hold Monster"
-"Legend Lore"
-"Mislead"
-"Modify Memory"
-"Passwall"
-"Planar Binding"
-"Rary's Telepathic Bond"
-"Scrying"
-"Seeming"
-"Telekinesis"
-"Teleportation Circle"
-"Wall of Force"
-"Wall of Stone"
-"Arcane Gate"
-"Chain Lightning"
-"Circle of Death"
-"Contingency"
-"Create Undead"
-"Disintegrate"
-"Drawmij's Instant Summons"
-"Eyebite"
-"Flesh to Stone"
-"Globe of Invulnerability"
-"Guards and Wards"
-"Magic Jar"
-"Mass Suggestion"
-"Move Earth"
-"Otiluke's Freezing Sphere"
-"Otto's Irresistible Dance"
-"Programmed Illusion"
-"Sunbeam"
-"True Seeing"
-"Wall of Ice"
-"Delayed Blast Fireball"
-"Etherealness"
-"Finger of Death"
-"Forcecage"
-"Mirage Arcane"
-"Mordenkainen's Magnificent Mansion"
-"Mordenkainen's Sword"
-"Plane Shift"
-"Prismatic Spray"
-"Project Image"
-"Reverse Gravity"
-"Sequester"
-"Simulacrum"
-"Symbol"
-"Teleport"
-"Antimagic Field"
-"Antipathy/Sympathy"
-"Clone"
-"Control Weather"
-"Demiplane"
-"Dominate Beast"
-"Feeblemind"
-"Incendiary Cloud"
-"Maze"
-"Mind Blank"
-"Power Word Stun"
-"Sunburst"
-"Telepathy"
-"Astral Projection"
-"Imprisonment"
-"Foresight"
-"Gate"
-"Meteor Swarm"
-"Power Word Kill"
-"Prismatic Wall"
-"Shapechange"
-"Time Stop"
-"True Polymorph"
-"Weird"
-"Wish"
-"Control Flames"
-"Create Bonfire"
-"Frostbite"
-"Gust"
-"Infestation"
-"Mold earth"
-"Shape Water"
-"Thunderclap"
-"Toll the Dead"
-"Absorb Elements"
-"Catapult"
-"Earth Tremor"
-"Ice Knife"
-"Snare"
-"Aganazzar's Scorcher"
-"Dragon's Breath"
-"Dust Devil"
-"Earthbind"
-"Maximilian's Earthen Grasp"
-"Mind Spike"
-"Pyrotechnics"
-"Shadow Blade"
-"Skywrite"
-"Snilloc's Snowball Swarm"
-"Warding Wind"
-"Catnap"
-"Enemies abound"
-"Erupting Earth"
-"Flame Arrows"
-"Life Transference"
-"Melf's Minute Meteors"
-"Summon Lesser Demons"
-"Thunder Step"
-"Tidal Wave"
-"Tiny Servant"
-"Wall of Sand"
-"Wall of Water"
-"Charm Monster"
-"Elemental Bane"
-"Sickening Radiance"
-"Storm Sphere"
-"Summon Greater Demon"
-"Vitriolic Sphere"
-"Watery Sphere"
-"Control Winds"
-"Danse Macabre"
-"Dawn"
-"Enervation"
-"Far Step"
-"Immolation"
-"Infernal Calling"
-"Negative Energy Flood"
-"Skill Empowerment"
-"Steel Wind Strike"
-"Synaptic Static"
-"Transmute Rock"
-"Wall of Light"
-"Create Homunculus"
-"Investiture of Flame"
-"Investiture of Ice"
-"Investiture of Stone"
-"Investiture of Wind"
-"Mental Prison"
-"Scatter"
-"Soul Cage"
-"Tenser's Transformation"
-"Crown of Stars"
-"Whirlwind"
-"Abi-Dalzim's Horrid Wilting"
-"Illusory Dragon"
-"Maddening Darkness"
-"Mighty Fortress"
-"Invulnerability"
-"Mass Polymorph"
-"Psychic Scream"
-"Booming Blade"
-"Green-Flame Blade"
-"Lightning Lure"
-"Mind Sliver"
-"Sword Burst"
-"Tasha's Caustinc Brew"
-"Augury"
-"Enhance Ability"
-"Tasha's Mind Whip"
-"Intellect Fortress"
-"Speak with Dead"
-"Spirit Shroud"
-"Summon Fey"
-"Summon Shadowspawn"
-"Summon Undead"
-"Divination"
-"Summon Aberration"
-"Summon Construct"
-"Summon Elemental"
-"Summon Fiend"
-"Tasha's Otherworldy Guise"
-"Dream of the Blue Veil"
-"Blade of Disaster"
-"Fireball"
+Acid Splash
+Blade Ward
+Chill Touch
+Dancing Lights
+Fire Bolt
+Friends
+Light
+Mage Hand
+Mending
+Message
+Minor Illusion
+Poison Spray
+Ray of Frost
+Shocking Grasp
+True Strike
+Alarm
+Burning Hands
+Charm Person
+Chromatic Orb
+Color Spray
+Comprehend Languages
+Detect Magic
+Disguise Self
+Expeditious Retreat
+False Life
+Feather Fall
+Find Familiar
+Fog Cloud
+Grease
+Identify
+Illusory Script
+Jump
+Longstrider
+Mage Armor
+Magic Missile
+Protection from Evil and Good
+Ray of Sickness
+Shield
+Silent Image
+Sleep
+Tasha's Hideous Laughter
+Tenser's Floating Disk
+Thunderwave
+Unseen Servant
+Witch Bolt
+Alter Self
+Arcane Lock
+Blindness/Deafness
+Blur
+Cloud of Daggers
+Continual Flame
+Crown of Madness
+Darkness
+Darkvision
+Detect Thoughts
+Enlarge/Reduce
+Flaming Sphere
+Gentle Repose
+Gust of Wind
+Hold Person
+Invisibility
+Knock
+Levitate
+Locate Object
+Magic Mouth
+Magic Weapon
+Melf's Acid Arrow
+Mirror Image
+Misty Step
+Nystul's Magic Aura
+Phantasmal Force
+Ray of Enfeeblement
+Rope Trick
+Scorching Ray
+See invisibility
+Shatter
+Spider Climb
+Suggestion
+Web
+Animate Dead
+Bestow Curse
+Blink
+Clairvoyance
+Counterspell
+Dispel Magic
+Fear
+Feign Death
+Fly
+Gaseous Form
+Glyph of Warding
+Haste
+Hypnotic Pattern
+Leomund's Tiny Hut
+Lightning Bolt
+Magic Circle
+Major Image
+Nondetection
+Phantom Steed
+Protection from Energy
+Remove Curse
+Sending
+Sleet Storm
+Slow
+Stinking Cloud
+Tongues
+Vampiric Touch
+Water Breathing
+Arcane Eye
+Banishment
+Blight
+Confusion
+Conjure Minor Elementals
+Control Water
+Dimension Door
+Evard's Black Tentacles
+Fabricate
+Fire Shield
+Greater Invisibility
+Hallucinatory Terrain
+Ice Storm
+Leomund's Secret Chest
+Locate Creature
+Mordenkainen's Faithful Hound
+Mordenkainen's Private Sanctum
+Otiluke's Resilient Sphere
+Phantasmal Killer
+Polymorph
+Stone Shape
+Stoneskin
+Wall of Fire
+Animate Objects
+Bigby's Hand
+Cloudkill
+Cone of Cold
+Conjure Elemental
+Contact Other Plane
+Creation
+Dominate Person
+Dream
+Geas
+Hold Monster
+Legend Lore
+Mislead
+Modify Memory
+Passwall
+Planar Binding
+Rary's Telepathic Bond
+Scrying
+Seeming
+Telekinesis
+Teleportation Circle
+Wall of Force
+Wall of Stone
+Arcane Gate
+Chain Lightning
+Circle of Death
+Contingency
+Create Undead
+Disintegrate
+Drawmij's Instant Summons
+Eyebite
+Flesh to Stone
+Globe of Invulnerability
+Guards and Wards
+Magic Jar
+Mass Suggestion
+Move Earth
+Otiluke's Freezing Sphere
+Otto's Irresistible Dance
+Programmed Illusion
+Sunbeam
+True Seeing
+Wall of Ice
+Delayed Blast Fireball
+Etherealness
+Finger of Death
+Forcecage
+Mirage Arcane
+Mordenkainen's Magnificent Mansion
+Mordenkainen's Sword
+Plane Shift
+Prismatic Spray
+Project Image
+Reverse Gravity
+Sequester
+Simulacrum
+Symbol
+Teleport
+Antimagic Field
+Antipathy/Sympathy
+Clone
+Control Weather
+Demiplane
+Dominate Beast
+Feeblemind
+Incendiary Cloud
+Maze
+Mind Blank
+Power Word Stun
+Sunburst
+Telepathy
+Astral Projection
+Imprisonment
+Foresight
+Gate
+Meteor Swarm
+Power Word Kill
+Prismatic Wall
+Shapechange
+Time Stop
+True Polymorph
+Weird
+Wish
+Control Flames
+Create Bonfire
+Frostbite
+Gust
+Infestation
+Mold earth
+Shape Water
+Thunderclap
+Toll the Dead
+Absorb Elements
+Catapult
+Earth Tremor
+Ice Knife
+Snare
+Aganazzar's Scorcher
+Dragon's Breath
+Dust Devil
+Earthbind
+Maximilian's Earthen Grasp
+Mind Spike
+Pyrotechnics
+Shadow Blade
+Skywrite
+Snilloc's Snowball Swarm
+Warding Wind
+Catnap
+Enemies abound
+Erupting Earth
+Flame Arrows
+Life Transference
+Melf's Minute Meteors
+Summon Lesser Demons
+Thunder Step
+Tidal Wave
+Tiny Servant
+Wall of Sand
+Wall of Water
+Charm Monster
+Elemental Bane
+Sickening Radiance
+Storm Sphere
+Summon Greater Demon
+Vitriolic Sphere
+Watery Sphere
+Control Winds
+Danse Macabre
+Dawn
+Enervation
+Far Step
+Immolation
+Infernal Calling
+Negative Energy Flood
+Skill Empowerment
+Steel Wind Strike
+Synaptic Static
+Transmute Rock
+Wall of Light
+Create Homunculus
+Investiture of Flame
+Investiture of Ice
+Investiture of Stone
+Investiture of Wind
+Mental Prison
+Scatter
+Soul Cage
+Tenser's Transformation
+Crown of Stars
+Whirlwind
+Abi-Dalzim's Horrid Wilting
+Illusory Dragon
+Maddening Darkness
+Mighty Fortress
+Invulnerability
+Mass Polymorph
+Psychic Scream
+Booming Blade
+Green-Flame Blade
+Lightning Lure
+Mind Sliver
+Sword Burst
+Tasha's Caustinc Brew
+Augury
+Enhance Ability
+Tasha's Mind Whip
+Intellect Fortress
+Speak with Dead
+Spirit Shroud
+Summon Fey
+Summon Shadowspawn
+Summon Undead
+Divination
+Summon Aberration
+Summon Construct
+Summon Elemental
+Summon Fiend
+Tasha's Otherworldy Guise
+Dream of the Blue Veil
+Blade of Disaster
+Fireball

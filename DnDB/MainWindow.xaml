@@ -36,7 +36,7 @@
             </Grid.ColumnDefinitions>
 
             <!--Bottom Bar Subgrid-->
-            <Grid Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5">
+            <Grid Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5" x:Name="BottomSubGrid">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
@@ -51,14 +51,14 @@
                     <ColumnDefinition Width="60"/>
                     <ColumnDefinition Width="60"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Text="Characters: " VerticalAlignment="Center"/>
-                <Button Grid.Column="1" Content="Create" x:Name="CreateChara" Click="CreateChara_Click"/>
-                <Button Grid.Column="2" Content="Rename" x:Name="RenameChara" Click="RenameChara_Click"/>
-                <Button Grid.Column="3" Content="Delete" x:Name="DeleteChara" Click="DeleteChara_Click"/>
-                <TextBlock Grid.Column="5" Text="Add Spells to  " VerticalAlignment="Center"/>
-                <ComboBox Grid.Column="6" x:Name="AddToThisClass"/>
-                <Button Grid.Column="7" x:Name="AddSpell" Content="Add" Click="AddSpell_Click"/>
-                <Button Grid.Column="8" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click"/>
+                <TextBlock x:Name="CharaTextBlock" Grid.Column="0" Text="Characters: " VerticalAlignment="Center" FontFamily="Comic Neue" FontSize="14"/>
+                <Button Grid.Column="1" Content="Create" x:Name="CreateChara" Click="CreateChara_Click" FontFamily="Comic Neue" FontSize="14"/>
+                <Button Grid.Column="2" Content="Rename" x:Name="RenameChara" Click="RenameChara_Click" FontFamily="Comic Neue" FontSize="14"/>
+                <Button Grid.Column="3" Content="Delete" x:Name="DeleteChara" Click="DeleteChara_Click" FontFamily="Comic Neue" FontSize="14"/>
+                <TextBlock x:Name="AddSpellsToTextBlock" Grid.Column="5" Text="Add Spells to  " VerticalAlignment="Center" FontFamily="Comic Neue" FontSize="14"/>
+                <ComboBox Grid.Column="6" x:Name="AddToThisClass" FontFamily="Comic Neue" FontSize="14"/>
+                <Button Grid.Column="7" x:Name="AddSpell" Content="Add" Click="AddSpell_Click" FontFamily="Comic Neue" FontSize="14"/>
+                <Button Grid.Column="8" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click" FontFamily="Comic Neue" FontSize="14"/>
             </Grid>
 
             <!--Main Body-->
@@ -67,16 +67,16 @@
                      Grid.ColumnSpan="5"
                      x:Name="SpellDescription"
                      Text="Description"
-                     FontSize="15"
+                     FontSize="18"
                      VerticalScrollBarVisibility="Auto" 
-                     IsReadOnly="True"/>
+                     IsReadOnly="True" FontFamily="Comic Neue"/>
             <TextBlock x:Name="SpellName" 
                        Grid.Row="0" 
                        Grid.Column="0" 
                        Grid.ColumnSpan="5" 
-                       FontSize="30" 
+                       FontSize="36" 
                        Text="Spell Name" 
-                       TextAlignment="Center"/>
+                       TextAlignment="Center" FontFamily="Comic Neue"/>
             <Grid Grid.Row="0" Grid.Column="4">
 
                 <Grid.RowDefinitions>
@@ -91,46 +91,46 @@
                         Grid.Row="0"
                         Grid.Column="1"
                         Content="⚙️"
-                        FontSize="20" Click="Options_Click"
+                        FontSize="20" Click="Options_Click" FontFamily="Comic Neue"
                 />
             </Grid>
             <TextBlock x:Name="SpellLevel" 
                        Grid.Row="1"
                        Grid.Column="0"
-                       FontSize="15"
+                       FontSize="18"
                        Text="Level N"
-                       TextAlignment="Center"/>
+                       TextAlignment="Center" FontFamily="Comic Neue"/>
             <TextBlock x:Name="SpellSchool" 
                        Grid.Row="1"
                        Grid.Column="1"
-                       FontSize="15"
+                       FontSize="18"
                        Text="School-Name"
-                       TextAlignment="Center"/>
+                       TextAlignment="Center" FontFamily="Comic Neue"/>
             <TextBlock x:Name="SpellCastTime" 
                        Grid.Row="1"
                        Grid.Column="2"
-                       FontSize="15"
+                       FontSize="18"
                        Text="Casting Time: 1 Unit"
-                       TextAlignment="Center"/>
+                       TextAlignment="Center" FontFamily="Comic Neue"/>
             <TextBlock x:Name="SpellDuration" 
                        Grid.Row="1"
                        Grid.Column="3"
-                       FontSize="15"
+                       FontSize="18"
                        Text="Duration: Sure"
-                       TextAlignment="Center"/>
+                       TextAlignment="Center" FontFamily="Comic Neue"/>
             <TextBlock x:Name="SpellRange" 
                        Grid.Row="1"
                        Grid.Column="4"
-                       FontSize="15"
+                       FontSize="18"
                        Text="Range: Forever"
-                       TextAlignment="Center"/>
+                       TextAlignment="Center" FontFamily="Comic Neue"/>
             <TextBlock x:Name="SpellInfo" 
                        Grid.Row="3"
                        Grid.Column="0"
                        Grid.ColumnSpan="5"
-                       FontSize="15"
+                       FontSize="18"
                        Text="Other Info"
-                       TextAlignment="Left"/>
+                       TextAlignment="Left" FontFamily="Comic Neue"/>
 
         </Grid>
 
@@ -140,17 +140,20 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-
             <ComboBox Grid.Row="0"
-                      x:Name="SelectedClass" SelectionChanged="SelectedClass_SelectionChanged"/>
+                      x:Name="SelectedClass" SelectionChanged="SelectedClass_SelectionChanged" FontFamily="Comic Neue" FontSize="14"/>
             <ComboBox Grid.Row="1"
-                      x:Name="SelectedLevel" SelectionChanged="SelectedLevel_SelectionChanged"/>
-            <ComboBox Grid.Row="2" x:Name="SelectedSchool"/>
-            <ListBox Grid.Row="3"
+                      x:Name="SelectedLevel" SelectionChanged="SelectedLevel_SelectionChanged" FontFamily="Comic Neue" FontSize="14"/>
+            <ComboBox Grid.Row="2" x:Name="SelectedSchool" FontFamily="Comic Neue" FontSize="14"/>
+            <TextBox Grid.Row="3"
+                     x:Name="SearchBox"
+                     SelectionChanged="SearchBox_OnSelectionChanged" FontFamily="Comic Neue" FontSize="16"/>
+            <ListBox Grid.Row="4"
                      Grid.Column="0"
-                     x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged"/>
+                     x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged" FontFamily="Comic Neue" FontSize="14" MouseDoubleClick="SpellList_MouseDoubleClick"/>
         </Grid>
     </Grid>
 </Window>
