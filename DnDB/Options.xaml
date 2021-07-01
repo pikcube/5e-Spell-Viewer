@@ -1,0 +1,49 @@
+﻿<Window x:Class="DnDB.Options"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DnDB"
+        mc:Ignorable="d"
+        Title="Options" Height="279" Width="402" FontFamily="Comic Neue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="1"
+               Content="Adjust Text Size" FontSize="16" FontFamily="Comic Neue"/>
+        <ComboBox Grid.Column="2" Grid.Row="1" x:Name="Box"
+                  FontSize="16" FontFamily="Comic Neue" SelectionChanged="ComboBox_SelectionChanged"/>
+        <Label Grid.Column="1" Grid.Row="3"
+               Content="Modify Custom Character" FontSize="16" FontFamily="Comic Neue"/>
+        <Button Grid.Column="2" Grid.Row="3"
+                Content="Open Class Directory" FontSize="16" FontFamily="Comic Neue" Click="Button_Click"/>
+        <CheckBox Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" x:Name="VSMCheckBox"
+               Content="Use Full Words for VSM" FontSize="16" FontFamily="Comic Neue" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
+        <CheckBox Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" x:Name="SearchCheckBox"
+                  Content="Show Search Box" FontSize="16" FontFamily="Comic Neue" Checked="SearchCheckBox_Checked" Unchecked="SearchCheckBox_Checked"/>
+        <CheckBox Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="2" x:Name="LevelCheckBox"
+                  Content="Sort By Level, Then By Name" FontSize="16" FontFamily="Comic Neue" Checked="LevelCheckBox_Checked" Unchecked="LevelCheckBox_Checked"/>
+
+    </Grid>
+</Window>

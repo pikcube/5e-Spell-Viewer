@@ -16,6 +16,8 @@ namespace DnDB
         public Form3()
         {
             InitializeComponent();
+            MaximizeBox = false;
+            MinimizeBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

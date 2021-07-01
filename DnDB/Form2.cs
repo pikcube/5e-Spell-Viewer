@@ -41,6 +41,8 @@ namespace DnDB
         private void Form2_Load(object sender, EventArgs e)
         {
             comboBox1.DataSource = MainWindow.Characters.Select(z => z.ClassName).ToList();
+            MaximizeBox = false;
+            MinimizeBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

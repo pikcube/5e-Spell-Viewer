@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlTypes;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -29,6 +30,84 @@ namespace DnDB
     /// </summary>
     public class OptionsVariables
     {
+        private string path;
+
+        public OptionsVariables(string p)
+        {
+            path = p;
+            if (!File.Exists(path))
+            {
+                MakeDefaultConfigFile();
+            }
+
+            Contents = File.ReadAllLines(path);
+
+        }
+
+        private void MakeDefaultConfigFile()
+        {
+            string[] a = {2.0.ToString(), false.ToString(), true.ToString(), true.ToString()};
+            File.WriteAllLines(path, a);
+        }
+
+        private readonly string[] Contents;
+
+        private void SaveOptionsConfig()
+        {
+            File.WriteAllLines(path, Contents);
+        }
+
+        public double Scale
+        {
+            get
+            {
+                return double.Parse(Contents[0]);
+            }
+            set
+            {
+                Contents[0] = value.ToString();
+                SaveOptionsConfig();
+            }
+        }
+
+        public bool UseFullVSM
+        {
+            get
+            {
+                return bool.Parse(Contents[1]);
+            }
+            set
+            {
+                Contents[1] = value.ToString();
+                SaveOptionsConfig();
+            }
+        }
+
+        public bool ShowSearchBox
+        {
+            get
+            {
+                return bool.Parse(Contents[2]);
+            }
+            set
+            {
+                Contents[2] = value.ToString();
+                SaveOptionsConfig();
+            }
+        }
+
+        public bool SortByLevel
+        {
+            get
+            {
+                return bool.Parse(Contents[3]);
+            }
+            set
+            {
+                Contents[3] = value.ToString();
+                SaveOptionsConfig();
+            }
+        }
 
     }
     
@@ -38,8 +117,8 @@ namespace DnDB
         {
             InitializeComponent();
         }
-        
-        public static double Scale = 2.0;
+
+        public static OptionsVariables SettingsVariables;
 
         public static List<DnDBClass> Classes = new List<DnDBClass>();
         public static List<DnDBClass> Characters = new List<DnDBClass>();
@@ -47,11 +126,8 @@ namespace DnDB
         private static DnDBDataSet.Master_SpellsDataTable SpellTable;
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //SpellLevel.Text = $"Spell Level:{Environment.NewLine}Level 1";
-            //SpellSchool.Text = $"School:{Environment.NewLine}SomeDnBS";
-            //SpellCastTime.Text = $"Casting Time{Environment.NewLine}1 Action";
-            //SpellDuration.Text = $"Duration:{Environment.NewLine}1 Minute";
-            //SpellRange.Text = $"Range:{Environment.NewLine}Forever";
+            SettingsVariables = new OptionsVariables("main.config");
+
             string[] LevelList =
             {
                 "All Levels", "Cantrip", "Level 1", "Level 2", "Level 3", "Level 4",
@@ -119,10 +195,19 @@ namespace DnDB
                 }
             }
 
-            SpellList.ItemsSource = SpellsFiltered
-                .OrderBy(z => z.Name[0] != '*') //False shows up first before true, so this check is inverted. Given 1 = true, makes sense
-                .ThenBy(z => z.Level)
-                .ThenBy(z => z.Name).Select(z => z.Name);
+            if (SettingsVariables.SortByLevel)
+            {
+                SpellList.ItemsSource = SpellsFiltered
+                    .OrderBy(z => z.Name[0] != '*') //False shows up first before true, so this check is inverted. Given 1 = true, makes sense
+                    .ThenBy(z => z.Level)
+                    .ThenBy(z => z.Name).Select(z => z.Name);
+            }
+            else
+            {
+                SpellList.ItemsSource = SpellsFiltered
+                    .OrderBy(z => z.Name[0] != '*') //False shows up first before true, so this check is inverted. Given 1 = true, makes sense
+                    .ThenBy(z => z.Name).Select(z => z.Name);
+            }
             SpellList.SelectedIndex = 0;
         }
 
@@ -220,7 +305,12 @@ namespace DnDB
                 return;
             }
 
-            SpellRow Spell = SpellRow.GetSpell((string)SpellList.SelectedItem);
+            RefreshSpellDisplay();
+        }
+
+        private void RefreshSpellDisplay()
+        {
+            SpellRow Spell = SpellRow.GetSpell((string) SpellList.SelectedItem);
             SpellName.Text = Spell.Name;
             SpellLevel.Text = $"Level {Spell.Level}";
             SpellSchool.Text = Spell.School;
@@ -340,19 +430,41 @@ namespace DnDB
             private static string VSM(bool V, bool S, bool M)
             {
                 string Output = "";
-                if (V)
+                if (SettingsVariables.UseFullVSM)
                 {
-                    Output += "V";
-                }
+                    if (V)
+                    {
+                        Output += "Verbal, ";
+                    }
 
-                if (S)
-                {
-                    Output += "S";
-                }
+                    if (S)
+                    {
+                        Output += "Somatic, ";
+                    }
 
-                if (M)
+                    if (M)
+                    {
+                        Output += "Material, ";
+                    }
+
+                    Output = Output.TrimEnd().TrimEnd(',');
+                }
+                else
                 {
-                    Output += "M";
+                    if (V)
+                    {
+                        Output += "V";
+                    }
+
+                    if (S)
+                    {
+                        Output += "S";
+                    }
+
+                    if (M)
+                    {
+                        Output += "M";
+                    }
                 }
 
                 return Output;
@@ -513,7 +625,12 @@ namespace DnDB
 
         private void Options_Click(object sender, RoutedEventArgs e)
         {
-            
+            Options O = new Options {WindowStartupLocation = WindowStartupLocation.CenterOwner};
+            O.ShowDialog();
+            UpdateFontSize();
+            UpdateClasses();
+            UpdateSpellListContents();
+            RefreshSpellDisplay();
         }
 
         private void SelectedLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -554,7 +671,19 @@ namespace DnDB
 
             BottomSubGrid.ColumnDefinitions[6].Width = new GridLength(100 * Scale);
 
+            SearchBox.Visibility = SettingsVariables.ShowSearchBox ? Visibility.Visible : Visibility.Collapsed;
+        }
 
+        public static double Scale
+        {
+            get
+            {
+                return SettingsVariables.Scale;
+            }
+            set
+            {
+                SettingsVariables.Scale = value;
+            }
         }
 
         private void SpellList_MouseDoubleClick(object sender, MouseButtonEventArgs e)

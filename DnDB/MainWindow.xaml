@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DnDB"
         mc:Ignorable="d"
-        Title="Spell Viewer" Height="489" Width="917" Loaded="Window_Loaded" Icon="dd-dice-512.png">
+        Title="Spell Viewer" Height="489" Width="917" Loaded="Window_Loaded" Icon="dd-dice-512.png" FontFamily="Comic Neue">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
