@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -37,16 +38,34 @@ namespace DnDB
         {
             InitializeComponent();
             string[] comboBoxStrings = {"Tiny", "Smaller", "Medium (Default)", "Bigger", "Large", "Huge", "Maximum",};
-            Box.ItemsSource = comboBoxStrings;
-            Box.SelectedIndex = (int) (2 * GlobalSize - 2);
+            TextSizeBox.ItemsSource = comboBoxStrings;
+            TextSizeBox.SelectedIndex = (int) (2 * GlobalSize - 2);
             LevelCheckBox.IsChecked = MainWindow.SettingsVariables.SortByLevel;
             SearchCheckBox.IsChecked = MainWindow.SettingsVariables.ShowSearchBox;
             VSMCheckBox.IsChecked = MainWindow.SettingsVariables.UseFullVSM;
+            UpdateTextSize();
+        }
+
+        private void UpdateTextSize()
+        {
+            WindowObject.FontSize = 6 * GlobalSize;
+            AdjustLabel.FontSize = 8 * GlobalSize;
+            ModifyLabel.FontSize = 8 * GlobalSize;
+            TextSizeBox.FontSize = 8 * GlobalSize;
+            OpenClassButton.FontSize = 8 * GlobalSize;
+            LevelCheckBox.FontSize = 8 * GlobalSize;
+            SearchCheckBox.FontSize = 8 * GlobalSize;
+            VSMCheckBox.FontSize = 8 * GlobalSize;
+
+            WindowObject.Width = Math.Max(201 * GlobalSize, 402);
+            WindowObject.Height = Math.Max(139.5 * GlobalSize, 279);
+
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            GlobalSize = (double) (Box.SelectedIndex + 2) / 2;
+            GlobalSize = (double) (TextSizeBox.SelectedIndex + 2) / 2;
+            UpdateTextSize();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

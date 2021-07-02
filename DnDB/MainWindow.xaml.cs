@@ -14,14 +14,10 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
-using MessageBox = System.Windows.MessageBox;
-using Path = System.IO.Path;
 
 namespace DnDB
 {
@@ -586,7 +582,8 @@ namespace DnDB
 
         private void CreateChara_Click(object sender, RoutedEventArgs e)
         {
-            Form1 F = new Form1 { StartPosition = FormStartPosition.CenterParent };
+            //Form1 F = new Form1 { StartPosition = FormStartPosition.CenterParent };
+            CreateChara F = new CreateChara {WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this,};
             F.ShowDialog();
             if (NewClass == "")
             {
@@ -603,7 +600,7 @@ namespace DnDB
 
         private void RenameChara_Click(object sender, RoutedEventArgs e)
         {
-            Form2 F = new Form2 { StartPosition = FormStartPosition.CenterParent };
+            RenameChara F = new RenameChara {WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this,};
             F.ShowDialog();
             if (NewClass == "")
             {
@@ -618,14 +615,14 @@ namespace DnDB
 
         private void DeleteChara_Click(object sender, RoutedEventArgs e)
         {
-            Form3 F = new Form3 { StartPosition = FormStartPosition.CenterParent };
+            DeleteChara F = new DeleteChara {WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this,};
             F.ShowDialog();
             UpdateClasses();
         }
 
         private void Options_Click(object sender, RoutedEventArgs e)
         {
-            Options O = new Options {WindowStartupLocation = WindowStartupLocation.CenterOwner};
+            Options O = new Options {WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this, };
             O.ShowDialog();
             UpdateFontSize();
             UpdateClasses();

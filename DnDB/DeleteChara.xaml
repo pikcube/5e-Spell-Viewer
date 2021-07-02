@@ -1,0 +1,32 @@
+﻿<Window x:Class="DnDB.DeleteChara" x:Name="window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DnDB"
+        mc:Ignorable="d"
+        Title="DeleteChara" Height="102" Width="407">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="1" x:Name="CharacterLabel"
+               Content="Character:" FontSize="16" FontFamily="Comic Neue"/>
+        <ComboBox Grid.Row="1" Grid.Column="3" x:Name="CharacterComboBox"
+                  FontSize="16" FontFamily="Comic Neue"/>
+        <Button Grid.Row="1" Grid.Column="5" x:Name="DeleteButton"
+                Content=" Delete " FontSize="16" FontFamily="Comic Neue" Click="DeleteButton_Click"/>
+    </Grid>
+</Window>
