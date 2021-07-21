@@ -26,7 +26,7 @@ namespace DnDB
     /// </summary>
     public class OptionsVariables
     {
-        private string path;
+        private readonly string path;
 
         public OptionsVariables(string p)
         {
@@ -38,11 +38,24 @@ namespace DnDB
 
             Contents = File.ReadAllLines(path);
 
+            if (Contents.Length != 5)
+            {
+                MakeDefaultConfigFile();
+            }
+
+            Contents = File.ReadAllLines(path);
         }
 
         private void MakeDefaultConfigFile()
         {
-            string[] a = {2.0.ToString(), false.ToString(), true.ToString(), true.ToString()};
+            string[] a =
+            {
+                2.0.ToString(),
+                false.ToString(),
+                true.ToString(),
+                true.ToString(),
+                "Calibri",
+            };
             File.WriteAllLines(path, a);
         }
 
@@ -105,6 +118,28 @@ namespace DnDB
             }
         }
 
+        public FontFamily SelectedFont
+        {
+            get
+            {
+                return new FontFamily(Contents[4]);
+            }
+        }
+
+        public void SetSelectedFont(string FontName)
+        {
+            try
+            {
+                _ = new FontFamily(FontName);
+                Contents[4] = FontName;
+                SaveOptionsConfig();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
     }
     
     public partial class MainWindow
@@ -145,13 +180,54 @@ namespace DnDB
             SelectedSchool.SelectedIndex = 0;
             SelectedSchool.SelectionChanged += SelectedClass_SelectionChanged;
 
-            SpellTable = new DnDBDataSet.Master_SpellsDataTable();
-            TableAdapter = new DnDBDataSetTableAdapters.Master_SpellsTableAdapter();
-            TableAdapter.Fill(SpellTable);
-            SpellDescription.TextWrapping = TextWrapping.Wrap;
+            try
+            {
+                SpellTable = new DnDBDataSet.Master_SpellsDataTable();
+                TableAdapter = new DnDBDataSetTableAdapters.Master_SpellsTableAdapter();
+                TableAdapter.Fill(SpellTable);
+                SpellDescription.TextWrapping = TextWrapping.Wrap;
+            }
+            catch (Exception ex)
+            {
+                File.WriteAllText("error.txt", ex.Message + Environment.NewLine + ex.StackTrace);
+                MessageBox.Show("Error loading database, please install the Microsoft Access Database Engine 2010 Redistributable and see if the error persists");
+                Process.Start(@"https://www.microsoft.com/en-us/download/details.aspx?id=13255");
+                Close();
+            }
 
             UpdateClasses();
             UpdateFontSize();
+        }
+
+        public static bool IsReservedFileName(string FileName)
+        { 
+            string[] ReservedNames =
+            {
+                "con",
+                "prn",
+                "aux",
+                "nul",
+                "com1",
+                "com2",
+                "com3",
+                "com4",
+                "com5",
+                "com6",
+                "com7",
+                "com8",
+                "com9",
+                "lpt1",
+                "lpt2",
+                "lpt3",
+                "lpt4",
+                "lpt5",
+                "lpt6",
+                "lpt7",
+                "lpt8",
+                "lpt9",
+                "clock$",
+            };
+            return ReservedNames.Any(z => z == FileName);
         }
 
         private void SelectedClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -162,6 +238,11 @@ namespace DnDB
         private void UpdateSpellListContents()
         {
             IEnumerable<SpellRow> SpellsToFilter;
+            if (SelectedClass.SelectedIndex < 0 || SelectedClass.SelectedIndex >= SelectedClass.Items.Count)
+            {
+                SelectedClass.SelectedIndex = 0;
+            }
+
             try
             {
                 SpellsToFilter = SpellTable.Select(z => SpellRow.GetSpell(z.Name)).Where(z =>
@@ -635,7 +716,7 @@ namespace DnDB
 
         }
 
-        void UpdateFontSize()
+        private void UpdateFontSize()
         {
             SelectedClass.FontSize = 7 * Scale;
             SelectedLevel.FontSize = 7 * Scale;
@@ -660,6 +741,29 @@ namespace DnDB
             RemoveSpell.FontSize = 7 * Scale;
             Options.FontSize = 10 * Scale;
 
+            SelectedClass.FontFamily = SettingsVariables.SelectedFont;
+            SelectedLevel.FontFamily = SettingsVariables.SelectedFont;
+            SelectedSchool.FontFamily = SettingsVariables.SelectedFont;
+            SearchBox.FontFamily = SettingsVariables.SelectedFont;
+            SpellList.FontFamily = SettingsVariables.SelectedFont;
+            SpellName.FontFamily = SettingsVariables.SelectedFont;
+            SpellLevel.FontFamily = SettingsVariables.SelectedFont;
+            SpellSchool.FontFamily = SettingsVariables.SelectedFont;
+            SpellCastTime.FontFamily = SettingsVariables.SelectedFont;
+            SpellDuration.FontFamily = SettingsVariables.SelectedFont;
+            SpellRange.FontFamily = SettingsVariables.SelectedFont;
+            SpellInfo.FontFamily = SettingsVariables.SelectedFont;
+            SpellDescription.FontFamily = SettingsVariables.SelectedFont;
+            CharaTextBlock.FontFamily = SettingsVariables.SelectedFont;
+            CreateChara.FontFamily = SettingsVariables.SelectedFont;
+            RenameChara.FontFamily = SettingsVariables.SelectedFont;
+            DeleteChara.FontFamily = SettingsVariables.SelectedFont;
+            AddSpellsToTextBlock.FontFamily = SettingsVariables.SelectedFont;
+            AddToThisClass.FontFamily = SettingsVariables.SelectedFont;
+            AddSpell.FontFamily = SettingsVariables.SelectedFont;
+            RemoveSpell.FontFamily = SettingsVariables.SelectedFont;
+            Options.FontFamily = SettingsVariables.SelectedFont;
+
             BottomSubGrid.ColumnDefinitions[1].Width = new GridLength(30 * Scale);
             BottomSubGrid.ColumnDefinitions[2].Width = new GridLength(30 * Scale);
             BottomSubGrid.ColumnDefinitions[3].Width = new GridLength(30 * Scale);
@@ -668,7 +772,7 @@ namespace DnDB
 
             BottomSubGrid.ColumnDefinitions[6].Width = new GridLength(100 * Scale);
 
-            SearchBox.Visibility = SettingsVariables.ShowSearchBox ? Visibility.Visible : Visibility.Collapsed;
+            //SearchBox.Visibility = SettingsVariables.ShowSearchBox ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public static double Scale

@@ -1,4 +1,4 @@
-﻿<Window x:Class="DnDB.MainWindow"
+﻿<Window x:Class="DnDB.MainWindow" x:Name="mainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -51,7 +51,7 @@
                     <ColumnDefinition Width="60"/>
                     <ColumnDefinition Width="60"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock x:Name="CharaTextBlock" Grid.Column="0" Text="Characters: " VerticalAlignment="Center" FontFamily="Comic Neue" FontSize="14"/>
+                <TextBlock Grid.Column="0" Text="Characters: " VerticalAlignment="Center" FontFamily="Comic Neue" FontSize="14" x:Name="CharaTextBlock"/>
                 <Button Grid.Column="1" Content="Create" x:Name="CreateChara" Click="CreateChara_Click" FontFamily="Comic Neue" FontSize="14"/>
                 <Button Grid.Column="2" Content="Rename" x:Name="RenameChara" Click="RenameChara_Click" FontFamily="Comic Neue" FontSize="14"/>
                 <Button Grid.Column="3" Content="Delete" x:Name="DeleteChara" Click="DeleteChara_Click" FontFamily="Comic Neue" FontSize="14"/>

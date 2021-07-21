@@ -41,6 +41,10 @@ namespace DnDB
             CharacterComboBox.FontSize = 8 * Scale;
             DeleteButton.FontSize = 8 * Scale;
 
+            CharacterLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            CharacterComboBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            DeleteButton.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+
             window.Width = Math.Max(204 * Scale, 408);
             window.Height = Math.Max(51 * Scale, 102);
         }

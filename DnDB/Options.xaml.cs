@@ -14,6 +14,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Drawing.Text;
+using FontFamily = System.Drawing.FontFamily;
 
 namespace DnDB
 {
@@ -43,11 +45,24 @@ namespace DnDB
             LevelCheckBox.IsChecked = MainWindow.SettingsVariables.SortByLevel;
             SearchCheckBox.IsChecked = MainWindow.SettingsVariables.ShowSearchBox;
             VSMCheckBox.IsChecked = MainWindow.SettingsVariables.UseFullVSM;
+            List<string> fontBoxString = new List<string>();
+            using (InstalledFontCollection C = new InstalledFontCollection())
+            {
+                foreach (FontFamily F in C.Families)
+                {
+                    fontBoxString.Add(F.Name);
+                }
+            }
+            FontBox.ItemsSource = fontBoxString.OrderBy(z => z).ToList();
+            FontBox.SelectedItem = MainWindow.SettingsVariables.SelectedFont.ToString();
+            
             UpdateTextSize();
         }
 
         private void UpdateTextSize()
         {
+            FontBox.FontSize = 8 * GlobalSize;
+            FontLabel.FontSize = 8 * GlobalSize;
             WindowObject.FontSize = 6 * GlobalSize;
             AdjustLabel.FontSize = 8 * GlobalSize;
             ModifyLabel.FontSize = 8 * GlobalSize;
@@ -57,8 +72,19 @@ namespace DnDB
             SearchCheckBox.FontSize = 8 * GlobalSize;
             VSMCheckBox.FontSize = 8 * GlobalSize;
 
+            WindowObject.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            AdjustLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            ModifyLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            TextSizeBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            OpenClassButton.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            LevelCheckBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            SearchCheckBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            VSMCheckBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            FontBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            FontLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+
             WindowObject.Width = Math.Max(201 * GlobalSize, 402);
-            WindowObject.Height = Math.Max(139.5 * GlobalSize, 279);
+            WindowObject.Height = Math.Max(161.5 * GlobalSize, 323);
 
         }
 
@@ -100,6 +126,12 @@ namespace DnDB
             {
                 MainWindow.SettingsVariables.SortByLevel = LevelCheckBox.IsChecked.Value;
             }
+        }
+
+        private void FontBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MainWindow.SettingsVariables.SetSelectedFont(FontBox.SelectedItem.ToString());
+            UpdateTextSize();
         }
     }
 }
