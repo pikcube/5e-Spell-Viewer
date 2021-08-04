@@ -36,7 +36,7 @@
         <Label Grid.Column="1" Grid.Row="1" x:Name="FontLabel"
                Content="Select Font" FontSize="16" FontFamily="Comic Neue" Grid.ColumnSpan="2"/>
         <ComboBox Grid.Column="3" Grid.Row="1" x:Name="FontBox"
-                  FontSize="16" FontFamily="Comic Neue" SelectionChanged="FontBox_SelectionChanged"/>
+                  FontSize="16" FontFamily="Comic Neue" SelectionChanged="FontBox_SelectionChanged" IsEditable="True"/>
         <Label Grid.Column="1" Grid.Row="3" x:Name="AdjustLabel"
                Content="Adjust Text Size" FontSize="16" FontFamily="Comic Neue" Grid.ColumnSpan="2"/>
         <ComboBox Grid.Column="3" Grid.Row="3" x:Name="TextSizeBox"

@@ -18,6 +18,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using Newtonsoft.Json;
 
 namespace DnDB
 {
@@ -30,20 +31,31 @@ namespace DnDB
 
         public OptionsVariables(string p)
         {
-            path = p;
-            if (!File.Exists(path))
+            try
+            {
+                path = p;
+                if (!File.Exists(path))
+                {
+                    MakeDefaultConfigFile();
+                }
+
+                Contents = File.ReadAllLines(path);
+
+                if (Contents.Length == 5)
+                {
+                    return;
+                }
+
+                MakeDefaultConfigFile();
+            }
+            catch
             {
                 MakeDefaultConfigFile();
             }
-
-            Contents = File.ReadAllLines(path);
-
-            if (Contents.Length != 5)
+            finally
             {
-                MakeDefaultConfigFile();
+                Contents = File.ReadAllLines(path);
             }
-
-            Contents = File.ReadAllLines(path);
         }
 
         private void MakeDefaultConfigFile()
@@ -55,23 +67,19 @@ namespace DnDB
                 true.ToString(),
                 true.ToString(),
                 "Calibri",
+                //false.ToString(),
             };
             File.WriteAllLines(path, a);
         }
 
         private readonly string[] Contents;
 
-        private void SaveOptionsConfig()
-        {
-            File.WriteAllLines(path, Contents);
-        }
+
+        private void SaveOptionsConfig() => File.WriteAllLines(path, Contents);
 
         public double Scale
         {
-            get
-            {
-                return double.Parse(Contents[0]);
-            }
+            get => double.Parse(Contents[0]);
             set
             {
                 Contents[0] = value.ToString();
@@ -81,10 +89,7 @@ namespace DnDB
 
         public bool UseFullVSM
         {
-            get
-            {
-                return bool.Parse(Contents[1]);
-            }
+            get => bool.Parse(Contents[1]);
             set
             {
                 Contents[1] = value.ToString();
@@ -94,10 +99,7 @@ namespace DnDB
 
         public bool ShowSearchBox
         {
-            get
-            {
-                return bool.Parse(Contents[2]);
-            }
+            get => bool.Parse(Contents[2]);
             set
             {
                 Contents[2] = value.ToString();
@@ -107,10 +109,7 @@ namespace DnDB
 
         public bool SortByLevel
         {
-            get
-            {
-                return bool.Parse(Contents[3]);
-            }
+            get => bool.Parse(Contents[3]);
             set
             {
                 Contents[3] = value.ToString();
@@ -120,10 +119,7 @@ namespace DnDB
 
         public FontFamily SelectedFont
         {
-            get
-            {
-                return new FontFamily(Contents[4]);
-            }
+            get => new FontFamily(Contents[4]);
         }
 
         public void SetSelectedFont(string FontName)
@@ -140,6 +136,36 @@ namespace DnDB
             }
         }
 
+        //public bool DarkModeEnabled
+        //{
+        //    get => true;
+        //    //get => bool.Parse(Contents[5]);
+        //    set
+        //    {
+        //        Contents[5] = value.ToString();
+        //        SaveOptionsConfig();
+        //    }
+        //}
+
+        //public Brush TextColor
+        //{
+        //    get => DarkModeEnabled ? Brushes.White : Brushes.Black;
+        //}
+
+        //public Brush BackgroundColor
+        //{
+        //    get => DarkModeEnabled ? Brushes.Black : Brushes.White;
+        //}
+
+        //public LinearGradientBrush BackgroundGradientBrush => DarkModeEnabled
+        //    ? new LinearGradientBrush(GradientStopCollection.Parse("#00000000,0 #00000000,1"))
+        //    : new LinearGradientBrush(GradientStopCollection.Parse("#FFF0F0F0,0 #FFE5E5E5,1"));
+
+        //public Brush ButtonBrush
+        //{
+        //    get => DarkModeEnabled ? new SolidColorBrush(Color.FromArgb(255, 34, 34, 34)) : new SolidColorBrush(Color.FromArgb(255, 221, 221, 221));
+        //}
+
     }
     
     public partial class MainWindow
@@ -151,52 +177,64 @@ namespace DnDB
 
         public static OptionsVariables SettingsVariables;
 
-        public static List<DnDBClass> Classes = new List<DnDBClass>();
-        public static List<DnDBClass> Characters = new List<DnDBClass>();
-        private static DnDBDataSetTableAdapters.Master_SpellsTableAdapter TableAdapter;
-        private static DnDBDataSet.Master_SpellsDataTable SpellTable;
+        public static List<DnDBClass> Classes;
+        public static List<DnDBClass> Characters;
+        //private static DnDBDataSetTableAdapters.Master_SpellsTableAdapter TableAdapter;
+        private static List<MasterSpell> SpellTable;
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            SettingsVariables = new OptionsVariables("main.config");
-
-            string[] LevelList =
-            {
-                "All Levels", "Cantrip", "Level 1", "Level 2", "Level 3", "Level 4",
-                "Level 5", "Level 6", "Level 7", "Level 8", "Level 9",
-            };
-
-            string[] Schools =
-            {
-                "All Schools", "Abjuration", "Conjuration", "Divination", "Enchantment",
-                "Evocation", "Illusion", "Necromancy", "Transmutation",
-            };
-
-
-            SelectedLevel.ItemsSource = LevelList;
-            SelectedLevel.SelectedIndex = 0;
-            SelectedLevel.SelectionChanged += SelectedClass_SelectionChanged;
-
-            SelectedSchool.ItemsSource = Schools;
-            SelectedSchool.SelectedIndex = 0;
-            SelectedSchool.SelectionChanged += SelectedClass_SelectionChanged;
-
             try
             {
-                SpellTable = new DnDBDataSet.Master_SpellsDataTable();
-                TableAdapter = new DnDBDataSetTableAdapters.Master_SpellsTableAdapter();
-                TableAdapter.Fill(SpellTable);
-                SpellDescription.TextWrapping = TextWrapping.Wrap;
-            }
-            catch (Exception ex)
-            {
-                File.WriteAllText("error.txt", ex.Message + Environment.NewLine + ex.StackTrace);
-                MessageBox.Show("Error loading database, please install the Microsoft Access Database Engine 2010 Redistributable and see if the error persists");
-                Process.Start(@"https://www.microsoft.com/en-us/download/details.aspx?id=13255");
-                Close();
-            }
+                Classes = new List<DnDBClass>();
+                Characters = new List<DnDBClass>();
+                try
+                {
+                    Directory.SetCurrentDirectory(
+                        $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}/DnDB_Beta");
+                }
+                catch (IOException)
+                {
+                    Directory.CreateDirectory(
+                        $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}/DnDB_Beta");
+                    Directory.SetCurrentDirectory(
+                        $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}/DnDB_Beta");
+                }
+                SettingsVariables = new OptionsVariables($"{Directory.GetCurrentDirectory()}/main.config");
 
-            UpdateClasses();
-            UpdateFontSize();
+                string[] LevelList =
+                {
+                    "All Levels", "Cantrip", "Level 1", "Level 2", "Level 3", "Level 4",
+                    "Level 5", "Level 6", "Level 7", "Level 8", "Level 9",
+                };
+
+                string[] Schools =
+                {
+                    "All Schools", "Abjuration", "Conjuration", "Divination", "Enchantment",
+                    "Evocation", "Illusion", "Necromancy", "Transmutation",
+                };
+
+
+                SelectedLevel.ItemsSource = LevelList;
+                SelectedLevel.SelectedIndex = 0;
+                SelectedLevel.SelectionChanged += SelectedClass_SelectionChanged;
+
+                SelectedSchool.ItemsSource = Schools;
+                SelectedSchool.SelectedIndex = 0;
+                SelectedSchool.SelectionChanged += SelectedClass_SelectionChanged;
+
+                var I = JsonConvert.DeserializeObject<Root>(File.ReadAllText("spells.json"));
+                SpellTable = I.MasterSpells;
+                SpellDescription.TextWrapping = TextWrapping.Wrap;
+
+
+                UpdateClasses();
+                UpdateFontSize();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                MessageBox.Show(exception.StackTrace);
+            }
         }
 
         public static bool IsReservedFileName(string FileName)
@@ -242,7 +280,7 @@ namespace DnDB
             {
                 SelectedClass.SelectedIndex = 0;
             }
-
+            
             try
             {
                 SpellsToFilter = SpellTable.Select(z => SpellRow.GetSpell(z.Name)).Where(z =>
@@ -264,12 +302,9 @@ namespace DnDB
             //Apparently you can't update a member of an IEnumberable from a foreach loop, it just updates a local copy and throws it away.
             List<SpellRow> SpellsFiltered = SpellsToFilter.ToList();
             
-            foreach (SpellRow s in SpellsFiltered)
+            foreach (SpellRow s in SpellsFiltered.Where(s => IsPreparedSpellInCurrentClass(s.Name)))
             {
-                if (IsPreparedSpellInCurrentClass(s.Name))
-                {
-                    s.Name = $"*{s.Name}";
-                }
+                s.Name = $"*{s.Name}";
             }
 
             if (SettingsVariables.SortByLevel)
@@ -423,7 +458,7 @@ namespace DnDB
                 bool RewriteNeeded = false;
                 ClassName = Path.GetFileNameWithoutExtension(path);
                 Spells = new List<SpellRow>();
-                foreach (var S in spells.ToArray())
+                foreach (string S in spells.ToArray())
                 {
                     try
                     {
@@ -549,17 +584,15 @@ namespace DnDB
 
             public static SpellRow GetSpell(string SpellName)
             {
-                DnDBDataSet.Master_SpellsRow Row = SpellTable.Rows.Find(SpellName.Trim('*')) as DnDBDataSet.Master_SpellsRow;
-                if (Row == null)
-                {
-                    throw new Exception("Can't Find The Spell");
-                }
+                MasterSpell Row = SpellTable.First(z => string.Equals(z.Name, SpellName.Trim('*'), StringComparison.CurrentCultureIgnoreCase));
+
+                SpellTable[SpellTable.IndexOf(Row)].Name = SpellName.Trim('*');
 
                 return new SpellRow(
-                    Row.Name,
+                    SpellName.Trim('*'),
                     Row.Level,
                     Row.School,
-                    Row.Casting_Time,
+                    Row.CastingX0020Time,
                     Row.Duration,
                     Row.Range,
                     Row.Area,
@@ -574,21 +607,21 @@ namespace DnDB
 
 
 
-            private SpellRow(string name, int level, string school, string castingTime, string duration, string range, string area,
-                bool isRitual, bool isConcentration, bool isVerbal, bool isSomatic, bool isMaterial, string material, string details)
+            private SpellRow(string name, string level, string school, string castingTime, string duration, string range, string area,
+                string isRitual, string isConcentration, string isVerbal, string isSomatic, string isMaterial, string material, string details)
             {
                 Name = name;
-                Level = level;
+                Level = int.Parse(level);
                 School = school;
                 CastingTime = castingTime;
                 Duration = duration;
                 Range = range;
                 Area = area == "n/a" ? "" : area;
-                IsRitual = isRitual;
-                IsConcentration = isConcentration;
-                IsVerbal = isVerbal;
-                IsSomatic = isSomatic;
-                IsMaterial = isMaterial;
+                IsRitual = isRitual.Equals("1");
+                IsConcentration = isConcentration.Equals("1");
+                IsVerbal = isVerbal.Equals("1");
+                IsSomatic = isSomatic.Equals("1");
+                IsMaterial = isMaterial.Equals("1");
                 Material = material == "none" ? "" : material;
                 Details = details;
             }
@@ -619,7 +652,7 @@ namespace DnDB
 
         private bool AttemptToInferSelectedSpell(ref string SelectedSpell)
         {
-            var a = SpellList.ItemsSource as IEnumerable<string>;
+            IEnumerable<string> a = SpellList.ItemsSource as IEnumerable<string>;
             if (a == null)
             {
                 return false;
@@ -764,6 +797,54 @@ namespace DnDB
             RemoveSpell.FontFamily = SettingsVariables.SelectedFont;
             Options.FontFamily = SettingsVariables.SelectedFont;
 
+            //SelectedClass.Foreground = SettingsVariables.TextColor;
+            //SelectedLevel.Foreground = SettingsVariables.TextColor;
+            //SelectedSchool.Foreground = SettingsVariables.TextColor;
+            //SearchBox.Foreground = SettingsVariables.TextColor;
+            //SpellList.Foreground = SettingsVariables.TextColor;
+            //SpellName.Foreground = SettingsVariables.TextColor;
+            //SpellLevel.Foreground = SettingsVariables.TextColor;
+            //SpellSchool.Foreground = SettingsVariables.TextColor;
+            //SpellCastTime.Foreground = SettingsVariables.TextColor;
+            //SpellDuration.Foreground = SettingsVariables.TextColor;
+            //SpellRange.Foreground = SettingsVariables.TextColor;
+            //SpellInfo.Foreground = SettingsVariables.TextColor;
+            //SpellDescription.Foreground = SettingsVariables.TextColor;
+            //CharaTextBlock.Foreground = SettingsVariables.TextColor;
+            //CreateChara.Foreground = SettingsVariables.TextColor;
+            //RenameChara.Foreground = SettingsVariables.TextColor;
+            //DeleteChara.Foreground = SettingsVariables.TextColor;
+            //AddSpellsToTextBlock.Foreground = SettingsVariables.TextColor;
+            //AddToThisClass.Foreground = SettingsVariables.TextColor;
+            //AddSpell.Foreground = SettingsVariables.TextColor;
+            //RemoveSpell.Foreground = SettingsVariables.TextColor;
+            //Options.Foreground = SettingsVariables.TextColor;
+
+            //SelectedClass.Background = SettingsVariables.BackgroundGradientBrush;
+            //SelectedLevel.Background = SettingsVariables.BackgroundGradientBrush;
+            //SelectedSchool.Background = SettingsVariables.BackgroundColor;
+            //SearchBox.Background = SettingsVariables.BackgroundColor;
+            //SpellList.Background = SettingsVariables.BackgroundColor;
+            ////SpellName.Background = SettingsVariables.BackgroundColor;
+            ////SpellLevel.Background = SettingsVariables.BackgroundColor;
+            ////SpellSchool.Background = SettingsVariables.BackgroundColor;
+            ////SpellCastTime.Background = SettingsVariables.BackgroundColor;
+            ////SpellDuration.Background = SettingsVariables.BackgroundColor;
+            ////SpellRange.Background = SettingsVariables.BackgroundColor;
+            ////SpellInfo.Background = SettingsVariables.BackgroundColor;
+            //SpellDescription.Background = SettingsVariables.BackgroundColor;
+            ////CharaTextBlock.Background = SettingsVariables.BackgroundColor;
+            //CreateChara.Background = SettingsVariables.ButtonBrush;
+            //RenameChara.Background = SettingsVariables.ButtonBrush;
+            //DeleteChara.Background = SettingsVariables.ButtonBrush;
+            ////AddSpellsToTextBlock.Background = SettingsVariables.BackgroundColor;
+            //AddToThisClass.Background = SettingsVariables.BackgroundGradientBrush;
+            //AddToThisClass.BorderBrush = SettingsVariables.BackgroundColor;
+            //AddSpell.Background = SettingsVariables.ButtonBrush;
+            //RemoveSpell.Background = SettingsVariables.ButtonBrush;
+            //Options.Background = SettingsVariables.ButtonBrush;
+            //mainWindow.Background = SettingsVariables.BackgroundColor;
+
             BottomSubGrid.ColumnDefinitions[1].Width = new GridLength(30 * Scale);
             BottomSubGrid.ColumnDefinitions[2].Width = new GridLength(30 * Scale);
             BottomSubGrid.ColumnDefinitions[3].Width = new GridLength(30 * Scale);
@@ -772,7 +853,7 @@ namespace DnDB
 
             BottomSubGrid.ColumnDefinitions[6].Width = new GridLength(100 * Scale);
 
-            //SearchBox.Visibility = SettingsVariables.ShowSearchBox ? Visibility.Visible : Visibility.Collapsed;
+            SearchBox.Visibility = SettingsVariables.ShowSearchBox ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public static double Scale
@@ -868,5 +949,63 @@ namespace DnDB
         {
             UpdateSpellListContents();
         }
+
+        private void AddToThisClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
+
+    public class MasterSpell
+    {
+        [JsonProperty("Name")]
+        public string Name { get; set; }
+
+        [JsonProperty("Level")]
+        public string Level { get; set; }
+
+        [JsonProperty("School")]
+        public string School { get; set; }
+
+        [JsonProperty("Casting_x0020_Time")]
+        public string CastingX0020Time { get; set; }
+
+        [JsonProperty("Duration")]
+        public string Duration { get; set; }
+
+        [JsonProperty("Range")]
+        public string Range { get; set; }
+
+        [JsonProperty("Area")]
+        public string Area { get; set; }
+
+        [JsonProperty("Ritual")]
+        public string Ritual { get; set; }
+
+        [JsonProperty("Concentration")]
+        public string Concentration { get; set; }
+
+        [JsonProperty("V")]
+        public string V { get; set; }
+
+        [JsonProperty("S")]
+        public string S { get; set; }
+
+        [JsonProperty("M")]
+        public string M { get; set; }
+
+        [JsonProperty("Material")]
+        public string Material { get; set; }
+
+        [JsonProperty("Details")]
+        public string Details { get; set; }
+    }
+
+    public class Root
+    {
+        [JsonProperty("Master_Spells")]
+        public List<MasterSpell> MasterSpells { get; set; }
+    }
+
+
 }

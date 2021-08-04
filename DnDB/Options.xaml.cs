@@ -22,7 +22,7 @@ namespace DnDB
     /// <summary>
     /// Interaction logic for Options.xaml
     /// </summary>
-    public partial class Options : Window
+    public partial class Options
     {
         double GlobalSize
         {
@@ -48,10 +48,7 @@ namespace DnDB
             List<string> fontBoxString = new List<string>();
             using (InstalledFontCollection C = new InstalledFontCollection())
             {
-                foreach (FontFamily F in C.Families)
-                {
-                    fontBoxString.Add(F.Name);
-                }
+                fontBoxString.AddRange(C.Families.Select(F => F.Name));
             }
             FontBox.ItemsSource = fontBoxString.OrderBy(z => z).ToList();
             FontBox.SelectedItem = MainWindow.SettingsVariables.SelectedFont.ToString();
@@ -130,7 +127,12 @@ namespace DnDB
 
         private void FontBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            MainWindow.SettingsVariables.SetSelectedFont(FontBox.SelectedItem.ToString());
+            object fontBoxSelectedItem = FontBox.SelectedItem;
+            if (fontBoxSelectedItem == null)
+            {
+                return;
+            }
+            MainWindow.SettingsVariables.SetSelectedFont(fontBoxSelectedItem.ToString());
             UpdateTextSize();
         }
     }

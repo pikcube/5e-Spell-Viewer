@@ -56,7 +56,7 @@
                 <Button Grid.Column="2" Content="Rename" x:Name="RenameChara" Click="RenameChara_Click" FontFamily="Comic Neue" FontSize="14"/>
                 <Button Grid.Column="3" Content="Delete" x:Name="DeleteChara" Click="DeleteChara_Click" FontFamily="Comic Neue" FontSize="14"/>
                 <TextBlock x:Name="AddSpellsToTextBlock" Grid.Column="5" Text="Add Spells to  " VerticalAlignment="Center" FontFamily="Comic Neue" FontSize="14"/>
-                <ComboBox Grid.Column="6" x:Name="AddToThisClass" FontFamily="Comic Neue" FontSize="14"/>
+                <ComboBox Grid.Column="6" x:Name="AddToThisClass" FontFamily="Comic Neue" FontSize="14" SelectionChanged="AddToThisClass_SelectionChanged"/>
                 <Button Grid.Column="7" x:Name="AddSpell" Content="Add" Click="AddSpell_Click" FontFamily="Comic Neue" FontSize="14"/>
                 <Button Grid.Column="8" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click" FontFamily="Comic Neue" FontSize="14"/>
             </Grid>

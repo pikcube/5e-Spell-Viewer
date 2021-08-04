@@ -95,6 +95,9 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -144,15 +147,6 @@
     <Compile Include="CreateChara.xaml.cs">
       <DependentUpon>CreateChara.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DnDBDataSet.cs">
-      <DependentUpon>DnDBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DnDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DnDBDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -183,6 +177,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="packages.config" />
+    <None Include="spells.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="Master_Spells.xml" />
     <Resource Include="background.jpg" />
     <Resource Include="istockphoto-1138089745-612x612.jpg" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -249,24 +248,9 @@
     <Content Include="classesDefault\Wizard.dndbClass">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="DnDBDataSet.xsc">
-      <DependentUpon>DnDBDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="DnDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DnDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="DnDBDataSet.xss">
-      <DependentUpon>DnDBDataSet.xsd</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <Content Include="DnDB_TemporaryKey.pfx">
+    <Resource Include="dd-dice-512.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="DnDB_1_TemporaryKey.pfx" />
+    </Resource>
     <Resource Include="fonts\ComicNeue-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -280,10 +264,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="dd-dice-512.png" />
-    <Content Include="DnDB.accdb">
+    <Resource Include="dd-dice-512.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="DnDB.accdb">
