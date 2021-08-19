@@ -53,12 +53,12 @@
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Text="Characters: " VerticalAlignment="Center" FontFamily="Comic Neue" FontSize="14" x:Name="CharaTextBlock"/>
                 <Button Grid.Column="1" Content="Create" x:Name="CreateChara" Click="CreateChara_Click" FontFamily="Comic Neue" FontSize="14"/>
-                <Button Grid.Column="2" Content="Rename" x:Name="RenameChara" Click="RenameChara_Click" FontFamily="Comic Neue" FontSize="14"/>
+                <Button Grid.Column="2" Content="Rename" x:Name="RenameChara" Click="RenameChara_Click" FontFamily="Comic Neue" FontSize="14" Height="22" VerticalAlignment="Top"/>
                 <Button Grid.Column="3" Content="Delete" x:Name="DeleteChara" Click="DeleteChara_Click" FontFamily="Comic Neue" FontSize="14"/>
                 <TextBlock x:Name="AddSpellsToTextBlock" Grid.Column="5" Text="Add Spells to  " VerticalAlignment="Center" FontFamily="Comic Neue" FontSize="14"/>
-                <ComboBox Grid.Column="6" x:Name="AddToThisClass" FontFamily="Comic Neue" FontSize="14" SelectionChanged="AddToThisClass_SelectionChanged"/>
+                <ComboBox Grid.Column="6" x:Name="AddToThisClass" FontFamily="Comic Neue" FontSize="14" SelectionChanged="AddToThisClass_SelectionChanged" GotFocus="AddToThisClass_GotFocus"/>
                 <Button Grid.Column="7" x:Name="AddSpell" Content="Add" Click="AddSpell_Click" FontFamily="Comic Neue" FontSize="14"/>
-                <Button Grid.Column="8" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click" FontFamily="Comic Neue" FontSize="14"/>
+                <Button Grid.Column="8" x:Name="RemoveSpell" Content="Remove" Click="RemoveSpell_Click" FontFamily="Comic Neue" FontSize="14" Height="22" VerticalAlignment="Top"/>
             </Grid>
 
             <!--Main Body-->
@@ -153,7 +153,15 @@
                      SelectionChanged="SearchBox_OnSelectionChanged" FontFamily="Comic Neue" FontSize="16"/>
             <ListBox Grid.Row="4"
                      Grid.Column="0"
-                     x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged" FontFamily="Comic Neue" FontSize="14" MouseDoubleClick="SpellList_MouseDoubleClick"/>
+                     x:Name="SpellList" IsSynchronizedWithCurrentItem="False" SelectionChanged="SpellList_SelectionChanged" FontFamily="Comic Neue" FontSize="14" MouseDoubleClick="SpellList_MouseDoubleClick" SelectionMode="Extended">
+                <ListBox.ContextMenu>
+                    <ContextMenu x:Name="RightClickSpellList">
+                        <MenuItem Header="Prepare" Click="MenuItemPrepare_OnClick"/>
+                        <MenuItem Header="Add"/>
+                        <MenuItem Header="Remove"/>
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+            </ListBox>
         </Grid>
     </Grid>
 </Window>

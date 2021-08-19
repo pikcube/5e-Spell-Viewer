@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DnDB"
         mc:Ignorable="d"
-        Title="Options" Height="323" Width="402" FontFamily="Comic Neue" FontSize="12">
+        Title="Options" Height="348" Width="402" FontFamily="Comic Neue" FontSize="12">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="20"/>
@@ -45,11 +47,15 @@
                Content="Modify Custom Character" FontSize="16" FontFamily="Comic Neue" Grid.ColumnSpan="2"/>
         <Button Grid.Column="3" Grid.Row="5" x:Name="OpenClassButton"
                 Content="Open Class Directory" FontSize="16" FontFamily="Comic Neue" Click="Button_Click"/>
-        <CheckBox Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3" x:Name="VSMCheckBox"
+        <Label Grid.Column="1" Grid.Row="7" x:Name="SpellsLabel"
+               Content="Add Homebrew Spells" FontSize="16" FontFamily="Comic Neue" Grid.ColumnSpan="2"/>
+        <Button Grid.Column="3" Grid.Row="7" x:Name="OpenSpellsButton"
+                Content="Modify JSON File" FontSize="16" FontFamily="Comic Neue" Click="OpenSpellsButton_Click"/>
+        <CheckBox Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" x:Name="VSMCheckBox"
                Content="Use Full Words for VSM" FontSize="16" FontFamily="Comic Neue" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
-        <CheckBox Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" x:Name="SearchCheckBox"
+        <CheckBox Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="3" x:Name="SearchCheckBox"
                   Content="Show Search Box" FontSize="16" FontFamily="Comic Neue" Checked="SearchCheckBox_Checked" Unchecked="SearchCheckBox_Checked"/>
-        <CheckBox Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="3" x:Name="LevelCheckBox"
+        <CheckBox Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="3" x:Name="LevelCheckBox"
                   Content="Sort By Level, Then By Name" FontSize="16" FontFamily="Comic Neue" Checked="LevelCheckBox_Checked" Unchecked="LevelCheckBox_Checked"/>
 
     </Grid>

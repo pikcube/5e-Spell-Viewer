@@ -68,6 +68,8 @@ namespace DnDB
             LevelCheckBox.FontSize = 8 * GlobalSize;
             SearchCheckBox.FontSize = 8 * GlobalSize;
             VSMCheckBox.FontSize = 8 * GlobalSize;
+            SpellsLabel.FontSize = 8 * GlobalSize;
+            OpenSpellsButton.FontSize = 8 * GlobalSize;
 
             WindowObject.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             AdjustLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
@@ -79,9 +81,11 @@ namespace DnDB
             VSMCheckBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             FontBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             FontLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            SpellsLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            OpenSpellsButton.FontFamily = MainWindow.SettingsVariables.SelectedFont;
 
             WindowObject.Width = Math.Max(201 * GlobalSize, 402);
-            WindowObject.Height = Math.Max(161.5 * GlobalSize, 323);
+            WindowObject.Height = Math.Max(181 * GlobalSize, 362);
 
         }
 
@@ -134,6 +138,40 @@ namespace DnDB
             }
             MainWindow.SettingsVariables.SetSelectedFont(fontBoxSelectedItem.ToString());
             UpdateTextSize();
+        }
+
+        private void OpenSpellsButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Process.Start("spells.custom.json");
+            }
+            catch (Exception)
+            {
+                MainWindow.CreateCustomJson();
+                try
+                {
+                    Process.Start("spells.custom.json");
+                }
+                catch (Exception)
+                {
+                    ProcessStartInfo a = new ProcessStartInfo
+                    {
+                        Arguments = $"\"{Directory.GetCurrentDirectory()}\"",
+                        FileName = "explorer.exe",
+                    };
+                    Process.Start(a);
+                }
+            }
+
+            try
+            {
+                Process.Start("README.example.spells.custom.json");
+            }
+            catch (Exception)
+            {
+                //ignore
+            }
         }
     }
 }

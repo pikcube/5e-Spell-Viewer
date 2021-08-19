@@ -20,7 +20,7 @@ namespace DnDB
     /// <summary>
     /// Interaction logic for CreateChara.xaml
     /// </summary>
-    public partial class CreateChara : Window
+    public partial class CreateChara
     {
         public CreateChara()
         {
@@ -31,7 +31,7 @@ namespace DnDB
             UpdateTextSize();
         }
 
-        private double Scale => MainWindow.SettingsVariables.Scale;
+        private static double Scale => MainWindow.SettingsVariables.Scale;
 
         private void UpdateTextSize()
         {

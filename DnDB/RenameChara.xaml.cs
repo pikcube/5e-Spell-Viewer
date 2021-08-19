@@ -82,6 +82,17 @@ namespace DnDB
                 File.WriteAllLines($@"classes\{NewNameTextBox.Text}.dndbChara", a);
                 File.Delete($@"classes\{CharacterComboBox.Text}.dndbChara");
 
+                if (File.Exists($@"classes\{CharacterComboBox.Text}.dndbChara.prep"))
+                {
+                    string[] b = File.ReadAllLines($@"classes\{CharacterComboBox.Text}.dndbChara.prep");
+                    File.WriteAllLines($@"classes\{NewNameTextBox.Text}.dndbChara.prep", b);
+                    File.Delete($@"classes\{CharacterComboBox.Text}.dndbChara.prep");
+                }
+                else if (File.Exists($@"classes\{NewNameTextBox.Text}.dndbChara.prep"))
+                {
+                    File.Delete($@"classes\{NewNameTextBox.Text}.dndbChara.prep");
+                }
+
                 MainWindow.NewClass = NewNameTextBox.Text;
                 Close();
             }

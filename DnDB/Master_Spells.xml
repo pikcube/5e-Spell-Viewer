@@ -4,7 +4,7 @@
 <Name>Abi-Dalzim&apos;s Horrid Wilting</Name>
 <Level>8</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>cube 30 ft</Area>
@@ -22,7 +22,7 @@ Nonmagical plants in the area that aren&apos;t creatures, such as trees and shru
 <Name>Absorb Elements</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Reaction *</Casting_x0020_Time>
+<CastingTime>1 Reaction *</CastingTime>
 <Duration>1 Round</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -41,7 +41,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Acid Arrow</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -59,7 +59,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Acid Splash</Name>
 <Level>0</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -77,7 +77,7 @@ This spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th l
 <Name>Aganazzar&apos;s Scorcher</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>line 30 ft</Area>
@@ -95,7 +95,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Aid</Name>
 <Level>2</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -113,7 +113,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Alarm</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -133,7 +133,7 @@ An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet
 <Name>Alter Self</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -155,7 +155,7 @@ Natural Weapons. You grow claws, fangs, spines, horns, or a different natural we
 <Name>Animal Friendship</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -173,7 +173,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Animal Messenger</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -193,7 +193,7 @@ At Higher Levels. If you cast this spell using a spell slot of 3rd level or high
 <Name>Animal Shapes</Name>
 <Level>8</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -213,7 +213,7 @@ The target&apos;s gear melds into the new form. The target can&apos;t activate, 
 <Name>Animate Dead</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -235,7 +235,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Animate Objects</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -259,7 +259,7 @@ At Higher Levels. If you cast this spell using a spell slot of 6th level or high
 <Name>Antilife Shell</Name>
 <Level>5</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>sphere 10 ft</Area>
@@ -279,7 +279,7 @@ If you move so that an affected creature is forced to pass through the barrier, 
 <Name>Antimagic Field</Name>
 <Level>8</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>sphere 10 ft</Area>
@@ -313,7 +313,7 @@ Dispel Magic. Spells and magical effects such as dispel magic have no effect on 
 <Name>Antipathy/Sympathy</Name>
 <Level>8</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>10 Days</Duration>
 <Range>60 ft</Range>
 <Area>cube 200 ft</Area>
@@ -339,7 +339,7 @@ A creature that successfully saves against this effect is immune to it for 1 min
 <Name>Arcane Eye</Name>
 <Level>4</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -359,7 +359,7 @@ As an action, you can move the eye up to 30 feet in any direction. There is no l
 <Name>Arcane Gate</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>500 ft</Range>
 <Area>n/a</Area>
@@ -375,7 +375,7 @@ As an action, you can move the eye up to 30 feet in any direction. There is no l
 <Name>Arcane Hand</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -404,7 +404,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Arcane Lock</Name>
 <Level>2</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -422,7 +422,7 @@ While affected by this spell, the object is more difficult to break or force ope
 <Name>Arcanist&apos;s Magic Aura</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -443,7 +443,7 @@ Mask. You change the way the target appears to spells and magical effects that d
 <Name>Armor of Agathys</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -459,7 +459,7 @@ Mask. You change the way the target appears to spells and magical effects that d
 <Name>Arms of Hadar</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>sphere 10 ft</Area>
@@ -475,7 +475,7 @@ Mask. You change the way the target appears to spells and magical effects that d
 <Name>Astral Projection</Name>
 <Level>9</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Special</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -501,7 +501,7 @@ If you are returned to your body prematurely, your companions remain in their as
 <Name>Augury</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -527,7 +527,7 @@ If you cast the spell two or more times before completing your next long rest, t
 <Name>Aura of Life</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -543,7 +543,7 @@ If you cast the spell two or more times before completing your next long rest, t
 <Name>Aura of Purity</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -559,7 +559,7 @@ If you cast the spell two or more times before completing your next long rest, t
 <Name>Aura of Vitality</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -575,7 +575,7 @@ If you cast the spell two or more times before completing your next long rest, t
 <Name>Awaken</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>8 Hours</Casting_x0020_Time>
+<CastingTime>8 Hours</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -593,7 +593,7 @@ The awakened beast or plant is charmed by you for 30 days or until you or your c
 <Name>Bane</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -611,7 +611,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Banishing Smite</Name>
 <Level>5</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -627,7 +627,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Banishment</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -649,7 +649,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Barkskin</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -665,7 +665,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Beacon of Hope</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -681,7 +681,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Beast Bond</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -697,7 +697,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Beast Sense</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -713,7 +713,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Bestow Curse</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -739,7 +739,7 @@ At Higher Levels. If you cast this spell using a spell slot of 4th level or high
 <Name>Bigby&apos;s Hand</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -755,7 +755,7 @@ At Higher Levels. If you cast this spell using a spell slot of 4th level or high
 <Name>Black Tentacles</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>square 20 ft</Area>
@@ -775,7 +775,7 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 <Name>Blade Barrier</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -793,7 +793,7 @@ When a creature enters the wall&apos;s area for the first time on a turn or star
 <Name>Blade of Disaster</Name>
 <Level>9</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -809,7 +809,7 @@ When a creature enters the wall&apos;s area for the first time on a turn or star
 <Name>Blade Ward</Name>
 <Level>0</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -825,7 +825,7 @@ When a creature enters the wall&apos;s area for the first time on a turn or star
 <Name>Bless</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -843,7 +843,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Blight</Name>
 <Level>4</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -865,7 +865,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Blinding Smite</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -881,7 +881,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Blindness/Deafness</Name>
 <Level>2</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -899,7 +899,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Blink</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -917,7 +917,7 @@ While on the Ethereal Plane, you can see and hear the plane you originated from,
 <Name>Blur</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -933,7 +933,7 @@ While on the Ethereal Plane, you can see and hear the plane you originated from,
 <Name>Bones of the Earth</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>cylinder 30 ft</Area>
@@ -955,7 +955,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Booming Blade</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>Self (5 ft</Range>
 <Area>n/a</Area>
@@ -971,7 +971,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Branding Smite</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -989,7 +989,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Burning Hands</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>cone 15 ft</Area>
@@ -1009,7 +1009,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Call Lightning</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>cylinder 60 ft</Area>
@@ -1030,7 +1030,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th or higher l
 <Name>Calm Emotions</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -1050,7 +1050,7 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 <Name>Catapult</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -1068,7 +1068,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Catnap</Name>
 <Level>3</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -1086,7 +1086,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Cause Fear</Name>
 <Level>1</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -1104,7 +1104,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Ceremony</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -1132,7 +1132,7 @@ Wedding. You touch adult humanoids willing to be bonded together in marriage. Fo
 <Name>Chain Lightning</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>n/a</Area>
@@ -1152,7 +1152,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Chaos Bolt</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -1182,7 +1182,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Charm Monster</Name>
 <Level>4</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -1200,7 +1200,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Charm Person</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -1218,7 +1218,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Chill Touch</Name>
 <Level>0</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -1238,7 +1238,7 @@ This spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th l
 <Name>Chromatic Orb</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -1254,7 +1254,7 @@ This spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th l
 <Name>Circle of Death</Name>
 <Level>6</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>sphere 60 ft</Area>
@@ -1272,7 +1272,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Circle of Power</Name>
 <Level>5</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -1288,7 +1288,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Clairvoyance</Name>
 <Level>3</Level>
 <School>Divination</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>1 mile</Range>
 <Area>n/a</Area>
@@ -1308,7 +1308,7 @@ A creature that can see the sensor (such as a creature benefiting from see invis
 <Name>Clone</Name>
 <Level>8</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -1326,7 +1326,7 @@ At any time after the clone matures, if the original creature dies, its soul tra
 <Name>Cloud of Daggers</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>cube 5 ft</Area>
@@ -1342,7 +1342,7 @@ At any time after the clone matures, if the original creature dies, its soul tra
 <Name>Cloudkill</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -1364,7 +1364,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Color Spray</Name>
 <Level>1</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>Self</Range>
 <Area>cone 15 ft</Area>
@@ -1384,7 +1384,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Command</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -1414,7 +1414,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Commune</Name>
 <Level>5</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -1434,7 +1434,7 @@ If you cast the spell two or more times before finishing your next long rest, th
 <Name>Commune with Nature</Name>
 <Level>5</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -1461,7 +1461,7 @@ For example, you could determine the location of powerful undead in the area, th
 <Name>Compelled Duel</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -1477,7 +1477,7 @@ For example, you could determine the location of powerful undead in the area, th
 <Name>Comprehend Languages</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -1495,7 +1495,7 @@ This spell doesn&apos;t decode secret messages in a text or a glyph, such as an 
 <Name>Compulsion</Name>
 <Level>4</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -1515,7 +1515,7 @@ A target isn&apos;t compelled to move into an obviously deadly hazard, such as a
 <Name>Cone of Cold</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>cone 60 ft</Area>
@@ -1535,7 +1535,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Confusion</Name>
 <Level>4</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>sphere 10 ft</Area>
@@ -1564,7 +1564,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Conjure Animals</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -1603,7 +1603,7 @@ CR 	Creature Name
 <Name>Conjure Barrage</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>cone 60 ft</Area>
@@ -1619,7 +1619,7 @@ CR 	Creature Name
 <Name>Conjure Celestial</Name>
 <Level>7</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -1641,7 +1641,7 @@ At Higher Levels. When you cast this spell using a 9th-level spell slot, you sum
 <Name>Conjure Elemental</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -1673,7 +1673,7 @@ CR 	Creature Name
 <Name>Conjure Fey</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -1712,7 +1712,7 @@ CR 	Creature Name
 <Name>Conjure Minor Elementals</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -1748,7 +1748,7 @@ CR 	Monster
 <Name>Conjure Volley</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>cylinder 40 ft</Area>
@@ -1764,7 +1764,7 @@ CR 	Monster
 <Name>Conjure Woodland Beings</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -1801,7 +1801,7 @@ CR 	Creature
 <Name>Contact Other Plane</Name>
 <Level>5</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -1819,7 +1819,7 @@ On a successful save, you can ask the entity up to five questions. You must ask 
 <Name>Contagion</Name>
 <Level>5</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>7 Days</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -1851,7 +1851,7 @@ Slimy Doom. The creature begins to bleed uncontrollably. The creature has disadv
 <Name>Contingency</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>10 Days</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -1873,7 +1873,7 @@ If you cast this spell again, the effect of another contingency spell on you end
 <Name>Continual Flame</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -1889,7 +1889,7 @@ If you cast this spell again, the effect of another contingency spell on you end
 <Name>Control Flames</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>cube 5 ft</Area>
@@ -1915,7 +1915,7 @@ If you cast this spell multiple times, you can have up to three of its non-insta
 <Name>Control Water</Name>
 <Level>4</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>300 ft</Range>
 <Area>n/a</Area>
@@ -1947,7 +1947,7 @@ The first time each turn that an object enters the vortex, the object takes 2d8 
 <Name>Control Weather</Name>
 <Level>8</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Self</Range>
 <Area>sphere 5 miles</Area>
@@ -1993,7 +1993,7 @@ Stage 	Condition
 <Name>Control Winds</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>300 ft</Range>
 <Area>cube 100 ft</Area>
@@ -2015,7 +2015,7 @@ Updraft. You cause a sustained updraft within the cube, rising upward from the c
 <Name>Cordon of Arrows</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>5 ft</Range>
 <Area>n/a</Area>
@@ -2031,7 +2031,7 @@ Updraft. You cause a sustained updraft within the cube, rising upward from the c
 <Name>Counterspell</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Reaction</Casting_x0020_Time>
+<CastingTime>1 Reaction</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2049,7 +2049,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Create Bonfire</Name>
 <Level>0</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>cube 5 ft</Area>
@@ -2069,7 +2069,7 @@ The spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th le
 <Name>Create Food and Water</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -2085,7 +2085,7 @@ The spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th le
 <Name>Create Homunculus</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -2105,7 +2105,7 @@ You can have only one homunculus at a time. If you cast this spell while your ho
 <Name>Create or Destroy Water</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>cube 30 ft</Area>
@@ -2127,7 +2127,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Create Undead</Name>
 <Level>6</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -2149,7 +2149,7 @@ At Higher Levels. When you cast this spell using a 7th-level spell slot, you can
 <Name>Creation</Name>
 <Level>5</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Special</Duration>
 <Range>30 ft</Range>
 <Area>cube 5 ft</Area>
@@ -2179,7 +2179,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Crown of Madness</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -2195,7 +2195,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Crown of Stars</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -2215,7 +2215,7 @@ At Higher Levels. When you cast this spell using a spell slot of 8th level or hi
 <Name>Crusader&apos;s Mantle</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -2231,7 +2231,7 @@ At Higher Levels. When you cast this spell using a spell slot of 8th level or hi
 <Name>Cure Wounds</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -2249,7 +2249,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Dancing Lights</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -2267,7 +2267,7 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 <Name>Danse Macabre</Name>
 <Level>5</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2289,7 +2289,7 @@ At Higher Levels. When you cast this spell using a spell slotâ€˜ of 6th leve
 <Name>Dark Star</Name>
 <Level>8</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>150 ft</Range>
 <Area>sphere 40 ft</Area>
@@ -2309,7 +2309,7 @@ Any creature that enters the spell&apos;s area for the first time on a turn or s
 <Name>Darkness</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>sphere 15 ft</Area>
@@ -2329,7 +2329,7 @@ If any of this spell&apos;s area overlaps with an area of light created by a spe
 <Name>Darkvision</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -2345,7 +2345,7 @@ If any of this spell&apos;s area overlaps with an area of light created by a spe
 <Name>Dawn</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>cylinder 30 ft</Area>
@@ -2365,7 +2365,7 @@ If you&apos;re within 60 feet of the cylinder, you can move it up to 60 feet as 
 <Name>Daylight</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>sphere 60 ft</Area>
@@ -2385,7 +2385,7 @@ If any of this spell&apos;s area overlaps with an area of darkness created by a 
 <Name>Death Ward</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -2405,7 +2405,7 @@ If the spell is still in effect when the target is subjected to an effect that w
 <Name>Delayed Blast Fireball</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>150 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -2429,7 +2429,7 @@ At Higher Levels. When you cast this spell using a spell slot of 8th level or hi
 <Name>Demiplane</Name>
 <Level>8</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2447,7 +2447,7 @@ Each time you cast this spell, you can create a new demiplane, or have the shado
 <Name>Destructive Wave</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -2463,7 +2463,7 @@ Each time you cast this spell, you can create a new demiplane, or have the shado
 <Name>Detect Evil and Good</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -2481,7 +2481,7 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 <Name>Detect Magic</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -2499,7 +2499,7 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 <Name>Detect Poison and Disease</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -2517,7 +2517,7 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 <Name>Detect Thoughts</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -2541,7 +2541,7 @@ Once you detect the presence of a creature in this way, you can read its thought
 <Name>Dimension Door</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>500 ft</Range>
 <Area>n/a</Area>
@@ -2561,7 +2561,7 @@ If you would arrive in a place already occupied by an object or a creature, you 
 <Name>Disguise Self</Name>
 <Level>1</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -2581,7 +2581,7 @@ To discern that you are disguised, a creature can use its action to inspect your
 <Name>Disintegrate</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2605,7 +2605,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Dispel Evil and Good</Name>
 <Level>5</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -2627,7 +2627,7 @@ Dismissal. As your action, make a melee spell attack against a celestial, an ele
 <Name>Dispel Magic</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -2645,7 +2645,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Dissonant Whispers</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2661,7 +2661,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Distort Value</Name>
 <Level>1</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>cube 1 ft</Area>
@@ -2681,7 +2681,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Divination</Name>
 <Level>4</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -2701,7 +2701,7 @@ If you cast the spell two or more times before finishing your next long rest, th
 <Name>Divine Favor</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -2717,7 +2717,7 @@ If you cast the spell two or more times before finishing your next long rest, th
 <Name>Divine Word</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -2741,7 +2741,7 @@ Regardless of its current hit points, a celestial, an elemental, a fey, or a fie
 <Name>Dominate Beast</Name>
 <Level>4</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2765,7 +2765,7 @@ At Higher Levels. When you cast this spell with a 5th-level spell slot, the dura
 <Name>Dominate Monster</Name>
 <Level>8</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2789,7 +2789,7 @@ At Higher Levels. When you cast this spell with a 9th-level spell slot, the dura
 <Name>Dominate Person</Name>
 <Level>5</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -2813,7 +2813,7 @@ At Higher Levels. When you cast this spell using a 6th-level spell slot, the dur
 <Name>Dragon&apos;s Breath</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>cone 15 ft</Area>
@@ -2831,7 +2831,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Drawmij&apos;s Instant Summons</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -2847,7 +2847,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Dream</Name>
 <Level>5</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -2869,7 +2869,7 @@ If you have a body part, lock of hair, clipping from a nail, or similar portion 
 <Name>Dream of the Blue Veil</Name>
 <Level>7</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>20 ft</Range>
 <Area>n/a</Area>
@@ -2885,7 +2885,7 @@ If you have a body part, lock of hair, clipping from a nail, or similar portion 
 <Name>Druid Grove</Name>
 <Level>6</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>Touch</Range>
 <Area>cube *</Area>
@@ -2918,7 +2918,7 @@ To a creature immune to this effect, the winds are a fragrant, gentle breeze, an
 <Name>Druidcraft</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -2940,7 +2940,7 @@ To a creature immune to this effect, the winds are a fragrant, gentle breeze, an
 <Name>Dust Devil</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>cube 5 ft</Area>
@@ -2962,7 +2962,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Earth Tremor</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -2980,7 +2980,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Earthbind</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>300 ft</Range>
 <Area>n/a</Area>
@@ -2996,7 +2996,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Earthquake</Name>
 <Level>8</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>500 ft</Range>
 <Area>n/a</Area>
@@ -3024,7 +3024,7 @@ Structures. The tremor deals 50 bludgeoning damage to any structure in contact w
 <Name>Eldritch Blast</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -3042,7 +3042,7 @@ The spell creates more than one beam when you reach higher levels: two beams at 
 <Name>Elemental Bane</Name>
 <Level>4</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -3060,7 +3060,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Elemental Weapon</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -3076,7 +3076,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Encode Thoughts</Name>
 <Level>0</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3096,7 +3096,7 @@ Casting this spell while holding a thought strand allows you to instantly receiv
 <Name>Enemies abound</Name>
 <Level>3</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -3114,7 +3114,7 @@ Whenever the affected creature chooses another creature as a target, it must cho
 <Name>Enervation</Name>
 <Level>5</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -3134,7 +3134,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Enhance Ability</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -3164,7 +3164,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Enlarge/Reduce</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -3186,7 +3186,7 @@ Reduce. The target&apos;s size is halved in all dimensions, and its weight is re
 <Name>Ensnaring Strike</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3202,7 +3202,7 @@ Reduce. The target&apos;s size is halved in all dimensions, and its weight is re
 <Name>Entangle</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>square 20 ft</Area>
@@ -3222,7 +3222,7 @@ When the spell ends, the conjured plants wilt away.</Details>
 <Name>Enthrall</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -3238,7 +3238,7 @@ When the spell ends, the conjured plants wilt away.</Details>
 <Name>Erupting Earth</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>cube 20 ft</Area>
@@ -3256,7 +3256,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Etherealness</Name>
 <Level>7</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3282,7 +3282,7 @@ At Higher Levels. When you cast this spell using a spell slot of 8th level or hi
 <Name>Evard&apos;s Black Tentacles</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>square 20 ft</Area>
@@ -3298,7 +3298,7 @@ At Higher Levels. When you cast this spell using a spell slot of 8th level or hi
 <Name>Expeditious Retreat</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3314,7 +3314,7 @@ At Higher Levels. When you cast this spell using a spell slot of 8th level or hi
 <Name>Eyebite</Name>
 <Level>6</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3336,7 +3336,7 @@ Sickened. The target has disadvantage on attack rolls and ability checks. At the
 <Name>Fabricate</Name>
 <Level>4</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>cube 10 ft</Area>
@@ -3356,7 +3356,7 @@ Creatures or magic items can&apos;t be created or transmuted by this spell. You 
 <Name>Faerie Fire</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>cube 20 ft</Area>
@@ -3374,7 +3374,7 @@ Any attack roll against an affected creature or object has advantage if the atta
 <Name>Faithful Hound</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -3394,7 +3394,7 @@ At the start of each of your turns, the hound attempts to bite one creature with
 <Name>False Life</Name>
 <Level>1</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3412,7 +3412,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Far Step</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3428,7 +3428,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Fast Friends</Name>
 <Level>3</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -3450,7 +3450,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Fear</Name>
 <Level>3</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>cone 30 ft</Area>
@@ -3468,7 +3468,7 @@ While frightened by this spell, a creature must take the Dash action and move aw
 <Name>Feather Fall</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Reaction *</Casting_x0020_Time>
+<CastingTime>1 Reaction *</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -3485,7 +3485,7 @@ While frightened by this spell, a creature must take the Dash action and move aw
 <Name>Feeblemind</Name>
 <Level>8</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>n/a</Area>
@@ -3507,7 +3507,7 @@ The spell can also be ended by greater restoration, heal, or wish.</Details>
 <Name>Feign Death</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -3523,7 +3523,7 @@ The spell can also be ended by greater restoration, heal, or wish.</Details>
 <Name>Find Familiar</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -3551,7 +3551,7 @@ Finally, when you cast a spell with a range of touch, your familiar can deliver 
 <Name>Find Greater Steed</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -3575,7 +3575,7 @@ Whenever the mount disappears, it leaves behind any objects it was wearing or ca
 <Name>Find Steed</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -3599,7 +3599,7 @@ You can&apos;t have more than one steed bonded by this spell at a time. As an ac
 <Name>Find the Path</Name>
 <Level>6</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Day</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3617,7 +3617,7 @@ For the duration, as long as you are on the same plane of existence as the desti
 <Name>Find Traps</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -3635,7 +3635,7 @@ This spell merely reveals that a trap is present. You don&apos;t learn the locat
 <Name>Finger of Death</Name>
 <Level>7</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -3653,7 +3653,7 @@ A humanoid killed by this spell rises at the start of your next turn as a zombie
 <Name>Fire Bolt</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -3671,7 +3671,7 @@ This spell&apos;s damage increases by 1d10 when you reach 5th level (2d10), 11th
 <Name>Fire Shield</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3691,7 +3691,7 @@ In addition, whenever a creature within 5 feet of you hits you with a melee atta
 <Name>Fire Storm</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>n/a</Area>
@@ -3709,7 +3709,7 @@ The fire damages objects in the area and ignites flammable objects that aren&apo
 <Name>Fireball</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -3729,7 +3729,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Flame Arrows</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -3747,7 +3747,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Flame Blade</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -3769,7 +3769,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Flame Strike</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>cylinder 10 ft</Area>
@@ -3787,7 +3787,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Flaming Sphere</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>sphere 5 ft</Area>
@@ -3809,7 +3809,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Flesh to Stone</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -3831,7 +3831,7 @@ If you maintain your concentration on this spell for the entire possible duratio
 <Name>Floating Disk</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -3851,7 +3851,7 @@ If you move more than 100 feet from the disk (typically because it can&apos;t mo
 <Name>Flock of Familiars</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -3873,7 +3873,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Fly</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -3891,7 +3891,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Fog Cloud</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>120 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -3909,7 +3909,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Forbiddance</Name>
 <Level>6</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>1 Day</Duration>
 <Range>Touch</Range>
 <Area>40,000 ft2</Area>
@@ -3931,7 +3931,7 @@ The spell&apos;s area can&apos;t overlap with the area of another forbiddance sp
 <Name>Forcecage</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>100 ft</Range>
 <Area>cube 20 ft</Area>
@@ -3957,7 +3957,7 @@ This spell can&apos;t be dispelled by dispel magic.</Details>
 <Name>Foresight</Name>
 <Level>9</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -3975,7 +3975,7 @@ This spell immediately ends if you cast it again before its duration ends.</Deta
 <Name>Fortune&apos;s Favor</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -3995,7 +3995,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Freedom of Movement</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4013,7 +4013,7 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 <Name>Freezing Sphere</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>300 ft</Range>
 <Area>sphere 60 ft</Area>
@@ -4035,7 +4035,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Friends</Name>
 <Level>0</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -4051,7 +4051,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Frostbite</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4069,7 +4069,7 @@ The spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th le
 <Name>Galder&apos;s Speedy Courier</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -4091,7 +4091,7 @@ At Higher Levels. When you cast this spell using an 8th-level spell slot, you ca
 <Name>Galder&apos;s Tower</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4121,7 +4121,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Gaseous Form</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4141,7 +4141,7 @@ While in the form of a misty cloud, the target can&apos;t talk or manipulate obj
 <Name>Gate</Name>
 <Level>9</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4163,7 +4163,7 @@ When you cast this spell, you can speak the name of a specific creature (a pseud
 <Name>Geas</Name>
 <Level>5</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>30 Days</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4185,7 +4185,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th or 8th leve
 <Name>Gentle Repose</Name>
 <Level>2</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Days</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4203,7 +4203,7 @@ The spell also effectively extends the time limit on raising the target from the
 <Name>Giant Insect</Name>
 <Level>4</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4225,7 +4225,7 @@ The GM might allow you to choose different targets. For example, if you transfor
 <Name>Gift of Alacrity</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4241,7 +4241,7 @@ The GM might allow you to choose different targets. For example, if you transfor
 <Name>Gift of Gab</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Reaction *</Casting_x0020_Time>
+<CastingTime>1 Reaction *</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -4259,7 +4259,7 @@ When you cast this spell, you skillfully reshape the memories of listeners in yo
 <Name>Glibness</Name>
 <Level>8</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -4275,7 +4275,7 @@ When you cast this spell, you skillfully reshape the memories of listeners in yo
 <Name>Globe of Invulnerability</Name>
 <Level>6</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>sphere 10 ft</Area>
@@ -4295,7 +4295,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Glyph of Warding</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Until Dispelled or Triggered</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4325,7 +4325,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Goodberry</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4343,7 +4343,7 @@ The berries lose their potency if they have not been consumed within 24 hours of
 <Name>Grasping Vine</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4359,7 +4359,7 @@ The berries lose their potency if they have not been consumed within 24 hours of
 <Name>Gravity Fissure</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>line 100 ft</Area>
@@ -4379,7 +4379,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Gravity Sinkhole</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -4397,7 +4397,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Grease</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>square 10 ft</Area>
@@ -4415,7 +4415,7 @@ When the grease appears, each creature standing in its area must succeed on a De
 <Name>Greater Invisibility</Name>
 <Level>4</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4431,7 +4431,7 @@ When the grease appears, each creature standing in its area must succeed on a De
 <Name>Greater Restoration</Name>
 <Level>5</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4452,7 +4452,7 @@ When the grease appears, each creature standing in its area must succeed on a De
 <Name>Green-Flame Blade</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self (5 ft</Range>
 <Area>n/a</Area>
@@ -4468,7 +4468,7 @@ When the grease appears, each creature standing in its area must succeed on a De
 <Name>Guardian of Faith</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4486,7 +4486,7 @@ Any creature hostile to you that moves to a space within 10 feet of the guardian
 <Name>Guardian of Nature</Name>
 <Level>4</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -4514,7 +4514,7 @@ Great Tree. Your skin appears barky, leaves sprout from your hair, and you gain 
 <Name>Guards and Wards</Name>
 <Level>6</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>Touch</Range>
 <Area>2,500 ft2</Area>
@@ -4553,7 +4553,7 @@ You can create a permanently guarded and warded structure by casting this spell 
 <Name>Guidance</Name>
 <Level>0</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4569,7 +4569,7 @@ You can create a permanently guarded and warded structure by casting this spell 
 <Name>Guiding Bolt</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -4587,7 +4587,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Gust</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4610,7 +4610,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Gust of Wind</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -4632,7 +4632,7 @@ As a bonus action on each of your turns before the spell ends, you can change th
 <Name>Hail of Thorns</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -4648,7 +4648,7 @@ As a bonus action on each of your turns before the spell ends, you can change th
 <Name>Hallow</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>24 Hours</Casting_x0020_Time>
+<CastingTime>24 Hours</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Touch</Range>
 <Area>sphere 60 ft</Area>
@@ -4688,7 +4688,7 @@ Tongues. Affected creatures can communicate with any other creature in the area,
 <Name>Hallucinatory Terrain</Name>
 <Level>4</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>300 ft</Range>
 <Area>cube 150 ft</Area>
@@ -4706,7 +4706,7 @@ The tactile characteristics of the terrain are unchanged, so creatures entering 
 <Name>Harm</Name>
 <Level>6</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4722,7 +4722,7 @@ The tactile characteristics of the terrain are unchanged, so creatures entering 
 <Name>Haste</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4740,7 +4740,7 @@ When the spell ends, the target can&apos;t move or take actions until after its 
 <Name>Heal</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4758,7 +4758,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Healing Spirit</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>cube 5 ft</Area>
@@ -4780,7 +4780,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Healing Word</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4798,7 +4798,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Heat Metal</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4818,7 +4818,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Hellish Rebuke</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Reaction *</Casting_x0020_Time>
+<CastingTime>1 Reaction *</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4836,7 +4836,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Heroes&apos; Feast</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4854,7 +4854,7 @@ A creature that partakes of the feast gains several benefits. The creature is cu
 <Name>Heroism</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4872,7 +4872,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Hex</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -4888,7 +4888,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Hideous Laughter</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -4906,7 +4906,7 @@ At the end of each of its turns, and each time it takes damage, the target can m
 <Name>Hold Monster</Name>
 <Level>5</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -4925,7 +4925,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Hold Person</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -4943,7 +4943,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Holy Aura</Name>
 <Level>8</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>sphere 30 ft</Area>
@@ -4959,7 +4959,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Holy Weapon</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -4977,7 +4977,7 @@ As a bonus action on your turn, you can dismiss this spell and cause the weapon 
 <Name>Hunger of Hadar</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>150 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -4993,7 +4993,7 @@ As a bonus action on your turn, you can dismiss this spell and cause the weapon 
 <Name>Hunter&apos;s Mark</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -5011,7 +5011,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd or 4th leve
 <Name>Hypnotic Pattern</Name>
 <Level>3</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>cube 30 ft</Area>
@@ -5029,7 +5029,7 @@ The spell ends for an affected creature if it takes any damage or if someone els
 <Name>Ice Knife</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>sphere 5 ft</Area>
@@ -5047,7 +5047,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Ice Storm</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>300 ft</Range>
 <Area>cylinder 20 ft</Area>
@@ -5067,7 +5067,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Identify</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5085,7 +5085,7 @@ If you instead touch a creature throughout the casting, you learn what spells, i
 <Name>Illusory Dragon</Name>
 <Level>8</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -5107,7 +5107,7 @@ The illusion is tangible because of the shadow stuff used to create it, but atta
 <Name>Illusory Script</Name>
 <Level>1</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>10 Days</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5129,7 +5129,7 @@ A creature with truesight can read the hidden message.</Details>
 <Name>Immolation</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -5147,7 +5147,7 @@ If damage from this spell kills a target, the target is turned to ash.</Details>
 <Name>Immovable Object</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5167,7 +5167,7 @@ At Higher Levels. If you cast this spell using a spell slot of 4th or 5th level,
 <Name>Imprisonment</Name>
 <Level>9</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -5209,7 +5209,7 @@ You can use a particular special component to create only one prison at a time. 
 <Name>Incendiary Cloud</Name>
 <Level>8</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>150 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -5229,7 +5229,7 @@ The cloud moves 10 feet directly away from you in a direction that you choose at
 <Name>Incite Greed</Name>
 <Level>3</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -5247,7 +5247,7 @@ At the end of each of its turns, an affected target can make a Wisdom saving thr
 <Name>Infernal Calling</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -5273,7 +5273,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Infestation</Name>
 <Level>0</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -5291,7 +5291,7 @@ The spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th le
 <Name>Inflict Wounds</Name>
 <Level>1</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5309,7 +5309,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Insect Plague</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>300 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -5329,7 +5329,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Instant Summons</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5350,7 +5350,7 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 <Name>Intellect Fortress</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -5366,7 +5366,7 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 <Name>Investiture of Flame</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5389,7 +5389,7 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 <Name>Investiture of Ice</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>cone 15 ft</Area>
@@ -5414,7 +5414,7 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 <Name>Investiture of Stone</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5437,7 +5437,7 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 <Name>Investiture of Wind</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>cube 15 ft</Area>
@@ -5460,7 +5460,7 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 <Name>Invisibility</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5478,7 +5478,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Invulnerability</Name>
 <Level>9</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5494,7 +5494,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Jim&apos;s Glowing Coin</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -5510,7 +5510,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Jim&apos;s Magic Missile</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -5532,7 +5532,7 @@ At Higher Levels . When you cast this spell using a spell slot of 2nd level or h
 <Name>Jump</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5548,7 +5548,7 @@ At Higher Levels . When you cast this spell using a spell slot of 2nd level or h
 <Name>Knock</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -5570,7 +5570,7 @@ When you cast the spell, a loud knock, audible from as far away as 300 feet, ema
 <Name>Legend Lore</Name>
 <Level>5</Level>
 <School>Divination</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5588,7 +5588,7 @@ The information you learn is accurate but might be couched in figurative languag
 <Name>Leomund&apos;s Secret Chest</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5604,7 +5604,7 @@ The information you learn is accurate but might be couched in figurative languag
 <Name>Leomund&apos;s Tiny Hut</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Self</Range>
 <Area>sphere 10 ft</Area>
@@ -5620,7 +5620,7 @@ The information you learn is accurate but might be couched in figurative languag
 <Name>Lesser Restoration</Name>
 <Level>2</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5636,7 +5636,7 @@ The information you learn is accurate but might be couched in figurative languag
 <Name>Levitate</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -5656,7 +5656,7 @@ When the spell ends, the target floats gently to the ground if it is still aloft
 <Name>Life Transference</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -5674,7 +5674,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Light</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>sphere 20 ft</Area>
@@ -5692,7 +5692,7 @@ If you target an object held or worn by a hostile creature, that creature must s
 <Name>Lightning Arrow</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5708,7 +5708,7 @@ If you target an object held or worn by a hostile creature, that creature must s
 <Name>Lightning Bolt</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>line 100 ft</Area>
@@ -5727,7 +5727,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Lightning Lure</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self (15 ft</Range>
 <Area>n/a</Area>
@@ -5743,7 +5743,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Locate Animals or Plants</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5759,7 +5759,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Locate Creature</Name>
 <Level>4</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5779,7 +5779,7 @@ This spell can&apos;t locate a creature if running water at least 10 feet wide b
 <Name>Locate Object</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5799,7 +5799,7 @@ This spell can&apos;t locate an object if any thickness of lead, even a thin she
 <Name>Longstrider</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5817,7 +5817,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Maddening Darkness</Name>
 <Level>8</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>150 ft</Range>
 <Area>sphere 60 ft</Area>
@@ -5835,7 +5835,7 @@ Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a 
 <Name>Maelstrom</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -5851,7 +5851,7 @@ Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a 
 <Name>Mage Armor</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5867,7 +5867,7 @@ Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a 
 <Name>Mage Hand</Name>
 <Level>0</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -5887,7 +5887,7 @@ The hand can&apos;t attack, activate magic items, or carry more than 10 pounds.<
 <Name>Magic Circle</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>10 ft</Range>
 <Area>cylinder 10 ft</Area>
@@ -5914,7 +5914,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Magic Jar</Name>
 <Level>6</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -5942,7 +5942,7 @@ When the spell ends, the container is destroyed.</Details>
 <Name>Magic Missile</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -5960,7 +5960,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Magic Mouth</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -5980,7 +5980,7 @@ The triggering circumstance can be as general or as detailed as you like, though
 <Name>Magic Stone</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -5998,7 +5998,7 @@ If you cast this spell again, the spell ends early on any pebbles still affected
 <Name>Magic Weapon</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -6016,7 +6016,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Magnificent Mansion</Name>
 <Level>7</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>300 ft</Range>
 <Area>cube 10 ft</Area>
@@ -6036,7 +6036,7 @@ You can create any floor plan you like, but the space can&apos;t exceed 50 cubes
 <Name>Magnify Gravity</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>60 ft</Range>
 <Area>sphere 10 ft</Area>
@@ -6056,7 +6056,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Major Image</Name>
 <Level>3</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>cube 20 ft</Area>
@@ -6078,7 +6078,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Mass Cure Wounds</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>sphere 30 ft</Area>
@@ -6096,7 +6096,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Mass Heal</Name>
 <Level>9</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6112,7 +6112,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Mass Healing Word</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6130,7 +6130,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Mass Polymorph</Name>
 <Level>9</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -6154,7 +6154,7 @@ The target&apos;s gear melds into the new form. The target can&apos;t activate, 
 <Name>Mass Suggestion</Name>
 <Level>6</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6178,7 +6178,7 @@ At Higher Levels. When you cast this spell using a 7th-level spell slot, the dur
 <Name>Maximilian&apos;s Earthen Grasp</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>square 5 ft</Area>
@@ -6200,7 +6200,7 @@ As an action, you can cause the hand to reach for a different creature or to mov
 <Name>Maze</Name>
 <Level>8</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6220,7 +6220,7 @@ When the spell ends, the target reappears in the space it left or, if that space
 <Name>Meld into Stone</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -6240,7 +6240,7 @@ Minor physical damage to the stone doesn&apos;t harm you, but its partial destru
 <Name>Melf&apos;s Acid Arrow</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -6256,7 +6256,7 @@ Minor physical damage to the stone doesn&apos;t harm you, but its partial destru
 <Name>Melf&apos;s Minute Meteors</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -6274,7 +6274,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Mending</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -6292,7 +6292,7 @@ This spell can physically repair a magic item or construct, but the spell can&ap
 <Name>Mental Prison</Name>
 <Level>6</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6308,7 +6308,7 @@ This spell can physically repair a magic item or construct, but the spell can&ap
 <Name>Message</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -6326,7 +6326,7 @@ You can cast this spell through solid objects if you are familiar with the targe
 <Name>Meteor Swarm</Name>
 <Level>9</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>1 mile</Range>
 <Area>sphere 40 ft</Area>
@@ -6344,7 +6344,7 @@ The spell damages objects in the area and ignites flammable objects that aren&ap
 <Name>Mighty Fortress</Name>
 <Level>8</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>1 mile</Range>
 <Area>n/a</Area>
@@ -6372,7 +6372,7 @@ Casting this spell on the same spot once every 7 days for a year makes the fortr
 <Name>Mind Blank</Name>
 <Level>8</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -6388,7 +6388,7 @@ Casting this spell on the same spot once every 7 days for a year makes the fortr
 <Name>Mind Sliver</Name>
 <Level>0</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6404,7 +6404,7 @@ Casting this spell on the same spot once every 7 days for a year makes the fortr
 <Name>Mind Spike</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6422,7 +6422,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Minor Illusion</Name>
 <Level>0</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>cube 5 ft</Area>
@@ -6444,7 +6444,7 @@ If a creature uses its action to examine the sound or image, the creature can de
 <Name>Mirage Arcane</Name>
 <Level>7</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>10 Days</Duration>
 <Range>Sight</Range>
 <Area>square 1 mile</Area>
@@ -6466,7 +6466,7 @@ Creatures with truesight can see through the illusion to the terrain&apos;s true
 <Name>Mirror Image</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -6490,7 +6490,7 @@ A creature is unaffected by this spell if it can&apos;t see, if it relies on sen
 <Name>Mislead</Name>
 <Level>5</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -6510,7 +6510,7 @@ You can see through its eyes and hear through its ears as if you were located wh
 <Name>Misty Step</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -6526,7 +6526,7 @@ You can see through its eyes and hear through its ears as if you were located wh
 <Name>Modify Memory</Name>
 <Level>5</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -6552,7 +6552,7 @@ At Higher Levels. If you cast this spell using a spell slot of 6th level or high
 <Name>Mold earth</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>cube 5 ft</Area>
@@ -6576,7 +6576,7 @@ If you cast this spell multiple times, you can have no more than two of its non-
 <Name>Moonbeam</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>cylinder 5 ft</Area>
@@ -6600,7 +6600,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Mordenkainen&apos;s Faithful Hound</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -6616,7 +6616,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Mordenkainen&apos;s Magnificent Mansion</Name>
 <Level>7</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>300 ft</Range>
 <Area>n/a</Area>
@@ -6632,7 +6632,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Mordenkainen&apos;s Private Sanctum</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>120 ft</Range>
 <Area>cube *</Area>
@@ -6648,7 +6648,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Mordenkainen&apos;s Sword</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6666,7 +6666,7 @@ When the sword appears, you make a melee spell attack against a target of your c
 <Name>Motivational Speech</Name>
 <Level>3</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6684,7 +6684,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Move Earth</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>2 Hours</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -6708,7 +6708,7 @@ Similarly, this spell doesn&apos;t directly affect plant growth. The moved earth
 <Name>Negative Energy Flood</Name>
 <Level>5</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6726,7 +6726,7 @@ If you target an undead with this spell, the target doesn&apos;t make a saving t
 <Name>Nondetection</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -6742,7 +6742,7 @@ If you target an undead with this spell, the target doesn&apos;t make a saving t
 <Name>Nystul&apos;s Magic Aura</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -6758,7 +6758,7 @@ If you target an undead with this spell, the target doesn&apos;t make a saving t
 <Name>Otherworldly Form</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -6781,7 +6781,7 @@ If you target an undead with this spell, the target doesn&apos;t make a saving t
 <Name>Otiluke&apos;s Freezing Sphere</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>300 ft</Range>
 <Area>sphere 60 ft</Area>
@@ -6797,7 +6797,7 @@ If you target an undead with this spell, the target doesn&apos;t make a saving t
 <Name>Otiluke&apos;s Resilient Sphere</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -6813,7 +6813,7 @@ If you target an undead with this spell, the target doesn&apos;t make a saving t
 <Name>Otto&apos;s Irresistible Dance</Name>
 <Level>6</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -6831,7 +6831,7 @@ A dancing creature must use all its movement to dance without leaving its space 
 <Name>Pass Without Trace</Name>
 <Level>2</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -6847,7 +6847,7 @@ A dancing creature must use all its movement to dance without leaving its space 
 <Name>Passwall</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -6865,7 +6865,7 @@ When the opening disappears, any creatures or objects still in the passage creat
 <Name>Phantasmal Force</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>cube 10 ft</Area>
@@ -6881,7 +6881,7 @@ When the opening disappears, any creatures or objects still in the passage creat
 <Name>Phantasmal Killer</Name>
 <Level>4</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -6899,7 +6899,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Phantom Steed</Name>
 <Level>3</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -6917,7 +6917,7 @@ For the duration, you or a creature you choose can ride the steed. The creature 
 <Name>Planar Ally</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6943,7 +6943,7 @@ A creature enlisted to join your group counts as a member of it, receiving a ful
 <Name>Planar Binding</Name>
 <Level>5</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -6963,7 +6963,7 @@ At Higher Levels. When you cast this spell using a spell slot of a higher level,
 <Name>Plane Shift</Name>
 <Level>7</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -6983,7 +6983,7 @@ You can use this spell to banish an unwilling creature to another plane. Choose 
 <Name>Plant Growth</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>Special</Casting_x0020_Time>
+<CastingTime>Special</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>n/a</Area>
@@ -7005,7 +7005,7 @@ If you cast this spell over 8 hours, you enrich the land. All plants in a half-m
 <Name>Poison Spray</Name>
 <Level>0</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -7023,7 +7023,7 @@ This spell&apos;s damage increases by 1d12 when you reach 5th level (2d12), 11th
 <Name>Polymorph</Name>
 <Level>4</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7047,7 +7047,7 @@ The target&apos;s gear melds into the new form. The creature can&apos;t activate
 <Name>Power Word Heal</Name>
 <Level>9</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7063,7 +7063,7 @@ The target&apos;s gear melds into the new form. The creature can&apos;t activate
 <Name>Power Word Kill</Name>
 <Level>9</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7079,7 +7079,7 @@ The target&apos;s gear melds into the new form. The creature can&apos;t activate
 <Name>Power Word Pain</Name>
 <Level>7</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7099,7 +7099,7 @@ A target suffering this pain can make a Constitution saving throw at the end of 
 <Name>Power Word Stun</Name>
 <Level>8</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7117,7 +7117,7 @@ The stunned target must make a Constitution saving throw at the end of each of i
 <Name>Prayer of Healing</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -7135,7 +7135,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Prestidigitation</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -7161,7 +7161,7 @@ If you cast this spell multiple times, you can have up to three of its non-insta
 <Name>Primal Savagery</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -7179,7 +7179,7 @@ The spell&apos;s damage increases by 1d10 when you reach 5th level (2d10), 11th 
 <Name>Primordial Ward</Name>
 <Level>6</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -7199,7 +7199,7 @@ If you do so, the resistances end, and you have the immunity until the end of yo
 <Name>Prismatic Spray</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>cone 60 ft</Area>
@@ -7231,7 +7231,7 @@ If you do so, the resistances end, and you have the immunity until the end of yo
 <Name>Prismatic Wall</Name>
 <Level>9</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7267,7 +7267,7 @@ The wall can be destroyed, also one layer at a time, in order from red to violet
 <Name>Private Sanctum</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>120 ft</Range>
 <Area>cube 100 ft</Area>
@@ -7297,7 +7297,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Produce Flame</Name>
 <Level>0</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -7317,7 +7317,7 @@ This spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th l
 <Name>Programmed Illusion</Name>
 <Level>6</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>120 ft</Range>
 <Area>cube 30 ft</Area>
@@ -7339,7 +7339,7 @@ Physical interaction with the image reveals it to be an illusion, because things
 <Name>Project Image</Name>
 <Level>7</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Day</Duration>
 <Range>500 miles</Range>
 <Area>n/a</Area>
@@ -7361,7 +7361,7 @@ Physical interaction with the image reveals it to be an illusion, because things
 <Name>Protection from Energy</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7377,7 +7377,7 @@ Physical interaction with the image reveals it to be an illusion, because things
 <Name>Protection from Evil and Good</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7395,7 +7395,7 @@ The protection grants several benefits. Creatures of those types have disadvanta
 <Name>Protection from Poison</Name>
 <Level>2</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7413,7 +7413,7 @@ For the duration, the target has advantage on saving throws against being poison
 <Name>Psychic Scream</Name>
 <Level>9</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -7433,7 +7433,7 @@ A stunned target can make an Intelligence saving throw at the end of each of its
 <Name>Pulse Wave</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>cone 30 ft</Area>
@@ -7453,7 +7453,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Purify Food and Drink</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>10 ft</Range>
 <Area>sphere 5 ft</Area>
@@ -7469,7 +7469,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Pyrotechnics</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>cube 5 ft</Area>
@@ -7489,7 +7489,7 @@ Smoke. Thick black smoke spreads out from the target in a 20-foot radius, moving
 <Name>Raise Dead</Name>
 <Level>5</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7511,7 +7511,7 @@ Coming back from the dead is an ordeal. The target takes a âˆ’4 penalty to a
 <Name>Rary&apos;s Telepathic Bond</Name>
 <Level>5</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -7527,7 +7527,7 @@ Coming back from the dead is an ordeal. The target takes a âˆ’4 penalty to a
 <Name>Ravenous Void</Name>
 <Level>9</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>1,000 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -7547,7 +7547,7 @@ A creature that starts its turn within 100 feet of the sphere must succeed on a 
 <Name>Ray of Enfeeblement</Name>
 <Level>2</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7565,7 +7565,7 @@ At the end of each of the target&apos;s turns, it can make a Constitution saving
 <Name>Ray of Frost</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7583,7 +7583,7 @@ The spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th le
 <Name>Ray of Sickness</Name>
 <Level>1</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7599,7 +7599,7 @@ The spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th le
 <Name>Reality Break</Name>
 <Level>8</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7622,7 +7622,7 @@ D10 Effect
 <Name>Regenerate</Name>
 <Level>7</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7640,7 +7640,7 @@ The target&apos;s severed body members (fingers, legs, tails, and so on), if any
 <Name>Reincarnate</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7677,7 +7677,7 @@ The reincarnated creature recalls its former life and experiences. It retains th
 <Name>Remove Curse</Name>
 <Level>3</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7693,7 +7693,7 @@ The reincarnated creature recalls its former life and experiences. It retains th
 <Name>Resiliant Sphere</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>sphere 10 ft</Area>
@@ -7715,7 +7715,7 @@ A disintegrate spell targeting the globe destroys it without harming anything in
 <Name>Resistance</Name>
 <Level>0</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7731,7 +7731,7 @@ A disintegrate spell targeting the globe destroys it without harming anything in
 <Name>Resurrection</Name>
 <Level>7</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7755,7 +7755,7 @@ Casting this spell to restore life to a creature that has been dead for one year
 <Name>Reverse Gravity</Name>
 <Level>7</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>100 ft</Range>
 <Area>cylinder 50 ft</Area>
@@ -7775,7 +7775,7 @@ At the end of the duration, affected objects and creatures fall back down.</Deta
 <Name>Revivify</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7791,7 +7791,7 @@ At the end of the duration, affected objects and creatures fall back down.</Deta
 <Name>Rope Trick</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7813,7 +7813,7 @@ Anything inside the extradimensional space drops out when the spell ends.</Detai
 <Name>Sacred Flame</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -7831,7 +7831,7 @@ The spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th le
 <Name>Sanctuary</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -7849,7 +7849,7 @@ If the warded creature makes an attack, casts a spell that affects an enemy, or 
 <Name>Sapping Sting</Name>
 <Level>0</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -7867,7 +7867,7 @@ This spell&apos;s damage increases by ld4 when you reach 5th level (2d4), 11th l
 <Name>Scatter</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -7883,7 +7883,7 @@ This spell&apos;s damage increases by ld4 when you reach 5th level (2d4), 11th l
 <Name>Scorching Ray</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -7903,7 +7903,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Scrying</Name>
 <Level>5</Level>
 <School>Divination</School>
-<Casting_x0020_Time>10 Minutes</Casting_x0020_Time>
+<CastingTime>10 Minutes</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -7939,7 +7939,7 @@ Instead of targeting a creature, you can choose a location you have seen before 
 <Name>Searing Smite</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -7955,7 +7955,7 @@ Instead of targeting a creature, you can choose a location you have seen before 
 <Name>Secret Chest</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -7975,7 +7975,7 @@ After 60 days, there is a cumulative 5 percent chance per day that the spell&apo
 <Name>See invisibility</Name>
 <Level>2</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -7991,7 +7991,7 @@ After 60 days, there is a cumulative 5 percent chance per day that the spell&apo
 <Name>Seeming</Name>
 <Level>5</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -8013,7 +8013,7 @@ A creature can use its action to inspect a target and make an Intelligence (Inve
 <Name>Sending</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>Unlimited</Range>
 <Area>n/a</Area>
@@ -8031,7 +8031,7 @@ You can send the message across any distance and even to other planes of existen
 <Name>Sequester</Name>
 <Level>7</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8051,7 +8051,7 @@ You can set a condition for the spell to end early. The condition can be anythin
 <Name>Shadow Blade</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8071,7 +8071,7 @@ At Higher Levels. When you cast this spell using a 3rd- or 4th&apos; level spell
 <Name>Shadow of Moil</Name>
 <Level>4</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8089,7 +8089,7 @@ Until the spell ends, you have resistance to radiant damage. In addition, whenev
 <Name>Shape Water</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>cube 5 ft</Area>
@@ -8115,7 +8115,7 @@ If you cast this spell multiple times, you can have no more than two of its non-
 <Name>Shapechange</Name>
 <Level>9</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8141,7 +8141,7 @@ During this spell&apos;s duration, you can use your action to assume a different
 <Name>Shatter</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>sphere 10 ft</Area>
@@ -8161,7 +8161,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Shield</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Reaction *</Casting_x0020_Time>
+<CastingTime>1 Reaction *</CastingTime>
 <Duration>1 Round</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8178,7 +8178,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Shield of Faith</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -8194,7 +8194,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Shillelagh</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8210,7 +8210,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Shocking Grasp</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8228,7 +8228,7 @@ The spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th le
 <Name>Sickening Radiance</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>sphere 30 ft</Area>
@@ -8246,7 +8246,7 @@ When a creature moves into the spell&apos;s area for the first time on a turn or
 <Name>Silence</Name>
 <Level>2</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -8262,7 +8262,7 @@ When a creature moves into the spell&apos;s area for the first time on a turn or
 <Name>Silent Image</Name>
 <Level>1</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>cube 15 ft</Area>
@@ -8282,7 +8282,7 @@ Physical interaction with the image reveals it to be an illusion, because things
 <Name>Simulacrum</Name>
 <Level>7</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>12 Hours</Casting_x0020_Time>
+<CastingTime>12 Hours</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8304,7 +8304,7 @@ If you cast this spell again, any duplicate you created with this spell is insta
 <Name>Skill Empowerment</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8322,7 +8322,7 @@ You must choose a skill in which the target is proficient and that isn&apos;t al
 <Name>Skywrite</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Sight</Range>
 <Area>n/a</Area>
@@ -8338,7 +8338,7 @@ You must choose a skill in which the target is proficient and that isn&apos;t al
 <Name>Sleep</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -8360,7 +8360,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Sleet Storm</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>150 ft</Range>
 <Area>cylinder 40 ft</Area>
@@ -8380,7 +8380,7 @@ If a creature starts its turn in the spell&apos;s area and is concentrating on a
 <Name>Slow</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>cube 40 ft</Area>
@@ -8402,7 +8402,7 @@ A creature affected by this spell makes another Wisdom saving throw at the end o
 <Name>Snare</Name>
 <Level>1</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8426,7 +8426,7 @@ After the trap is triggered, the spell ends when no creature is restrained by it
 <Name>Snilloc&apos;s Snowball Swarm</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>90 ft</Range>
 <Area>sphere 5 ft</Area>
@@ -8444,7 +8444,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Soul Cage</Name>
 <Level>6</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Reaction *</Casting_x0020_Time>
+<CastingTime>1 Reaction *</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -8470,7 +8470,7 @@ A creature that can see the sensor (such as one using see invisibility or truesi
 <Name>Spare the Dying</Name>
 <Level>0</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8486,7 +8486,7 @@ A creature that can see the sensor (such as one using see invisibility or truesi
 <Name>Speak with Animals</Name>
 <Level>1</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8502,7 +8502,7 @@ A creature that can see the sensor (such as one using see invisibility or truesi
 <Name>Speak with Dead</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -8520,7 +8520,7 @@ Until the spell ends, you can ask the corpse up to five questions. The corpse kn
 <Name>Speak with Plants</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8544,7 +8544,7 @@ This spell can cause the plants created by the entangle spell to release a restr
 <Name>Spider Climb</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8560,7 +8560,7 @@ This spell can cause the plants created by the entangle spell to release a restr
 <Name>Spike Growth</Name>
 <Level>2</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>150 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -8578,7 +8578,7 @@ The transformation of the ground is camouflaged to look natural. Any creature th
 <Name>Spirit Guardians</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8598,7 +8598,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Spirit Shroud</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8614,7 +8614,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Spiritual Weapon</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -8636,7 +8636,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Staggering Smite</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -8652,7 +8652,7 @@ At Higher Levels. When you cast this spell using a spell slot of 3rd level or hi
 <Name>Steel Wind Strike</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -8670,7 +8670,7 @@ You can then teleport to an unoccupied space you can see within 5 feet of one of
 <Name>Stinking Cloud</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -8690,7 +8690,7 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 <Name>Stone Shape</Name>
 <Level>4</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8706,7 +8706,7 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 <Name>Stoneskin</Name>
 <Level>4</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -8722,7 +8722,7 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 <Name>Storm of Vengeance</Name>
 <Level>9</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Sight</Range>
 <Area>n/a</Area>
@@ -8748,7 +8748,7 @@ Round 5â€“10. Gusts and freezing rain assail the area under the cloud. The 
 <Name>Storm Sphere</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>150 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -8770,7 +8770,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Suggestion</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -8792,7 +8792,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Aberration</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8808,7 +8808,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Beast</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8824,7 +8824,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Celestial</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8840,7 +8840,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Construct</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8856,7 +8856,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Elemental</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8872,7 +8872,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Fey</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8888,7 +8888,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Fiend</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8904,7 +8904,7 @@ If you or any of your companions damage the target, the spell ends.</Details>
 <Name>Summon Greater Demon</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -8928,7 +8928,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Summon Lesser Demons</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -8952,7 +8952,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th or 7th leve
 <Name>Summon Shadowspawn</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8968,7 +8968,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th or 7th leve
 <Name>Summon Undead</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -8984,7 +8984,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th or 7th leve
 <Name>Sunbeam</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self (60 ft</Range>
 <Area>line 60 ft</Area>
@@ -9004,7 +9004,7 @@ For the duration, a mote of brilliant radiance shines in your hand. It sheds bri
 <Name>Sunburst</Name>
 <Level>8</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft (60 ft</Range>
 <Area>sphere 60 ft</Area>
@@ -9024,7 +9024,7 @@ This spell dispels any darkness in its area that was created by a spell.</Detail
 <Name>Swift Quiver</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -9040,7 +9040,7 @@ This spell dispels any darkness in its area that was created by a spell.</Detail
 <Name>Sword Burst</Name>
 <Level>0</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self (5 ft</Range>
 <Area>n/a</Area>
@@ -9056,7 +9056,7 @@ This spell dispels any darkness in its area that was created by a spell.</Detail
 <Name>Symbol</Name>
 <Level>7</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>Until Dispelled or Triggered</Duration>
 <Range>Touch (60 ft</Range>
 <Area>sphere 60 ft</Area>
@@ -9096,7 +9096,7 @@ Stunning. Each target must make a Wisdom saving throw and becomes stunned for 1 
 <Name>Synaptic Static</Name>
 <Level>5</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft (20 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -9113,7 +9113,7 @@ After a failed save, a target has muddled thoughts for 1 minute. During that tim
 <Name>Tasha&apos;s Caustinc Brew</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self (30 ft</Range>
 <Area>30 ft Line</Area>
@@ -9129,7 +9129,7 @@ After a failed save, a target has muddled thoughts for 1 minute. During that tim
 <Name>Tasha&apos;s Hideous Laughter</Name>
 <Level>1</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -9145,7 +9145,7 @@ After a failed save, a target has muddled thoughts for 1 minute. During that tim
 <Name>Tasha&apos;s Mind Whip</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -9161,7 +9161,7 @@ After a failed save, a target has muddled thoughts for 1 minute. During that tim
 <Name>Tasha&apos;s Otherworldy Guise</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -9177,7 +9177,7 @@ After a failed save, a target has muddled thoughts for 1 minute. During that tim
 <Name>Telekinesis</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -9203,7 +9203,7 @@ You can exert fine control on objects with your telekinetic grip, such as manipu
 <Name>Telepathic Bond</Name>
 <Level>5</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -9221,7 +9221,7 @@ Until the spell ends, the targets can communicate telepathically through the bon
 <Name>Telepathy</Name>
 <Level>8</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>Unlimited</Range>
 <Area>n/a</Area>
@@ -9237,7 +9237,7 @@ Until the spell ends, the targets can communicate telepathically through the bon
 <Name>Teleport</Name>
 <Level>7</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -9279,7 +9279,7 @@ Mishap. The spell&apos;s unpredictable magic results in a difficult journey. Eac
 <Name>Teleportation Circle</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>1 Round</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -9299,7 +9299,7 @@ You can create a permanent teleportation circle by casting this spell in the sam
 <Name>Temple of the Gods</Name>
 <Level>7</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -9329,7 +9329,7 @@ Casting this spell on the same spot every day for a year makes this effect perma
 <Name>Temporal Shunt</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Reaction *</Casting_x0020_Time>
+<CastingTime>1 Reaction *</CastingTime>
 <Duration>1 Round</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -9347,7 +9347,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Tenser&apos;s Floating Disk</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -9363,7 +9363,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Tenser&apos;s Transformation</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -9388,7 +9388,7 @@ Immediately after the spell ends, you must succeed on a DC 15 Constitution savin
 <Name>Tether Essence</Name>
 <Level>7</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -9404,7 +9404,7 @@ Immediately after the spell ends, you must succeed on a DC 15 Constitution savin
 <Name>Thaumaturgy</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -9430,7 +9430,7 @@ If you cast this spell multiple times, you can have up to three of its 1-minute 
 <Name>Thorn Whip</Name>
 <Level>0</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -9446,7 +9446,7 @@ If you cast this spell multiple times, you can have up to three of its 1-minute 
 <Name>Thunder Step</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -9466,7 +9466,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Thunderclap</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>5 ft</Range>
 <Area>n/a</Area>
@@ -9484,7 +9484,7 @@ The spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th le
 <Name>Thunderous Smite</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -9500,7 +9500,7 @@ The spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th le
 <Name>Thunderwave</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>cube 15 ft</Area>
@@ -9520,7 +9520,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Tidal Wave</Name>
 <Level>3</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -9536,7 +9536,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Time Ravage</Name>
 <Level>9</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -9552,7 +9552,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <Name>Time Stop</Name>
 <Level>9</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -9570,7 +9570,7 @@ This spell ends if one of the actions you use during this period, or any effects
 <Name>Tiny Hut</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Self</Range>
 <Area>sphere 10 ft</Area>
@@ -9590,7 +9590,7 @@ Until the spell ends, you can command the interior to become dimly lit or dark. 
 <Name>Tiny Servant</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -9612,7 +9612,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Toll the Dead</Name>
 <Level>0</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -9630,7 +9630,7 @@ The spell&apos;s damage increases by one die when you reach 5th level (2d8 or 2d
 <Name>Tongues</Name>
 <Level>3</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -9646,7 +9646,7 @@ The spell&apos;s damage increases by one die when you reach 5th level (2d8 or 2d
 <Name>Transmute Rock</Name>
 <Level>5</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Until Dispelled</Duration>
 <Range>120 ft</Range>
 <Area>cube 40 ft</Area>
@@ -9670,7 +9670,7 @@ Transmute Mud to Rock. Nonmagical mud or quicksand in the area no more than 10 f
 <Name>Transport via Plants</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>10 ft</Range>
 <Area>n/a</Area>
@@ -9686,7 +9686,7 @@ Transmute Mud to Rock. Nonmagical mud or quicksand in the area no more than 10 f
 <Name>Tree Stride</Name>
 <Level>5</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -9704,7 +9704,7 @@ You can use this transportation ability once per round for the duration. You mus
 <Name>True Polymorph</Name>
 <Level>9</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -9736,7 +9736,7 @@ Creature into Object. If you turn a creature into an object, it transforms along
 <Name>True Resurrection</Name>
 <Level>9</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Hour</Casting_x0020_Time>
+<CastingTime>1 Hour</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -9756,7 +9756,7 @@ The spell can even provide a new body if the original no longer exists, in which
 <Name>True Seeing</Name>
 <Level>6</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -9772,7 +9772,7 @@ The spell can even provide a new body if the original no longer exists, in which
 <Name>True Strike</Name>
 <Level>0</Level>
 <School>Divination</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Round</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -9788,7 +9788,7 @@ The spell can even provide a new body if the original no longer exists, in which
 <Name>Tsunami</Name>
 <Level>8</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>6 Rounds</Duration>
 <Range>Sight</Range>
 <Area>n/a</Area>
@@ -9804,7 +9804,7 @@ The spell can even provide a new body if the original no longer exists, in which
 <Name>Unseen Servant</Name>
 <Level>1</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -9824,7 +9824,7 @@ If you command the servant to perform a task that would move it more than 60 fee
 <Name>Vampiric Touch</Name>
 <Level>3</Level>
 <School>Necromancy</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -9842,7 +9842,7 @@ At Higher Levels. When you cast this spell using a spell slot of 4th level or hi
 <Name>Vicious Mockery</Name>
 <Level>0</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -9860,7 +9860,7 @@ This spell&apos;s damage increases by 1d4 when you reach 5th level (2d4), 11th l
 <Name>Vitriolic Sphere</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>150 ft</Range>
 <Area>sphere 20 ft</Area>
@@ -9878,7 +9878,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Wall of Fire</Name>
 <Level>4</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -9900,7 +9900,7 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
 <Name>Wall of Force</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -9918,7 +9918,7 @@ Nothing can physically pass through the wall. It is immune to all damage and can
 <Name>Wall of Ice</Name>
 <Level>6</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -9940,7 +9940,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Wall of Light</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -9964,7 +9964,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Wall of Sand</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>90 ft</Range>
 <Area>n/a</Area>
@@ -9980,7 +9980,7 @@ At Higher Levels. When you cast this spell using a spell slot of 6th level or hi
 <Name>Wall of Stone</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -10006,7 +10006,7 @@ If you maintain your concentration on this spell for its whole duration, the wal
 <Name>Wall of Thorns</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -10028,7 +10028,7 @@ At Higher Levels. When you cast this spell using a spell slot of 7th level or hi
 <Name>Wall of Water</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>n/a</Area>
@@ -10046,7 +10046,7 @@ Any ranged weapon attack that enters the wall&apos;s space has disadvantage on t
 <Name>Warding Bond</Name>
 <Level>2</Level>
 <School>Abjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Touch</Range>
 <Area>n/a</Area>
@@ -10064,7 +10064,7 @@ The spell ends if you drop to 0 hit points or if you and the target become separ
 <Name>Warding Wind</Name>
 <Level>2</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>Self</Range>
 <Area>sphere 10 ft</Area>
@@ -10089,7 +10089,7 @@ The wind has the following effects:
 <Name>Water Breathing</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>24 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -10105,7 +10105,7 @@ The wind has the following effects:
 <Name>Water Walk</Name>
 <Level>3</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -10123,7 +10123,7 @@ If you target a creature submerged in a liquid, the spell carries the target to 
 <Name>Watery Sphere</Name>
 <Level>4</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>90 ft</Range>
 <Area>sphere 5 ft</Area>
@@ -10147,7 +10147,7 @@ When the spell ends, the sphere falls to the ground and extinguishes all normal 
 <Name>Web</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>60 ft</Range>
 <Area>cube 20 ft</Area>
@@ -10171,7 +10171,7 @@ The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 
 <Name>Weird</Name>
 <Level>9</Level>
 <School>Illusion</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>sphere 30 ft</Area>
@@ -10187,7 +10187,7 @@ The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 
 <Name>Whirlwind</Name>
 <Level>7</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>300 ft</Range>
 <Area>cylinder 10 ft</Area>
@@ -10207,7 +10207,7 @@ A restrained creature can use an action to make a Strength or Dexterity check ag
 <Name>Wind Walk</Name>
 <Level>6</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Minute</Casting_x0020_Time>
+<CastingTime>1 Minute</CastingTime>
 <Duration>8 Hours</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -10225,7 +10225,7 @@ If a creature is in cloud form and flying when the effect ends, the creature des
 <Name>Wind Wall</Name>
 <Level>3</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>n/a</Area>
@@ -10245,7 +10245,7 @@ The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flyin
 <Name>Wish</Name>
 <Level>9</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -10276,7 +10276,7 @@ The stress of casting this spell to produce any effect other than duplicating an
 <Name>Witch Bolt</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>30 ft</Range>
 <Area>n/a</Area>
@@ -10292,7 +10292,7 @@ The stress of casting this spell to produce any effect other than duplicating an
 <Name>Word of Radiance</Name>
 <Level>0</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>5 ft</Range>
 <Area>n/a</Area>
@@ -10310,7 +10310,7 @@ The spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th le
 <Name>Word of Recall</Name>
 <Level>6</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>Instantaneous</Duration>
 <Range>5 ft</Range>
 <Area>n/a</Area>
@@ -10328,7 +10328,7 @@ You must designate a sanctuary by casting this spell within a location, such as 
 <Name>Wrath of Nature</Name>
 <Level>5</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>120 ft</Range>
 <Area>cube 60 ft</Area>
@@ -10352,7 +10352,7 @@ Rocks. As a bonus action on your turn, you can cause a loose rock in the cube to
 <Name>Wrathful Smite</Name>
 <Level>1</Level>
 <School>Evocation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -10368,7 +10368,7 @@ Rocks. As a bonus action on your turn, you can cause a loose rock in the cube to
 <Name>Wristpocket</Name>
 <Level>2</Level>
 <School>Conjuration</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>1 Hour</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -10386,7 +10386,7 @@ Until the spell ends, you can use your action to summon the object to your free 
 <Name>Zephyr Strike</Name>
 <Level>1</Level>
 <School>Transmutation</School>
-<Casting_x0020_Time>1 Bonus Action</Casting_x0020_Time>
+<CastingTime>1 Bonus Action</CastingTime>
 <Duration>1 Minute</Duration>
 <Range>Self</Range>
 <Area>n/a</Area>
@@ -10404,7 +10404,7 @@ Once before the spell ends, you can give yourself advantage on one weapon attack
 <Name>Zone of Truth</Name>
 <Level>2</Level>
 <School>Enchantment</School>
-<Casting_x0020_Time>1 Action</Casting_x0020_Time>
+<CastingTime>1 Action</CastingTime>
 <Duration>10 Minutes</Duration>
 <Range>60 ft</Range>
 <Area>sphere 15 ft</Area>

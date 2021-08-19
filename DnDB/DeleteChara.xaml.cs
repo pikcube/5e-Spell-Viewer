@@ -30,6 +30,10 @@ namespace DnDB
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             File.Delete($@"classes\{CharacterComboBox.Text}.dndbChara");
+            if (File.Exists($@"classes\{CharacterComboBox.Text}.dndbChara.prep"))
+            {
+                File.Delete($@"classes\{CharacterComboBox.Text}.dndbChara.prep");
+            }
             Close();
         }
 

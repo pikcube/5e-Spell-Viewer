@@ -54,6 +54,10 @@ namespace DnDB
             }
             finally
             {
+                if (path is null)
+                {
+                    throw new NoNullAllowedException();
+                }
                 Contents = File.ReadAllLines(path);
             }
         }
@@ -200,7 +204,6 @@ namespace DnDB
                         $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}/DnDB_Beta");
                 }
                 SettingsVariables = new OptionsVariables($"{Directory.GetCurrentDirectory()}/main.config");
-
                 string[] LevelList =
                 {
                     "All Levels", "Cantrip", "Level 1", "Level 2", "Level 3", "Level 4",
@@ -222,8 +225,8 @@ namespace DnDB
                 SelectedSchool.SelectedIndex = 0;
                 SelectedSchool.SelectionChanged += SelectedClass_SelectionChanged;
 
-                var I = JsonConvert.DeserializeObject<Root>(File.ReadAllText("spells.json"));
-                SpellTable = I.MasterSpells;
+                RefreshSpells();
+
                 SpellDescription.TextWrapping = TextWrapping.Wrap;
 
 
@@ -237,8 +240,77 @@ namespace DnDB
             }
         }
 
+        private static void RefreshSpells()
+        {
+            Root I = JsonConvert.DeserializeObject<Root>(File.ReadAllText("spells.json"));
+            SpellTable = I.MasterSpells;
+
+            if (File.Exists("spells.custom.json"))
+            {
+                I = JsonConvert.DeserializeObject<Root>(File.ReadAllText("spells.custom.json"));
+                I.MasterSpells.RemoveAll(z => z.Name == null);
+                SpellTable.AddRange(I.MasterSpells);
+                SpellTable = SpellTable.Distinct().ToList();
+            }
+            else
+            {
+                CreateCustomJson();
+            }
+        }
+
+        public static void CreateCustomJson()
+        {
+            Root R = new Root
+            {
+                MasterSpells = new List<MasterSpell>(),
+            };
+            R.MasterSpells.Add(new MasterSpell());
+            File.WriteAllText("spells.custom.json", JsonConvert.SerializeObject(R, Formatting.Indented));
+            MasterSpell Example = new MasterSpell
+            {
+                Name = "Any text",
+                Level = "Single digit 0-9",
+                School = "Name of school",
+                CastingTime = "Any text",
+                Duration = "Any text",
+                Range = "Any text",
+                Area = "Any text",
+                Ritual = "1 for ritual casting allowed, 0 otherwise",
+                Concentration = "1 for requires concentration, 0 otherwise",
+                V = "1 for requires verbal components, 0 otherwise",
+                S = "1 for requires somatic components, 0 otherwise",
+                M = "1 for requires material components, 0 otherwise",
+                Material = "The names of any materials required",
+                Details = "Any text, use \n for new lines. No data can be null. " +
+                          "'Spells with null names won't be loaded. Any other null properties may crash the app",
+            };
+            MasterSpell Example2 = new MasterSpell
+            {
+                Name = "Second Spell",
+                Level = "3",
+                School = "Evocation",
+                CastingTime = "1 Bonus Action",
+                Duration = "Instantanious",
+                Range = "Self",
+                Area = "50 Feet",
+                Ritual = "0",
+                Concentration = "0",
+                V = "1",
+                S = "0",
+                M = "0",
+                Material = null,
+                Details = "Material can be set to null as long as M is not set to 1 because the data in material is ignored " +
+                          "if Material is decoded as false. However, it is recommended to put in a dummy string to prevent " +
+                          "crashing in the case of M being set to 1 by accident.",
+            };
+            R.MasterSpells.Clear();
+            R.MasterSpells.Add(Example);
+            R.MasterSpells.Add(Example2);
+            File.WriteAllText("README.example.spells.custom.json", JsonConvert.SerializeObject(R, Formatting.Indented));
+        }
+
         public static bool IsReservedFileName(string FileName)
-        { 
+        {
             string[] ReservedNames =
             {
                 "con",
@@ -268,9 +340,26 @@ namespace DnDB
             return ReservedNames.Any(z => z == FileName);
         }
 
+        private int ManualCounter;
+
         private void SelectedClass_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             UpdateSpellListContents();
+            if (ManualControl)
+            {
+                return;
+            }
+
+            if (AddToThisClass.Items.Cast<string>().Any(z => z == (string)SelectedClass.SelectedItem))
+            {
+                AddToThisClass.SelectedItem = SelectedClass.SelectedItem;
+                ManualCounter = 1;
+            }
+            else if (ManualCounter == 1)
+            {
+                ManualControl = true;
+                ManualCounter = 2;
+            }
         }
 
         private void UpdateSpellListContents()
@@ -283,10 +372,10 @@ namespace DnDB
             
             try
             {
-                SpellsToFilter = SpellTable.Select(z => SpellRow.GetSpell(z.Name)).Where(z =>
-                    Classes[SelectedClass.SelectedIndex].Spells.Any(x => x.Name == z.Name) &&
-                    (z.Level + 1 == SelectedLevel.SelectedIndex || SelectedLevel.SelectedIndex == 0) &&
-                    (z.School == SelectedSchool.SelectedItem.ToString() || SelectedSchool.SelectedIndex == 0));
+                SpellsToFilter = SpellTable.Select(z => SpellRow.GetSpell(z.Name)).Where(z => //Create a list of spells where
+                    Classes[SelectedClass.SelectedIndex].Spells.Any(x => x.Name == z.Name) && //The spell is in the selected class
+                    (z.Level + 1 == SelectedLevel.SelectedIndex || SelectedLevel.SelectedIndex == 0) && //The spell is the correct level
+                    (z.School == SelectedSchool.SelectedItem.ToString() || SelectedSchool.SelectedIndex == 0)); //The spell is in the correct school
             }
             catch(Exception)
             {
@@ -294,27 +383,27 @@ namespace DnDB
                 return;
             }
 
-            if (SearchBox.Text != string.Empty)
+            if (SearchBox.Text != string.Empty) //If the search box has text in it
             {
-                SpellsToFilter = SpellsToFilter.Where(z => z.Name.ToLower().Contains(SearchBox.Text.ToLower()));
+                SpellsToFilter = SpellsToFilter.Where(z => z.Name.ToLower().Contains(SearchBox.Text.ToLower())); //Spell matches search box
             }
 
             //Apparently you can't update a member of an IEnumberable from a foreach loop, it just updates a local copy and throws it away.
             List<SpellRow> SpellsFiltered = SpellsToFilter.ToList();
-            
-            foreach (SpellRow s in SpellsFiltered.Where(s => IsPreparedSpellInCurrentClass(s.Name)))
+
+            foreach (SpellRow s in SpellsFiltered.Where(s => IsPreparedSpellInCurrentClass(s.Name))) //Add a * to any prepared spells
             {
                 s.Name = $"*{s.Name}";
             }
 
-            if (SettingsVariables.SortByLevel)
+            if (SettingsVariables.SortByLevel) //Sort spells first by prepared, then by level, then by name
             {
                 SpellList.ItemsSource = SpellsFiltered
                     .OrderBy(z => z.Name[0] != '*') //False shows up first before true, so this check is inverted. Given 1 = true, makes sense
                     .ThenBy(z => z.Level)
                     .ThenBy(z => z.Name).Select(z => z.Name);
             }
-            else
+            else //Don't sort by level
             {
                 SpellList.ItemsSource = SpellsFiltered
                     .OrderBy(z => z.Name[0] != '*') //False shows up first before true, so this check is inverted. Given 1 = true, makes sense
@@ -407,7 +496,43 @@ namespace DnDB
 
                 SpellList.SelectedIndex = Math.Min(SidebarIndex, SpellList.Items.Count - 1);
             }
+
+            var AddRightClickItem = RightClickSpellList.Items[1] as MenuItem;
+            var RemoveRightClickItem = RightClickSpellList.Items[2] as MenuItem;
+            AddRightClickItem.Items.Clear();
+            RemoveRightClickItem.Items.Clear();
+
+            foreach (var C in Characters)
+            {
+                var T = new MenuItem
+                {
+                    Header = C.ClassName
+                };
+                T.Click += AddClick;
+                var I = new MenuItem
+                {
+                    Header = C.ClassName
+                };
+                I.Click += RemoveClick;
+                AddRightClickItem.Items.Add(T);
+                RemoveRightClickItem.Items.Add(I);
+            }
+
             return;
+        }
+
+        private void RemoveClick(object sender, RoutedEventArgs e)
+        {
+            MenuItem a = sender as MenuItem;
+            AddToThisClass.SelectedItem = a.Header.ToString();
+            RemoveSpellFromCharacter(a.Header.ToString());
+        }
+
+        private void AddClick(object sender, RoutedEventArgs e)
+        {
+            MenuItem a = sender as MenuItem;
+            AddToThisClass.SelectedItem = a.Header.ToString();
+            AddSpellToCharacter(a.Header.ToString());
         }
 
         private void SpellList_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -592,7 +717,7 @@ namespace DnDB
                     SpellName.Trim('*'),
                     Row.Level,
                     Row.School,
-                    Row.CastingX0020Time,
+                    Row.CastingTime,
                     Row.Duration,
                     Row.Range,
                     Row.Area,
@@ -629,31 +754,48 @@ namespace DnDB
 
         private void AddSpell_Click(object sender, RoutedEventArgs e)
         {
+            string AddToThisClassSelectedName = (string)AddToThisClass.SelectedItem;
+
+            AddSpellToCharacter(AddToThisClassSelectedName);
+        }
+
+        private void AddSpellToCharacter(string AddToThisClassSelectedName)
+        {
             if (SpellList.Items.Count == 0)
             {
                 return;
             }
-            string SelectedSpell = (string)SpellList.SelectedItem;
-            if (SpellList.SelectedIndex == -1)
+
+            if (SpellList.SelectedItems.Count == 0)
             {
+                string SelectedSpell = "";
                 if (!AttemptToInferSelectedSpell(ref SelectedSpell))
                 {
                     return;
                 }
+
+                SpellList.SelectedItem = SelectedSpell;
             }
-            string AddToThisClassSelectedName = (string)AddToThisClass.SelectedItem;
+
+
+            List<string> SelectedItems = new List<string>();
+
             using (StreamWriter writer = new StreamWriter($@"classes\{AddToThisClassSelectedName}.dndbChara", true))
             {
-                writer.WriteLine(SelectedSpell.TrimStart('*'));
+                foreach (string SelectedSpell in SpellList.SelectedItems)
+                {
+                    writer.WriteLine(SelectedSpell.TrimStart('*'));
+                    SelectedItems.Add(SelectedSpell);
+                }
             }
+
             UpdateClasses();
-            MessageBox.Show($"{SelectedSpell} added to {AddToThisClassSelectedName}", "Add complete");
+            MessageBox.Show($"{string.Join(", ", SelectedItems)} added to {AddToThisClassSelectedName}", "Add complete");
         }
 
         private bool AttemptToInferSelectedSpell(ref string SelectedSpell)
         {
-            IEnumerable<string> a = SpellList.ItemsSource as IEnumerable<string>;
-            if (a == null)
+            if (!(SpellList.ItemsSource is IEnumerable<string> a))
             {
                 return false;
             }
@@ -671,25 +813,45 @@ namespace DnDB
 
         private void RemoveSpell_Click(object sender, RoutedEventArgs e)
         {
-            string SelectedSpell = (string)SpellList.SelectedItem;
-            if (SpellList.SelectedIndex == -1)
+            string AddToThisClassSelectedName = (string)AddToThisClass.SelectedItem;
+
+            RemoveSpellFromCharacter(AddToThisClassSelectedName);
+        }
+
+        private void RemoveSpellFromCharacter(string AddToThisClassSelectedName)
+        {
+            if (SpellList.SelectedItems.Count == 0)
             {
+                string SelectedSpell = "";
                 if (!AttemptToInferSelectedSpell(ref SelectedSpell))
                 {
                     return;
                 }
+
+                SpellList.SelectedItem = SelectedSpell;
             }
-            string AddToThisClassSelectedName = (string)AddToThisClass.SelectedItem;
-            MessageBoxResult Result = MessageBox.Show($"Are you sure you want to remove {SelectedSpell} from {AddToThisClassSelectedName}?", "Caution", MessageBoxButton.YesNo);
+
+            List<string> SelectedItems = SpellList.SelectedItems.Cast<string>().ToList();
+
+            MessageBoxResult Result =
+                MessageBox.Show(
+                    $"Are you sure you want to remove {string.Join(", ", SelectedItems)} from {AddToThisClassSelectedName}?",
+                    "Caution", MessageBoxButton.YesNo);
             if (Result != MessageBoxResult.Yes)
             {
                 return;
             }
+
             DnDBClass Class = Classes.First(z => z.ClassName == AddToThisClassSelectedName);
-            Class.Spells.RemoveAll(z => z.Name == SelectedSpell);
+            foreach (string SelectedSpell in SelectedItems)
+            {
+                Class.Spells.RemoveAll(z => z.Name == SelectedSpell);
+            }
+
             File.WriteAllLines($@"classes\{AddToThisClassSelectedName}.dndbChara", Class.Spells.Select(z => z.Name));
             UpdateClasses();
-            MessageBox.Show($"{SelectedSpell} removed from {AddToThisClassSelectedName}", "Remove complete");
+            MessageBox.Show($"{string.Join(", ", SelectedItems)} removed from {AddToThisClassSelectedName}",
+                "Remove complete");
         }
 
         public static string NewClass = "";
@@ -736,9 +898,10 @@ namespace DnDB
 
         private void Options_Click(object sender, RoutedEventArgs e)
         {
-            Options O = new Options {WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this, };
+            Options O = new Options {WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this,};
             O.ShowDialog();
             UpdateFontSize();
+            RefreshSpells();
             UpdateClasses();
             UpdateSpellListContents();
             RefreshSpellDisplay();
@@ -773,6 +936,7 @@ namespace DnDB
             AddSpell.FontSize = 7 * Scale;
             RemoveSpell.FontSize = 7 * Scale;
             Options.FontSize = 10 * Scale;
+            SpellList.ContextMenu.FontSize = 7 * Scale;
 
             SelectedClass.FontFamily = SettingsVariables.SelectedFont;
             SelectedLevel.FontFamily = SettingsVariables.SelectedFont;
@@ -796,6 +960,7 @@ namespace DnDB
             AddSpell.FontFamily = SettingsVariables.SelectedFont;
             RemoveSpell.FontFamily = SettingsVariables.SelectedFont;
             Options.FontFamily = SettingsVariables.SelectedFont;
+            SpellList.ContextMenu.FontFamily = SettingsVariables.SelectedFont;
 
             //SelectedClass.Foreground = SettingsVariables.TextColor;
             //SelectedLevel.Foreground = SettingsVariables.TextColor;
@@ -868,6 +1033,11 @@ namespace DnDB
             }
         }
 
+        private void MenuItemPrepare_OnClick(object sender, RoutedEventArgs e)
+        {
+            SpellList_MouseDoubleClick(sender, null);
+        }
+
         private void SpellList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (SpellList.SelectedItem == null)
@@ -875,19 +1045,24 @@ namespace DnDB
                 return;
             }
 
-            string spell = SpellList.SelectedItem.ToString();
-            bool WasPrepared = spell[0] == '*';
-            spell = spell.Trim('*');
-
             string Path = GetPreparedSpellPath(SelectedClass.SelectedItem.ToString());
             List<string> AllPreparedSpellsInClass = File.ReadAllLines(Path).ToList();
-            if (IsPreparedSpellInCurrentClass(spell))
+            string FirstSpell = SpellList.SelectedItem.ToString();
+            bool WasPrepared = FirstSpell[0] == '*';
+
+
+            foreach (string S in SpellList.SelectedItems.Cast<string>())
             {
-                AllPreparedSpellsInClass.RemoveAll(z => z == spell);
-            }
-            else
-            {
-                AllPreparedSpellsInClass.Add(spell);
+                string spell = S;
+                spell = spell.Trim('*');
+                if (IsPreparedSpellInCurrentClass(spell))
+                {
+                    AllPreparedSpellsInClass.RemoveAll(z => z == spell);
+                }
+                else
+                {
+                    AllPreparedSpellsInClass.Add(spell);
+                }
             }
             File.WriteAllLines(Path, AllPreparedSpellsInClass);
             LastClassLoadedIntoPrep = "";
@@ -895,10 +1070,10 @@ namespace DnDB
             UpdateSpellListContents();
             if (!WasPrepared)
             {
-                spell = $"*{spell}";
+                FirstSpell = $"*{FirstSpell}";
             }
 
-            SpellList.SelectedIndex = SpellList.Items.IndexOf(spell);
+            SpellList.SelectedIndex = SpellList.Items.IndexOf(FirstSpell);
 
         }
 
@@ -954,6 +1129,14 @@ namespace DnDB
         {
 
         }
+
+        private bool ManualControl;
+
+        private void AddToThisClass_GotFocus(object sender, RoutedEventArgs e)
+        {
+            ManualControl = true;
+            
+        }
     }
 
     public class MasterSpell
@@ -967,8 +1150,8 @@ namespace DnDB
         [JsonProperty("School")]
         public string School { get; set; }
 
-        [JsonProperty("Casting_x0020_Time")]
-        public string CastingX0020Time { get; set; }
+        [JsonProperty("CastingTime")]
+        public string CastingTime { get; set; }
 
         [JsonProperty("Duration")]
         public string Duration { get; set; }
