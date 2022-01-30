@@ -3,19 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Net.Mime;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Drawing.Text;
-using FontFamily = System.Drawing.FontFamily;
 
 namespace DnDB
 {
@@ -35,16 +25,31 @@ namespace DnDB
                 MainWindow.Scale = value;
             }
         }
-        
+
+        bool DarkModeEnabled
+        {
+            get
+            {
+                return MainWindow.SettingsVariables.DarkModeEnabled;
+            }
+            set
+            {
+                MainWindow.SettingsVariables.DarkModeEnabled = value;
+            }
+        }
+
         public Options()
         {
             InitializeComponent();
-            string[] comboBoxStrings = {"Tiny", "Smaller", "Medium (Default)", "Bigger", "Large", "Huge", "Maximum",};
+            string[] comboBoxStrings = { "Tiny", "Smaller", "Medium (Default)", "Bigger", "Large", "Huge", "Maximum", };
+            string[] DarkStrings = { "Light Mode", "Dark Mode" };
             TextSizeBox.ItemsSource = comboBoxStrings;
-            TextSizeBox.SelectedIndex = (int) (2 * GlobalSize - 2);
+            DarkBox.ItemsSource = DarkStrings;
+            TextSizeBox.SelectedIndex = (int)(2 * GlobalSize - 2);
             LevelCheckBox.IsChecked = MainWindow.SettingsVariables.SortByLevel;
             SearchCheckBox.IsChecked = MainWindow.SettingsVariables.ShowSearchBox;
             VSMCheckBox.IsChecked = MainWindow.SettingsVariables.UseFullVSM;
+            DarkBox.SelectedIndex = DarkModeEnabled ? 1 : 0;
             List<string> fontBoxString = new List<string>();
             using (InstalledFontCollection C = new InstalledFontCollection())
             {
@@ -52,7 +57,7 @@ namespace DnDB
             }
             FontBox.ItemsSource = fontBoxString.OrderBy(z => z).ToList();
             FontBox.SelectedItem = MainWindow.SettingsVariables.SelectedFont.ToString();
-            
+
             UpdateTextSize();
         }
 
@@ -70,6 +75,8 @@ namespace DnDB
             VSMCheckBox.FontSize = 8 * GlobalSize;
             SpellsLabel.FontSize = 8 * GlobalSize;
             OpenSpellsButton.FontSize = 8 * GlobalSize;
+            DarkBox.FontSize = 8 * GlobalSize;
+            DarkLabel.FontSize = 8 * GlobalSize;
 
             WindowObject.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             AdjustLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
@@ -83,15 +90,50 @@ namespace DnDB
             FontLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             SpellsLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             OpenSpellsButton.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            DarkBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+            DarkLabel.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+
+            WindowObject.Foreground = MainWindow.SettingsVariables.TextColor;
+            AdjustLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            ModifyLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            TextSizeBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            OpenClassButton.Foreground = MainWindow.SettingsVariables.TextColor;
+            LevelCheckBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            SearchCheckBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            VSMCheckBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            FontBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            FontBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            FontLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            SpellsLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            OpenSpellsButton.Foreground= MainWindow.SettingsVariables.TextColor;
+            DarkBox.Foreground= MainWindow.SettingsVariables.TextColor;
+            DarkLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+
+            WindowObject.Background = MainWindow.SettingsVariables.BackgroundColor;
+            AdjustLabel.Background = MainWindow.SettingsVariables.BackgroundColor;
+            ModifyLabel.Background = MainWindow.SettingsVariables.BackgroundColor;
+            TextSizeBox.Style = MainWindow.SettingsVariables.ComboStyle;
+            OpenClassButton.Background = MainWindow.SettingsVariables.ButtonBrush;
+            //LevelCheckBox.Background = MainWindow.SettingsVariables.BackgroundColor;
+            //SearchCheckBox.Background = MainWindow.SettingsVariables.BackgroundColor;
+            //VSMCheckBox.Background = MainWindow.SettingsVariables.BackgroundColor;
+            FontBox.Style = MainWindow.SettingsVariables.ComboStyle;
+            FontLabel.Background = MainWindow.SettingsVariables.BackgroundColor;
+            SpellsLabel.Background = MainWindow.SettingsVariables.BackgroundColor;
+            OpenSpellsButton.Background = MainWindow.SettingsVariables.ButtonBrush;
+            DarkBox.Style = MainWindow.SettingsVariables.ComboStyle;
+            DarkLabel.Background = MainWindow.SettingsVariables.BackgroundColor;
+            
+
 
             WindowObject.Width = Math.Max(201 * GlobalSize, 402);
-            WindowObject.Height = Math.Max(181 * GlobalSize, 362);
+            WindowObject.Height = Math.Max(201 * GlobalSize, 402);
 
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            GlobalSize = (double) (TextSizeBox.SelectedIndex + 2) / 2;
+            GlobalSize = (double)(TextSizeBox.SelectedIndex + 2) / 2;
             UpdateTextSize();
         }
 
@@ -172,6 +214,12 @@ namespace DnDB
             {
                 //ignore
             }
+        }
+
+        private void DarkBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DarkModeEnabled = DarkBox.SelectedIndex != 0;
+            UpdateTextSize();
         }
     }
 }

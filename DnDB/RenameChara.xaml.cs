@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using Path = System.Windows.Shapes.Path;
 
 namespace DnDB
 {
@@ -24,7 +14,7 @@ namespace DnDB
         public RenameChara()
         {
             InitializeComponent();
-            CharacterComboBox.ItemsSource= MainWindow.Characters.Select(z => z.ClassName).ToList();
+            CharacterComboBox.ItemsSource = MainWindow.Characters.Select(z => z.ClassName).ToList();
             UpdateTextSize();
         }
 
@@ -43,6 +33,17 @@ namespace DnDB
             CharacterComboBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             NewNameTextBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             RenameButton.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+
+            CharacterLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            NewNameLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            CharacterComboBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            NewNameTextBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            RenameButton.Foreground = MainWindow.SettingsVariables.TextColor;
+
+            Background = MainWindow.SettingsVariables.BackgroundColor;
+            CharacterComboBox.Style = MainWindow.SettingsVariables.ComboStyle;
+            NewNameTextBox.Background = MainWindow.SettingsVariables.BackgroundColor;
+            RenameButton.Background = MainWindow.SettingsVariables.ButtonBrush;
 
             window.Width = Math.Max(210 * Scale, 420);
             window.Height = Math.Max(95 * Scale, 190);

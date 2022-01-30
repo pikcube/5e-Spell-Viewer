@@ -3,17 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace DnDB
 {
@@ -27,7 +17,7 @@ namespace DnDB
             InitializeComponent();
             List<string> comboBox1DataSource = MainWindow.Classes.Select(z => z.ClassName).ToList();
             comboBox1DataSource.RemoveAt(0);
-            ClassComboBox.ItemsSource= comboBox1DataSource;
+            ClassComboBox.ItemsSource = comboBox1DataSource;
             UpdateTextSize();
         }
 
@@ -48,6 +38,19 @@ namespace DnDB
             NameTextBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             ClassComboBox.FontFamily = MainWindow.SettingsVariables.SelectedFont;
             CreateButton.FontFamily = MainWindow.SettingsVariables.SelectedFont;
+
+            ClassLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            NameLabel.Foreground = MainWindow.SettingsVariables.TextColor;
+            ImportCheckBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            NameTextBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            ClassComboBox.Foreground = MainWindow.SettingsVariables.TextColor;
+            CreateButton.Foreground = MainWindow.SettingsVariables.TextColor;
+
+            Background = MainWindow.SettingsVariables.BackgroundColor;
+            NameTextBox.Background = MainWindow.SettingsVariables.BackgroundColor;
+            ClassComboBox.Style = MainWindow.SettingsVariables.ComboStyle;
+            CreateButton.Background = MainWindow.SettingsVariables.ButtonBrush;
+
 
             window.Width = Math.Max(230 * Scale, 460);
             window.Height = Math.Max(90 * Scale, 180);
