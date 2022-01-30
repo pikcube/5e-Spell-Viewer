@@ -127,7 +127,7 @@ namespace DnDB
 
 
             WindowObject.Width = Math.Max(201 * GlobalSize, 402);
-            WindowObject.Height = Math.Max(201 * GlobalSize, 402);
+            WindowObject.Height = Math.Max(221 * GlobalSize, 442);
 
         }
 
