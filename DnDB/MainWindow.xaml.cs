@@ -1179,7 +1179,7 @@ namespace DnDB
 
         private void Edit_OnClick(object sender, RoutedEventArgs e)
         {
-            EditCharacter m = new EditCharacter();
+            EditCharacter m = new EditCharacter { WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this, };
             m.ShowDialog();
             switch (EditResult)
             {
