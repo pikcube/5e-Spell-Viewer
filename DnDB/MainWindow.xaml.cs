@@ -901,6 +901,7 @@ namespace DnDB
 
         private void RenameChara_Click(object sender, RoutedEventArgs e)
         {
+            //Give the window object a better name at some point
             RenameChara F = new RenameChara { WindowStartupLocation = WindowStartupLocation.CenterOwner, Owner = this, };
             F.ShowDialog();
             if (NewClass == "")
